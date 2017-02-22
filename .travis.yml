@@ -23,6 +23,8 @@ before_script:
 script:
 - cd wsgi/gde
 - python manage.py behave
+- python manage.py makemigrations
+- python manage.py migrate
 - cd ..
 - cd ..
 - sonar-scanner -Dsonar.login=$SONAR_TOKEN
