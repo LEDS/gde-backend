@@ -36,6 +36,5 @@ deploy:
     secure: F13foqcBVNTcOS5oNZT2zAdh3Udv72u/G+Dlpqoo6r8fs/7KerYV2ZIRPhveUjpC4qC53ut2ptc/QKbBNWU/iRYsI/xx+EUPj0t8b6emoQe56kF0oyeVVnw0ofu/xT3XKlGzMgOWHtSmz0PaeIxBmz/hQDr2TfnFEF+iuxlMGcpkaE9am5DcF7ECrMOn7Hx7ODWcY+9y8Wi+l5rqZmTU020so+MgixiH+9N3pIVtTbSUQxxa6epeRYgEa1hJ4c5SMH3wzNAzZp1+/2ukUuBgIYNVlq7+meP2U07swKVEye7SGo87bpU/cw57YupJTeXwIe0dKQBo+Z47fLb8py6P+BCelNM50UNWeWVOTvMtaikFEVl5smaeNGTDoX71/GMWbOz2e/t2/gz0NdObb2449mJC4FIJXtQBiEqmuj73qcOsFS8ABc30Twfn/L6nBaSPF2ZssivTisnWZnlqU2pZS6KdSd5euh4d7z9Z+zYbf6Q0zTWH17xMboRs7scSz4i3THVqmudf1tyBfGVOMANXaXmA79QX2IRh33vWqjPuzSsIC/GrelO7W7N5o6UVahi0gsHGpPJrNyhwmgdtgKbBks0xGMx62jEo0v8IpDlZ+aEx52urlhPv4bIZSOU6oDvbM7tvGB7D1Y6CU5Ko+jIRc9U21s8L7iwrgu3A96LxSdo=
   app: gdeifes
   domain: projetogde  
-  on:
-   repo: LEDS/gde
-   all_branches: true
+  on: Desenvolvimento
+  
