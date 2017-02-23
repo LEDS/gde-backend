@@ -127,3 +127,30 @@ class Tipologia(models.Model):
                self.especieDocumental.nome+'nome:'+self.nome
 
 
+class GrupoConarq(models.Model):
+    codigo = models.IntegerField(blank=False,unique=True)
+    nome = models.CharField(blank=False,max_length=150)
+
+    def __str__(self):
+        return self.nome
+
+class Conarq(models.Model):
+    codGrupo = models.ForeignKey(GrupoConarq,related_name="codGrupo",blank=False)
+    cod = models.IntegerField(blank=False,unique=True)
+    assunto = models.CharField(max_length=150,blank=False,null=True)
+    faseCorrente = models.CharField(max_length=150,blank=False,null=True)
+    faseIntermediaria = models.CharField(max_length=150,blank=False,null=True)
+    destinacaoFinal = models.CharField(max_length=150,blank=False,null=True)
+    observacoes = models.TextField(blank=False,null =True)
+    def __str__(self):
+        return self.assunto
+
+
+class Resposta(models.Model):
+    grupo = models.ForeignKey(GrupoConarq,related_name="grupo",blank=False)
+    codigo = models.ForeignKey(Conarq,related_name="codigo",blank=False)
+    resposta = models.TextField(blank=False)
+    observacoes = models.TextField(null=True)
+
+    def __str__(self):
+        return self.resposta
