@@ -6,7 +6,7 @@ admin.site.register(Campus)
 admin.site.register(Atividade)
 admin.site.register(EspecieDocumental)
 admin.site.register(Setor)
-admin.site.register(TipoAcumulo)<<<<<<< HEAD
+admin.site.register(TipoAcumulo)
 admin.site.register(Elemento)
 admin.site.register(Suporte)
 admin.site.register(Genero)
