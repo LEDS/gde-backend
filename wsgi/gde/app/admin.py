@@ -12,6 +12,17 @@ admin.site.register(Suporte)
 admin.site.register(Genero)
 admin.site.register(RestricaoAcesso)
 admin.site.register(Fase)
-admin.site.register(Tipologia)
+#admin.site.register(Tipologia)
 admin.site.register(Usuario)
+
+# define the admin class:
+class TipologiaAdmin(admin.ModelAdmin):
+    list_display = ('setor','usuario',  'nome', 'identificacao', 'atividade', 'display_element' )
+    list_filter = ('setor','usuario',  'nome', 'identificacao', 'atividade')
+    fields = [ 'setor', 'usuario', 'atividade', 'producaoSetor', 'especieDocumental', 'historico','finalidade', 'nome', 'identificacao',
+        'elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna',
+        ('inicioAcumulo', 'fimAcumulo') ,('quantidadeAcumulada','tipoAcumulo'), 'embasamentoLegal',
+        'informacaoOutrosDocumentos', 'restricaoAcesso']
+    
+admin.site.register(Tipologia, TipologiaAdmin)
 

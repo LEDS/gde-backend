@@ -8,7 +8,10 @@
             <br/>
 
             <div id="formularioAtividade" class="modal">
-                <div class="modal-content">
+                <div id="loader" class="progress" style="display:none">
+                    <div class="indeterminate"></div>
+                </div>
+                <div class="modal-content row">
                     <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="post">
                         {% csrf_token %}
                          {% if formAtividade.descricao.help_text %}
@@ -16,15 +19,15 @@
                 {%else%}
                     <div id="descricao" class="row">
                 {%endif%}
-
                         <div class="col s12" style="display:none" id="erro_atividade">Atividade já cadastrada!</div>
                         <div class="col s12 titulo">{{formAtividade.descricao.label}}</div>
-                        <div class="col s10">{{formAtividade.descricao}}</div>
+                        <div class="col s12">{{formAtividade.descricao}}</div>
                     </div>
                         <div class="input-field">
-                        <button class="btn right orange darken-4" type="submit" name="botao_cadastrar" value="3">Cadastrar</button>
-                        <input type="hidden" name="next" value="" />
+                            <button class="btn right orange darken-4" type="submit" name="botao_cadastrar" value="3">Cadastrar</button>
+                            <input type="hidden" name="next" value="" />
                         </div>
+                        <br/>
                     </form>
                 </div>
 

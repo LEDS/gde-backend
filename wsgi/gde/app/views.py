@@ -366,7 +366,6 @@ def cadastrar_tipologia(request):
                 response_data['resposta'] = '1'
                 return JsonResponse(response_data)
             response_data['resposta'] = '0'
-
             return JsonResponse(response_data)
         else:
             if request.POST.get('submit_enviar') == "0":

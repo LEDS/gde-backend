@@ -55,28 +55,33 @@ var json1;
 // AJAX for posting
 function create_post() {
     console.log("create post is working!") // sanity check
-    $.ajax({
-        url : "/tipologia/", // the endpoint
-        type : "POST", // http method
-        data : { csrfmiddlewaretoken : $('input[name=csrfmiddlewaretoken]').val(), descricao : $('#id_descricao').val(), botao_cadastrar : '3'  }, // data sent with the post request
+    $("#loader").show();
+        $.ajax({
+            url : "/tipologia/", // the endpoint
+            type : "POST", // http method
+            data : { csrfmiddlewaretoken : $('input[name=csrfmiddlewaretoken]').val(), descricao : $('#id_descricao').val(), botao_cadastrar : '3'  }, // data sent with the post request
+            // handle a successful response
+            success : function(json) {
+            json1 = json;
+            if(json.resposta == '0'){
+                $("#loader").hide();
+                $('#erro_atividade').show(); // remove the value from the input
+                }
+            else{
+                $('#formularioAtividade').closeModal();
+                $("#loader").hide();
+                Materialize.toast('Atividade criada com sucesso!', 4000);
+                $('#id_descricao').val('');
+                $('#erro_atividade').hide();
+            }
+            },
 
-        // handle a successful response
-        success : function(json) {
-        json1 = json;
-        if(json.resposta == '0')
-            $('#erro_atividade').show(); // remove the value from the input
-        else{
-            $('#formularioAtividade').closeModal();
-            Materialize.toast('Atividade criada com sucesso!', 4000);
-            $('#id_descricao').val('');
-        }
-        },
-
-        // handle a non-successful response
-        error : function(xhr,errmsg,err) {
-            $('#results').html("<div class='alert-box alert radius' data-alert>Oops! We have encountered an error: "+errmsg+
-                " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
-            console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
-        }
-    });
+            // handle a non-successful response
+            error : function(xhr,errmsg,err) {
+                $("#loader").hide();
+                $('#results').html("<div class='alert-box alert radius' data-alert>Opss! Nós encontramos um erro!: "+errmsg+
+                    " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
+                console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+            }
+        });
 };
