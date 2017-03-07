@@ -9,6 +9,10 @@ if [ ! -f "$OPENSHIFT_DATA_DIR"secrets.json ]; then
 	python "$OPENSHIFT_REPO_DIR"libs/secrets.py > "$OPENSHIFT_DATA_DIR"secrets.json
 fi
 
+#Adicionado
+python "$OPENSHIFT_REPO_DIR"wsgi/gde/manage.py makemigrations
+echo "python "$OPENSHIFT_REPO_DIR"wsgi/gde/manage.py makemigrations"
+
 # GETTING-STARTED: change 'gde' to your project name:
 echo "Executing 'python $OPENSHIFT_REPO_DIR/wsgi/gde/manage.py migrate --noinput'"
 # GETTING-STARTED: change 'gde' to your project name:
@@ -18,3 +22,7 @@ python "$OPENSHIFT_REPO_DIR"wsgi/gde/manage.py migrate --noinput
 echo "Executing 'python $OPENSHIFT_REPO_DIR/wsgi/gde/manage.py collectstatic --noinput'"
 # GETTING-STARTED: change 'gde' to your project name:
 python "$OPENSHIFT_REPO_DIR"wsgi/gde/manage.py collectstatic --noinput
+
+
+
+

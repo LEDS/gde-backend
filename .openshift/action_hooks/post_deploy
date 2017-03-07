@@ -2,3 +2,6 @@
 # This is a simple post deploy hook executed after your application 
 # is deployed and started.  This script gets executed directly, so 
 # it could be python, php, ruby, etc.
+
+# Criando usando no admin
+echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin@example.com', 'admin', 'pass')" | python $OPENSHIFT_REPO_DIR/wsgi/gde/manage.py shell
