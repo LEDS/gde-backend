@@ -25,7 +25,7 @@ script:
 - python manage.py migrate
 - cd ..
 - cd ..
-- sonar-scanner -Dsonar.login=$SONAR_TOKEN
+- sonar-scanner -D sonar.login=$SONAR_TOKEN
 deploy:
   provider: openshift
   user: projetogde@gmail.com
