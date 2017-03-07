@@ -363,7 +363,7 @@ def cadastrar_tipologia(request):
             if formAtividade.is_bound and formAtividade.is_valid():
                 descricao = formAtividade.cleaned_data['descricao']
                 Atividade.objects.create(setor=setor,descricao=descricao)
-                response_data['resposta'] = '1'
+                response_data['resposta'] = Atividade.objects.get(descricao=descricao).id
                 return JsonResponse(response_data)
             response_data['resposta'] = '0'
             return JsonResponse(response_data)

@@ -51,6 +51,12 @@ $('#formAtividade').on('submit', function(event){
     create_post();
 });
 
+function insere_atividade(val, text) {
+    $('#id_atividade').append(
+        $('<option></option>').val(val).html(text)
+    );
+}
+
 var json1;
 // AJAX for posting
 function create_post() {
@@ -68,11 +74,13 @@ function create_post() {
                 $('#erro_atividade').show(); // remove the value from the input
                 }
             else{
+                insere_atividade(json.resposta, $('#id_descricao').val());
                 $('#formularioAtividade').closeModal();
                 $("#loader").hide();
                 Materialize.toast('Atividade criada com sucesso!', 4000);
                 $('#id_descricao').val('');
                 $('#erro_atividade').hide();
+
             }
             },
 
@@ -85,3 +93,4 @@ function create_post() {
             }
         });
 };
+
