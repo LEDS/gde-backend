@@ -36,7 +36,8 @@ deploy:
   domain: projetogde
   on:
    repo: LEDS/gde
-   deployment_branch: Desenvolvimentolanguage: python
+   deployment_branch: Desenvolvimento
+language: python
 python:
 - '3.3'
 jdk:
