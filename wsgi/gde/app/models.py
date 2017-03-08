@@ -118,6 +118,8 @@ class Tipologia(models.Model):
     restricaoAcesso = models.ManyToManyField(RestricaoAcesso, related_name='restricaoAcesso')
     producaoSetor = models.BooleanField(choices=((True, 'Produzido neste setor'), (False, 'Recebido por este setor')),blank=False)
 
+
+
     def display_element(self):
         return ', '.join([elemento.nome for elemento in self.elemento.all()[:3]])
     display_element.short_description = 'Elemento'

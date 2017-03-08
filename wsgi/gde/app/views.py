@@ -373,7 +373,7 @@ def cadastrar_tipologia(request):
                 fase = Fase.objects.get(nome='Aguardando Resposta')
             elif request.POST.get('submit_salvar') == "1":
                 fase = Fase.objects.get(nome='Levantamento')
-            if form.is_bound:
+            if form.is_valid():
                 especieDocumental = form.cleaned_data['especieDocumental']
                 finalidade = form.cleaned_data['finalidade']
                 nome = form.cleaned_data['nome']
