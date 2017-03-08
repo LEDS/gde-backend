@@ -36,42 +36,4 @@ deploy:
   domain: projetogde
   on:
    repo: LEDS/gde
-   deployment_branch: Desenvolvimentolanguage: python
-python:
-- '3.3'
-jdk:
-- oraclejdk8
-addons:
-  apt:
-    packages:
-    - oracle-java8-installer
-  sonarqube: true
-services:
-  - postgres
-env:
-  global:
-  - secure: "vVSzQa1ygJ3gGfB6L1rR43wFWtrjBPWZYdiJetBjHtCQWEKPh7IAc4HK3HcFO1sbPV+poytVdhWY4YhYGquGmDgQl7zMVMoaXPvx8cN3GNzO6bOgTfw4CGmu1r12ZZQB4+FztK9qKH7UEz1xPAizJfKjhhruXFYy8BPyiptZu3zssTM3cexBfhdloeVlfh8rxWoIetVGMkE2k7+l4ioq+tjkmof8x6hN1LBto5kwiOCM4jXTse9OLN9NU9BtY+euz4P9cL9GorDJBzRtvVrHctXu8GTDf4AoXCP2iGgLOF0V5iVjRCNd69I5njG1093S/gEau6IllYie3h/o5mGyPEdxj0EViVslwDZrCDWDj3S01kc2ei+FX7xHZB6BPr2L92CKfwgw93jh+so2WglcROSrh6T2yPPimxUriCrFylZtT90JoeVTZ8rao9Z3IYQXNpUGGKLNslRRyxKTqJwxYbbfYB7L3T4uj0/mc4HZFQtj1sSXcp4t5rHQo+V+oWwexHN/8syM6WAogltOL8cOCXbjCiteYatVsefUAP7zo6qdbRmZkQzu4F5y2Z2keD+Vx/5P0k1/mdyqGeLBkv+MIR6i6dwuJi5Gq19pUm+Wno0RCm8Sl3NjKv+U1Zsex/WFAmC+/KtSNZm4VmHTC7cni63tPVh+Wg25m/QhJa3PNhA="
-before_install:
-  - createdb gde
-install:
-- pip install -r requirements.txt
-before_script:
-- export JAVA_HOME=/usr/lib/jvm/java-8-oracle
-script:
-- cd wsgi/gde
-- python manage.py behave
-- python manage.py makemigrations
-- python manage.py migrate
-- cd ..
-- cd ..
-- sonar-scanner -Dsonar.login=$SONAR_TOKEN
-deploy:
-  provider: openshift
-  user: projetogde@gmail.com
-  password:
-    secure: F13foqcBVNTcOS5oNZT2zAdh3Udv72u/G+Dlpqoo6r8fs/7KerYV2ZIRPhveUjpC4qC53ut2ptc/QKbBNWU/iRYsI/xx+EUPj0t8b6emoQe56kF0oyeVVnw0ofu/xT3XKlGzMgOWHtSmz0PaeIxBmz/hQDr2TfnFEF+iuxlMGcpkaE9am5DcF7ECrMOn7Hx7ODWcY+9y8Wi+l5rqZmTU020so+MgixiH+9N3pIVtTbSUQxxa6epeRYgEa1hJ4c5SMH3wzNAzZp1+/2ukUuBgIYNVlq7+meP2U07swKVEye7SGo87bpU/cw57YupJTeXwIe0dKQBo+Z47fLb8py6P+BCelNM50UNWeWVOTvMtaikFEVl5smaeNGTDoX71/GMWbOz2e/t2/gz0NdObb2449mJC4FIJXtQBiEqmuj73qcOsFS8ABc30Twfn/L6nBaSPF2ZssivTisnWZnlqU2pZS6KdSd5euh4d7z9Z+zYbf6Q0zTWH17xMboRs7scSz4i3THVqmudf1tyBfGVOMANXaXmA79QX2IRh33vWqjPuzSsIC/GrelO7W7N5o6UVahi0gsHGpPJrNyhwmgdtgKbBks0xGMx62jEo0v8IpDlZ+aEx52urlhPv4bIZSOU6oDvbM7tvGB7D1Y6CU5Ko+jIRc9U21s8L7iwrgu3A96LxSdo=
-  app: gdeifes
-  domain: projetogde
-  on:
-   repo: LEDS/gde
-  all_branches: true
+   deployment_branch: Desenvolvimento
