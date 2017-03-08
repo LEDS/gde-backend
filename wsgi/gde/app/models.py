@@ -117,7 +117,7 @@ class Tipologia(models.Model):
     informacaoOutrosDocumentos = models.BooleanField(choices=gera_sim_nao(), blank=False)
     restricaoAcesso = models.ManyToManyField(RestricaoAcesso, related_name='restricaoAcesso')
     producaoSetor = models.BooleanField(choices=((True, 'Produzido neste setor'), (False, 'Recebido por este setor')),blank=False)
-
+    dataEnvio = models.DateTimeField(auto_now=True, null=True)
 
 
     def display_element(self):
