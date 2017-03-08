@@ -74,7 +74,7 @@ function create_post() {
                 $('#erro_atividade').show(); // remove the value from the input
                 }
             else{
-                insere_atividade(json.resposta, $('#id_descricao').val());
+                insere_atividade(json.resposta, json.nome_atividade);
                 $('#formularioAtividade').closeModal();
                 $("#loader").hide();
                 Materialize.toast('Atividade criada com sucesso!', 4000);
