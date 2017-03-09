@@ -18,6 +18,8 @@ admin.site.register(GrupoConarq)
 admin.site.register(Conarq)
 admin.site.register(Resposta)
 
+from django.utils.html import format_html
+from django.core.urlresolvers import reverse
 
 # define the admin class:
 class TipologiaAdmin(admin.ModelAdmin):
@@ -27,6 +29,7 @@ class TipologiaAdmin(admin.ModelAdmin):
         'elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna',
         ('inicioAcumulo', 'fimAcumulo') ,('quantidadeAcumulada','tipoAcumulo'), 'embasamentoLegal',
         'informacaoOutrosDocumentos', 'restricaoAcesso']
+
     
 admin.site.register(Tipologia, TipologiaAdmin)
 
