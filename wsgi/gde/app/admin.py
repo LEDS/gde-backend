@@ -27,6 +27,6 @@ class TipologiaAdmin(admin.ModelAdmin):
         'elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna',
         ('inicioAcumulo', 'fimAcumulo') ,('quantidadeAcumulada','tipoAcumulo'), 'embasamentoLegal',
         'informacaoOutrosDocumentos', 'restricaoAcesso']
-    
+
 admin.site.register(Tipologia, TipologiaAdmin)
 
