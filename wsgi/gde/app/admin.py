@@ -30,6 +30,6 @@ class TipologiaAdmin(admin.ModelAdmin):
         ('inicioAcumulo', 'fimAcumulo') ,('quantidadeAcumulada','tipoAcumulo'), 'embasamentoLegal',
         'informacaoOutrosDocumentos', 'restricaoAcesso']
 
-    
+
 admin.site.register(Tipologia, TipologiaAdmin)
 
