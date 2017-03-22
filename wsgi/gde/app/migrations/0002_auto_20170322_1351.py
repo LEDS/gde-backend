@@ -11,9 +11,13 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+        migrations.RemoveField(
+            model_name='classificaarquivosifes',
+            name='grupo',
+        ),
         migrations.AddField(
-            model_name='tipologia',
-            name='dataEnvio',
-            field=models.DateTimeField(null=True, auto_now=True),
+            model_name='resposta',
+            name='status',
+            field=models.CharField(max_length=100, null=True),
         ),
     ]

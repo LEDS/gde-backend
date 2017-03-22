@@ -14,7 +14,7 @@
                 <div class="modal-content row">
                     <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="post">
                         {% csrf_token %}
-                         {% if formAtividade.descricao.help_text %}
+                {% if formAtividade.descricao.help_text %}
                     <div id="descricao" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{formAtividade.descricao.help_text}}">
                 {%else%}
                     <div id="descricao" class="row">

@@ -119,18 +119,13 @@ class Tipologia(models.Model):
     producaoSetor = models.BooleanField(choices=((True, 'Produzido neste setor'), (False, 'Recebido por este setor')),blank=False)
     dataEnvio = models.DateField(auto_now=True, null=True)
 
-
-    def display_element(self):
-        return ', '.join([elemento.nome for elemento in self.elemento.all()[:3]])
-    display_element.short_description = 'Elemento'
-
     def __str__(self):
         return 'setor:'+self.setor.nome+'usuário:'+self.usuario.user.username+'espécie:'+\
                self.especieDocumental.nome+'nome:'+self.nome
 
 
 class GrupoConarq(models.Model):
-    codigo = models.IntegerField(blank=False,unique=True)
+    codigo = models.CharField(max_length=50,blank=False,null=True)
     nome = models.CharField(blank=False,max_length=150)
 
     def __str__(self):
@@ -138,7 +133,7 @@ class GrupoConarq(models.Model):
 
 class Conarq(models.Model):
     codGrupo = models.ForeignKey(GrupoConarq,related_name="codGrupo",blank=False)
-    cod = models.IntegerField(blank=False,unique=True)
+    codigo = models.CharField(max_length=50,blank=False,null=True)
     assunto = models.CharField(max_length=150,blank=False,null=True)
     faseCorrente = models.CharField(max_length=150,blank=False,null=True)
     faseIntermediaria = models.CharField(max_length=150,blank=False,null=True)
@@ -147,12 +142,24 @@ class Conarq(models.Model):
     def __str__(self):
         return self.assunto
 
+class ClassificaArquivosIfes(models.Model):
+    codigo = models.CharField(max_length=50,blank=False,null=True)
+    conarq = models.ForeignKey(Conarq, related_name="conarq", blank=False)
+
+    def __str__(self):
+        return self.codigo
 
 class Resposta(models.Model):
-    grupo = models.ForeignKey(GrupoConarq,related_name="grupo",blank=False)
-    codigo = models.ForeignKey(Conarq,related_name="codigo",blank=False)
+    tipologia = models.OneToOneField(Tipologia, on_delete=models.CASCADE, blank=False)
+    codigo_ifes = models.ForeignKey(ClassificaArquivosIfes,related_name="codigo_ifes",blank=False)
     resposta = models.TextField(blank=False)
     observacoes = models.TextField(null=True)
+    status = models.CharField(max_length=100,blank=False,null=True)
+
+
+
 
     def __str__(self):
         return self.resposta
+
+
