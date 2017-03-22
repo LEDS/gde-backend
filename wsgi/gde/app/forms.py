@@ -47,12 +47,11 @@ class FormCampus(ModelForm):
         fields = ['nome']
 
 
-class FormTipologia(HTML5RequiredMixin, ModelForm):
+class FormTipologia(ModelForm):
     def __init__(self, *args, **kwargs):
         setor = kwargs.pop('setor', None)
         super(FormTipologia, self).__init__(*args,**kwargs)
         self.fields['atividade'] = forms.ModelChoiceField(required=True, queryset=Atividade.objects.filter(setor=setor), widget=forms.Select(), label='Este documento está relacionado a qual atividade do setor?')
-        self.fields['atividade'].widget.attrs['class'] = 'browser-default'
         self.fields['atividade'].widget.attrs['required'] = 'required'
         self.fields['producaoSetor'].widget.attrs['required'] = 'required'
         self.fields['formaDocumental'].widget.attrs['required'] = 'required'

@@ -15,7 +15,7 @@
     {% endif %}
     <div class="row">
         <div id= "form-login" class="col s4 offset-s4">
-            <div class="card-panel blue-grey lighten-4 z-depth-2">
+            <div class="card-panel  light-green lighten-3 z-depth-2">
                 <form id="login-form" method="post"
                       action="{% url 'django.contrib.auth.views.login' %}">
                     {% csrf_token %}
@@ -36,13 +36,13 @@
 
                     <br/><br/>
 
-                    <button id="botao-login" class="btn blue-grey darken-4 z-depth-1" type="submit" name="action">Login</button>
-                    <input type="hidden" name="next" value="/home" />
+                    <button id="botao-login" class="btn  green darken-4 z-depth-1" type="submit" name="action">Login</button>
+                    <input type="hidden" name="next" value="/levantamento_list" />
                     <ul class="center hide-on-med-and-down">
-                          <li><a class="blue-grey-text" href="#">Esqueceu a senha?</a></li>
+                          <li><a class="green-text" href="#">Esqueceu a senha?</a></li>
                     </ul>
                     <ul class="center hide-on-med-and-down">
-                          <li><strong>Ainda não tem uma conta?</strong><br/><a class="blue-grey-text" href="{% url 'app.views.cadastroUsuario' %}">Cadastre-se</a></li>
+                          <li><strong>Ainda não tem uma conta?</strong><br/><a class="green-text" href="{% url 'app.views.cadastroUsuario' %}">Cadastre-se</a></li>
                     </ul>
                 </form>
             </div>

@@ -4,7 +4,7 @@
 {% block content %}
     <div id="content-container" class="container p-none">
         <div class="lgn-container col-lg-8">
-            <h4 class="center">Cadastro de Tipologia</h4>
+            <h4 class="center subtitulo2">Cadastro de Tipologia</h4>
             <br/>
 
             <div id="formularioAtividade" class="modal">
@@ -40,23 +40,6 @@
                 <div class="fields">
 
 
-                {% if form.atividade.help_text %}
-                    <div id="atividade" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.atividade.help_text}}">
-                {%else%}
-                    <div id="atividade" class="row">
-                {%endif%}
-                        {% if form.atividade.errors %}
-                            {% for erro in form.atividade.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
-                            {% endfor %}
-                        {% endif %}
-                        <div class="col s12 titulo">{{form.atividade.label}}</div>
-                        <div class="col s10">{{form.atividade}}</div>
-                        <div class="col s2 adicionar">
-                           <a id="adicionarAtividade" href="#formularioAtividade" class="waves-effect waves-light btn modal-trigger"><i class="material-icons">add</i></a>
-                        </div>
-                    </div>
-
                 {% if form.historico.help_text %}
                     <div id="historico" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.historico.help_text}}">
                 {%else%}
@@ -71,10 +54,24 @@
                         <div class="col s12">{{form.historico}}</div>
                     </div>
 
+                {% if form.nome.help_text %}
+                    <div id="nome" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.nome.help_text}}">
+                {%else%}
+                    <div id="nome" class="row">
+                {%endif%}
+                        {% if form.nome.errors %}
+                            {% for erro in form.nome.errors %}
+                                <div class="col s12">{{erro|escape}}</div>
+                            {% endfor %}
+                        {% endif %}
+                        <div  class="col s12 titulo">{{form.nome.label}}</div>
+                        <div class="col s12">{{form.nome}}</div>
+                    </div>
+
                 {% if form.producaoSetor.help_text %}
                     <div id="producaoSetor" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.producaoSetor.help_text}}">
                 {%else%}
-                    <div id="producaoSetor" class="row">
+                    <div id="producaoSetor" class="row efeito">
                 {%endif%}
                         {% if form.producaoSetor.errors %}
                             {% for erro in form.producaoSetor.errors %}
@@ -83,21 +80,6 @@
                         {% endif %}
                         <div  class="col s12 titulo">{{form.producaoSetor.label}}</div>
                         <div class="col s12">{{form.producaoSetor}}</div>
-                    </div>
-
-
-                {% if form.especieDocumental.help_text %}
-                    <div id="especieDocumental" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.especieDocumental.help_text}}">
-                {%else%}
-                    <div id="especieDocumental" class="row">
-                {%endif%}
-                        {% if form.especieDocumental.errors %}
-                            {% for erro in form.especieDocumental.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
-                            {% endfor %}
-                        {% endif %}
-                        <div  class="col s12 titulo">{{form.especieDocumental.label}}</div>
-                        <div class="col s12">{{form.especieDocumental}}</div>
                     </div>
 
                 {% if form.finalidade.help_text %}
@@ -114,21 +96,37 @@
                         <div class="col s12">{{form.finalidade}}</div>
                     </div>
 
-
-                {% if form.nome.help_text %}
-                    <div id="nome" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.nome.help_text}}">
+                {% if form.atividade.help_text %}
+                    <div id="atividade" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.atividade.help_text}}">
                 {%else%}
-                    <div id="nome" class="row">
+                    <div id="atividade" class="row efeito bordaredonda">
                 {%endif%}
-                        {% if form.nome.errors %}
-                            {% for erro in form.nome.errors %}
+                        {% if form.atividade.errors %}
+                            {% for erro in form.atividade.errors %}
                                 <div class="col s12">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
-                        <div  class="col s12 titulo">{{form.nome.label}}</div>
-                        <div class="col s12">{{form.nome}}</div>
+                        <div class="col s12 titulo">{{form.atividade.label}}</div>
+                        <div class="col s10">{{form.atividade}}</div>
+                        <div class="col s2 adicionar">
+                           <a id="adicionarAtividade" href="#formularioAtividade" class="waves-effect waves-light btn modal-trigger"><i class="material-icons">add</i></a>
+                        </div>
                     </div>
 
+
+                {% if form.especieDocumental.help_text %}
+                    <div id="especieDocumental" class="row tooltipped"  data-position="top" data-delay="50" data-tooltip="{{form.especieDocumental.help_text}}">
+                {%else%}
+                    <div id="especieDocumental" class="row efeito">
+                {%endif%}
+                        {% if form.especieDocumental.errors %}
+                            {% for erro in form.especieDocumental.errors %}
+                                <div class="col s12 ">{{erro|escape}}</div>
+                            {% endfor %}
+                        {% endif %}
+                        <div  class="col s12 titulo">{{form.especieDocumental.label}}</div>
+                        <div class="col s12 ">{{form.especieDocumental}}</div>
+                    </div>
 
                 {% if form.identificacao.help_text %}
                     <div id="identificacao" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.identificacao.help_text}}">
@@ -148,7 +146,7 @@
                 {% if form.elemento.help_text %}
                     <div id="elemento" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.elemento.help_text}}">
                 {%else%}
-                    <div id="elemento" class="row" class="row">
+                    <div id="elemento" class="row efeito" class="row">
                 {%endif%}
                         {% if form.elemento.errors %}
                             {% for erro in form.elemento.errors %}
@@ -162,7 +160,7 @@
                 {% if form.suporte.help_text %}
                     <div id="suporte" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.suporte.help_text}}">
                 {%else%}
-                    <div id="suporte" class="row">
+                    <div id="suporte" class="row efeito">
                 {%endif%}
                         {% if form.suporte.errors %}
                             {% for erro in form.suporte.errors %}
@@ -176,7 +174,7 @@
                 {% if form.formaDocumental.help_text %}
                     <div id="formaDocumental" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.formaDocumental.help_text}}">
                 {%else%}
-                    <div id="formaDocumental" class="row">
+                    <div id="formaDocumental" class="row efeito">
                 {%endif%}
                         {% if form.formaDocumental.errors %}
                             {% for erro in form.formaDocumental.errors %}
@@ -190,7 +188,7 @@
                 {% if form.quantidadeVias.help_text %}
                     <div id="quantidadeVias" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.quantidadeVias.help_text}}">
                 {%else%}
-                    <div id="quantidadeVias" class="row">
+                    <div id="quantidadeVias" class="row efeito">
                 {%endif%}
                         {% if form.quantidadeVias.errors %}
                             {% for erro in form.quantidadeVias.errors %}
@@ -204,7 +202,7 @@
                 {% if form.genero.help_text %}
                     <div id="genero" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.genero.help_text}}">
                 {%else%}
-                    <div id="genero" class="row">
+                    <div id="genero" class="row efeito">
                 {%endif%}
                         {% if form.genero.errors %}
                             {% for erro in form.genero.errors %}
@@ -218,7 +216,7 @@
                 {% if form.anexo.help_text %}
                     <div id="anexo" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.anexo.help_text}}">
                 {%else%}
-                    <div id="anexo" class="row">
+                    <div id="anexo" class="row efeito">
                 {%endif%}
                         {% if form.anexo.errors %}
                             {% for erro in form.anexo.errors %}
@@ -233,7 +231,7 @@
                 {% if form.relacaoInterna.help_text %}
                     <div id="relacaoInterna" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.relacaoInterna.help_text}}">
                 {%else%}
-                    <div id="relacaoInterna" class="row">
+                    <div id="relacaoInterna" class="row efeito">
                 {%endif%}
                         {% if form.relacaoInterna.errors %}
                             {% for erro in form.relacaoInterna.errors %}
@@ -248,7 +246,7 @@
                 {% if form.relacaoExterna.help_text %}
                     <div id="relacaoExterna" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.relacaoExterna.help_text}}">
                 {%else%}
-                    <div id="relacaoExterna" class="row">
+                    <div id="relacaoExterna" class="row efeito">
                 {%endif%}
                         {% if form.relacaoExterna.errors %}
                             {% for erro in form.relacaoExterna.errors %}
@@ -259,7 +257,7 @@
                         <div class="col s12">{{form.relacaoExterna}}</div>
                     </div>
 
-                <div class="row">
+                <div class="row efeito">
 
                     {% if form.inicioAcumulo.help_text %}
                         <div id="PeriodoAcumulo" class=" tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.inicioAcumulo.help_text}}">
@@ -286,7 +284,7 @@
                         </div>
                 </div>
 
-                <div class="row">
+                <div class="row efeito">
                     {% if form.quantidadeAcumulada.help_text %}
                         <div id="quantidadetipo" class="tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.quantidadeAcumulada.help_text}}">
                     {%else%}
@@ -324,7 +322,7 @@
 
 
                 {% if form.informacaoOutrosDocumentos.help_text %}
-                    <div id="informacaoOutrosDocumentos" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.informacaoOutrosDocumentos.help_text}}">
+                    <div id="informacaoOutrosDocumentos" class="row tooltipped efeito" data-position="top" data-delay="50" data-tooltip="{{form.informacaoOutrosDocumentos.help_text}}">
                 {%else%}
                     <div id="informacaoOutrosDocumentos" class="row">
                 {%endif%}
@@ -341,7 +339,7 @@
                 {% if form.restricaoAcesso.help_text %}
                     <div id="restricaoAcesso" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.restricaoAcesso.help_text}}">
                 {%else%}
-                    <div id="restricaoAcesso" class="row">
+                    <div id="restricaoAcesso" class="row efeito">
                 {%endif%}
                         {% if form.restricaoAcesso.errors %}
                             {% for erro in form.restricaoAcesso.errors %}

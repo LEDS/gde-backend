@@ -1,6 +1,6 @@
 
 .backgroundColor{
-    background-color:#b0bec5;
+    background-color:#ccff90;
 }
 
 .selectField{
@@ -101,6 +101,13 @@
     color: #37474f;
     margin-top:15px;
 }
+.subtitulo2{
+    color: #37474f;
+    margin-top:20px;
+    position:relative;
+    top: 30px;
+    
+}
 
 .escolhido{
     margin-bottom:15px;
@@ -116,4 +123,32 @@
 
 .hidden{
   display: none;
+}
+.imagemlogo{
+    position:absolute;
+    left:6%;
+    top:80%;
+    margin-left:-70px;
+    margin-top:-40px;
+}
+.imagem{
+    position:absolute;
+    left:9%;
+    top:60%;
+    margin-left:-70px;
+    margin-top:-40px;3
+}
+
+
+.efeito li:hover{
+    background-color: #43a047 !important;
+}
+
+.efeito li>span{
+    color:black !important;
+}
+.bordaredonda{
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
 }
