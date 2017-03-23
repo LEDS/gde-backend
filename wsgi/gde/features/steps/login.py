@@ -30,7 +30,7 @@ def step_impl(context):
     br = context.browser
 
     # Checks success status
-    assert br.current_url.endswith('/home/')
+    assert br.current_url.endswith('/levantamento_list/')
     # assert br.find_element_by_id('main_title').text == "Login success"
 
 @when('Informo o siape e senha incorretos')
