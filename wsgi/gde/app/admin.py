@@ -19,7 +19,7 @@ admin.site.register(Conarq)
 admin.site.register(Resposta)
 
 
-# define the admin class:
+
 class TipologiaAdmin(admin.ModelAdmin):
     list_display = ('setor','usuario',  'nome', 'identificacao', 'atividade', 'display_element' )
     list_filter = ('setor','usuario',  'nome', 'identificacao', 'atividade')
