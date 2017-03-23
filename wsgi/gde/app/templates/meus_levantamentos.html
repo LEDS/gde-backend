@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}Meus Levantamentos{% endblock %}
 {% block content %}
-<div id="content-container" class="container p-none">
-        <div class="lgn-container col-lg-8 subtitulo2">
+<div class="container">
+    <div id="MeusLevantamentos" class="row subtitulo2">
+    <h4 class="center subtitulo2">Meus Levantamentos</h4>
+            <br/>
+        <div class="col-lg-8 ">
             <form>
                 {% csrf_token %}
 
@@ -39,10 +42,13 @@
                     </tbody>
             </table>
 
+            <div class="fixed-action-btn" style="bottom: 100px; right: 150px;">
                 <a href="{% url 'app.views.cadastrar_tipologia' %}" class="cadastrar btn-floating btn-large waves-effect waves-light orange darken-4">
                     <i class="material-icons">add</i>
                 </a>
+                </div>
             </form>
         </div>
+    </div>
 </div>
 {% endblock content %}

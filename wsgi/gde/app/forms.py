@@ -10,7 +10,6 @@ class HTML5RequiredMixin(object):
     def __init__(self, *args, **kwargs):
         super(HTML5RequiredMixin, self).__init__(*args, **kwargs)
         for field in self.fields:
-            self.fields[field].widget.attrs['class'] = 'browser-default'
             if (self.fields[field].required and
                type(self.fields[field].widget) not in
                     (AdminFileWidget, HiddenInput, FileInput) and
@@ -38,7 +37,7 @@ class FormSetor(ModelForm):
         model = Setor
         fields = ['campus', 'nome', 'sigla', 'funcao', 'historico']
         widgets = {
-            'campus': Select(attrs={'id':'id-campus','class':'browser-default selectField'}),
+            'campus': Select(attrs={'id':'id-campus','class':' selectField'}),
              'nome': TextInput(attrs={'class':'validate'})
                     }
 class FormCampus(ModelForm):
@@ -134,7 +133,7 @@ class FormParcialSetor(ModelForm):
         model = Setor
         exclude = ['nome', 'sigla', 'funcao', 'historico']
         widgets = {
-            'campus': Select(attrs={'id':'id-campus','class':'browser-default selectField'})
+            'campus': Select(attrs={'id':'id-campus','class':' selectField'})
                     }
 
 
@@ -143,5 +142,5 @@ class FormUsuario(ModelForm):
         model = Usuario
         fields = ['setor']
         widgets = {
-            'setor': Select(attrs={'id':'id-setor','class':'browser-default selectField'}),
+            'setor': Select(attrs={'id':'id-setor','class':' selectField'}),
         }

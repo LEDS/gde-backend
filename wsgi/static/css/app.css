@@ -1,6 +1,6 @@
 
 .backgroundColor{
-    background-color:#ccff90;
+    background-color:#c8e6c9;
 }
 
 .selectField{
@@ -106,7 +106,6 @@
     margin-top:20px;
     position:relative;
     top: 30px;
-    
 }
 
 .escolhido{
@@ -151,4 +150,8 @@
     -moz-border-radius:7px;
     -webkit-border-radius:7px;
     border-radius:7px;
+}
+.container{
+    padding-bottom:1px !important;
+    margin-bottom: 30px !important;
 }
