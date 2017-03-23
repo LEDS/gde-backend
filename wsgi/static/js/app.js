@@ -68,15 +68,14 @@ function create_post() {
             data : { csrfmiddlewaretoken : $('input[name=csrfmiddlewaretoken]').val(), descricao : $('#id_descricao').val(), botao_cadastrar : '3'  }, // data sent with the post request
             // handle a successful response
             success : function(json) {
-            json1 = json;
             if(json.resposta == '0'){
-                $("#loader").hide();
+                $('#loader').hide();
                 $('#erro_atividade').show(); // remove the value from the input
                 }
             else{
                 insere_atividade(json.resposta, json.nome_atividade);
                 $('#formularioAtividade').closeModal();
-                $("#loader").hide();
+                $('#loader').hide();
                 Materialize.toast('Atividade criada com sucesso!', 4000);
                 $('#id_descricao').val('');
                 $('#erro_atividade').hide();

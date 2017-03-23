@@ -53,27 +53,11 @@ class TipologiaAdmin(admin.ModelAdmin):
         ]
         return custom_urls + urls
     def acao_responder(self, obj):
-        if obj.resposta.status == 'salvo':
-            return format_html(
-
-            '<a class="button" href="{}">Editar</a>',
-            reverse('admin:processa_resposta', args=[obj.pk]),
-            )
-
-        elif obj.resposta.status == 'enviado':
-            return format_html(
-
-            '<a class="button" href="{}">Visualizar</a>',
-            reverse('admin:processa_resposta', args=[obj.pk]),
-            )
-        else:
-
-            return format_html(
+        return format_html(
 
                 '<a class="button" href="{}">Resposta</a>',
                 reverse('admin:processa_resposta', args=[obj.pk]),
             )
-
     acao_responder.short_description = 'Resposta'
     acao_responder.allow_tags = True
 

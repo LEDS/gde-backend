@@ -1,0 +1,12 @@
+#div_tabela{
+    margin-top:10px;
+    font-weight:normal;
+}
+#div_tabela table, th, td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+#div_tabela td{
+    height:10px;
+    width:150px;
+}
