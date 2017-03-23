@@ -3,11 +3,11 @@
 
 {% block content %}
     <div id="content-container" class="container p-none">
-        <div class="row">
+        <div class="row subtitulo2">
             <form id="register-form" method="post" class="col s12"
                   action="{% url 'app.views.cadastroUsuario' %}">
                 {% csrf_token %}
-                <h4>Cadastro de Usuário</h4>
+                <h4 class="center-align">Cadastro de Usuário</h4>
                 <script>
                 setorCampus = {{setorCampus|safe}};
                 function vinculaSetorCampusDinamicamente(jQuery){
@@ -35,7 +35,7 @@
                 tentaVincularSetorCampusDinamicamente();
                 </script>
                 <br/>
-                <div class="form">
+                <div class="form efeito">
                     {{formUser.as_p}}
                     {{formParcialSetor.as_p}}
                     {{formUsuario.as_p}}
