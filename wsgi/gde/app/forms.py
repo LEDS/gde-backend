@@ -144,3 +144,17 @@ class FormUsuario(ModelForm):
         widgets = {
             'setor': Select(attrs={'id':'id-setor','class':' selectField'}),
         }
+
+class FormResposta(ModelForm):
+    class Meta:
+        model = Resposta
+        exclude = ['tipologia', 'status']
+        labels={
+            'codigo_ifes':'Código do ifes:',
+            'observacoes':'Observações:'
+        }
+
+        widgets={
+            'codigo_ifes':Select(attrs={'onchange':'busca_atributos()'}),
+
+        }

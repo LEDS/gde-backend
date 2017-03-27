@@ -28,13 +28,19 @@
                             <td id="status">{{tipologia.fases}}</td>
                             <td>
                                 {%if tipologia.fases.nome == "Levantamento"%}
-                                    <a name=visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_edit' pk=tipologia.pk %}">
+                                    <a name=editar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_edit' pk=tipologia.pk %}">
                                     <i class="material-icons">mode_edit</i>
                                     </a>
                                 {%else%}
-                                    <a  name="editar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_view' pk=tipologia.pk %}">
+                                    <a  name="visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_view' pk=tipologia.pk %}">
                                         <i class="material-icons">visibility</i>
                                     </a>
+                                {%endif%}
+                                {%if tipologia.resposta%}
+                                    <a  name="visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="">
+                                        <i class="material-icons">email</i>
+                                    </a>
+
                                 {%endif%}
                             </td>
                         </tr>
