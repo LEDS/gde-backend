@@ -14,7 +14,7 @@
                 <div class="modal-content row">
                     <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="post">
                         {% csrf_token %}
-                         {% if formAtividade.descricao.help_text %}
+                {% if formAtividade.descricao.help_text %}
                     <div id="descricao" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{formAtividade.descricao.help_text}}">
                 {%else%}
                     <div id="descricao" class="row">
@@ -359,7 +359,7 @@
                          <!-- Modal Structure -->
                           <div id="modal" class="modal">
                             <div class="modal-content">
-                              <h4>Mensagem de confirmaçao</h4>
+                              <h4>Mensagem de confirmação</h4>
                               <p>Tem certeza que deseja enviar este formulário? Após o envio não será mais possível editá-lo.</p>
                             </div>
                             <div class="modal-footer">

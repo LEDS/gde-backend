@@ -20,6 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from app.views import *
+from app import admin as adminMethod
 
 urlpatterns = [
                   url(r'^admin/', admin.site.urls),
@@ -48,6 +49,8 @@ urlpatterns = [
                   url(r'^levantamento/(?P<pk>\d+)/edit/$', levantamento_edit, name='levantamento_edit'),
                   url(r'^tipologia/$', cadastrar_tipologia, name="cadastrar_tipologia"),
                   url(r'^levantamento/(?P<pk>\d+)/view/$', levantamento_view, name='levantamento_view'),
+                  #url(r'^processa_resposta/$', adminMethod.processa_resposta, name='processa_resposta'),
+
 
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
