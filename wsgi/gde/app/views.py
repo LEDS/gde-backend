@@ -1,4 +1,4 @@
-from app.models import EspecieDocumental, Setor, Campus, Atividade, Usuario, Tipologia, Fase
+from app.models import EspecieDocumental, Setor, Campus, Atividade, Usuario, Tipologia, Fase, Resposta
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.hashers import make_password, check_password
@@ -343,11 +343,15 @@ def levantamento_edit(request, pk):
         form = FormTipologia(instance=tipologia, setor=setor)
     return render(request, 'editar_levantamento.html', {'form': form, 'tipologia': tipologia})
 
-@csrf_protect
 @login_required
 def levantamento_view(request, pk):
     tipologia = get_object_or_404(Tipologia, pk=pk)
     return render(request, 'visualizar_levantamento.html',{'tipologia':tipologia})
+
+@login_required
+def resposta_view(request, pk):
+    resposta = get_object_or_404(Resposta, pk=pk)
+    return render(request, 'resposta_formulario.html',{'resposta':resposta})
 
 @login_required()
 def cadastrar_tipologia(request):

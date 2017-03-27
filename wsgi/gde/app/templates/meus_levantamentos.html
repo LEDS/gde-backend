@@ -37,7 +37,7 @@
                                     </a>
                                 {%endif%}
                                 {%if tipologia.resposta%}
-                                    <a  name="visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="">
+                                    <a  name="visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'resposta_view' pk=tipologia.pk %}">
                                         <i class="material-icons">email</i>
                                     </a>
 
