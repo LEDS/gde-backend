@@ -87,9 +87,7 @@ class TipologiaAdmin(admin.ModelAdmin):
                 resposta = form_resposta.cleaned_data['resposta']
                 observacoes = form_resposta.cleaned_data['observacoes']
                 Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
-                self.message_user(request, 'Success')
-            else:
-                self.message_user(request, 'Error'+form_resposta)
+                self.message_user(request, 'Resposta cadastrada com sucesso!')
         else:
             if request.GET.get('codigo'):
                 codigo = request.GET.get('codigo')
