@@ -7,8 +7,12 @@
             <div id="visualizacaoDados">
                     <h4 class="center subtitulo2">Visualização de Tipologia</h4>
                     <br/>
-                    <div id="producaoSetor" class="row">
-                        <div  class="col s12 titulo">Este documento é:</div>
+
+                    <div class="divider"></div>
+                    <div class="section"></div>
+                    
+                    <div id="producaoSetor" class="row div1">
+                        <div  class="col s12 titulo div2">Este documento é:</div>
                         {% if tipologia.producaoSetor == True%}
                             <div class="col s12">Produzido neste setor</div>
                         {%else%}
@@ -16,47 +20,47 @@
                         {%endif%}
                     </div>
 
-                    <div id="especieDocumental" class="row">
-                        <div  class="col s12 titulo">Espécie documental:</div>
+                    <div id="especieDocumental" class="row div1">
+                        <div  class="col s12 titulo div2">Espécie documental:</div>
                         <div class="col s12">{{tipologia.especieDocumental}}</div>
                     </div>
 
-                    <div id="finalidade" class="row">
-                        <div  class="col s12 titulo">Ação que gerou este documento / Objetivo para o qual foi produzido:</div>
+                    <div id="finalidade" class="row div1">
+                        <div  class="col s12 titulo div2">Ação que gerou este documento / Objetivo para o qual foi produzido:</div>
                         <div class="col s12">{{tipologia.finalidade}}</div>
                     </div>
 
-                    <div id="nome" class="row">
-                        <div  class="col s12 titulo">Nome do documento:</div>
+                    <div id="nome" class="row div1 bordaredon">
+                        <div  class="col s12 titulo div2">Nome do documento:</div>
                         <div class="col s12">{{tipologia.nome}}</div>
                     </div>
 
-                    <div id="identificacao" class="row">
-                        <div  class="col s12 titulo">Identificações no documento:</div>
+                    <div id="identificacao" class="row div1">
+                        <div  class="col s12 titulo div2">Identificações no documento:</div>
                         <div class="col s12">{{tipologia.identificacao}}</div>
                     </div>
 
-                    <div id="atividade" class="row">
-                        <div id="" class="col s12 titulo">Este documento está relacionado a qual atividade do setor?</div>
+                    <div id="atividade" class="row div1">
+                        <div id="" class="col s12 titulo div2">Este documento está relacionado a qual atividade do setor?</div>
                         <div class="col s12">{{tipologia.atividade}}</div>
                     </div>
 
-                    <div id="elemento" class="row" class="row">
-                        <div class="col s12 titulo">Marque os itens presentes neste documento:</div>
+                    <div id="elemento" class="row div1">
+                        <div class="col s12 titulo div2">Marque os itens presentes neste documento:</div>
                         {%for elem in tipologia.elemento.all%}
-                            <div class="col s12 escolhido"><i class="material-icons tiny">trending_flat</i> {{elem}}</div>
+                            <div class="col s12 escolhido"><i class="material-icons tiny">done</i> {{elem}}</div>
                         {%endfor%}
                     </div>
 
 
-                    <div id="suporte" class="row">
-                        <div  class="col s12 titulo">Em qual suporte a informação circula?</div>
+                    <div id="suporte" class="row div1">
+                        <div  class="col s12 titulo div2">Em qual suporte a informação circula?</div>
                         <div class="col s12">{{tipologia.suporte}}</div>
                     </div>
 
 
-                    <div id="formaDocumental" class="row">
-                        <div  class="col s12 titulo">Forma documental:</div>
+                    <div id="formaDocumental" class="row div1">
+                        <div  class="col s12 titulo div2">Forma documental:</div>
                         {%if tipologia.formaDocumental == True%}
                             <div class="col s12">Original</div>
                         {%else%}
@@ -65,8 +69,8 @@
                     </div>
 
 
-                    <div id="quantidadeVias" class="row">
-                        <div  class="col s12 titulo">Produz mais de uma via deste documento?</div>
+                    <div id="quantidadeVias" class="row div1">
+                        <div  class="col s12 titulo div2">Produz mais de uma via deste documento?</div>
                         {%if tipologia.quantidadeVias == True%}
                             <div class="col s12">Sim</div>
                         {%else%}
@@ -74,16 +78,16 @@
                         {%endif%}
                     </div>
 
-                    <div id="genero" class="row">
-                        <div  class="col s12 titulo">Qual o gênero predominante do documento?</div>
+                    <div id="genero" class="row div1">
+                        <div  class="col s12 titulo div2">Qual o gênero predominante do documento?</div>
                         {%for genero in tipologia.genero.all%}
-                            <div class="col s12 escolhido"><i class="material-icons tiny">trending_flat</i> {{genero}}</div>
+                            <div class="col s12 escolhido"><i class="material-icons tiny">done</i> {{genero}}</div>
                         {%endfor%}
                     </div>
 
 
-                    <div id="anexo" class="row">
-                        <div  class="col s12 titulo">Este documento pussui anexo?</div>
+                    <div id="anexo" class="row div1">
+                        <div  class="col s12 titulo div2">Este documento pussui anexo?</div>
                         {%if tipologia.anexo == True%}
                             <div class="col s12">Sim</div>
                         {%else%}
@@ -91,8 +95,8 @@
                         {%endif%}
                     </div>
 
-                    <div id="relacaoInterna" class="row">
-                        <div  class="col s12 titulo">Este documento será encaminhado para outros setores?</div>
+                    <div id="relacaoInterna" class="row div1">
+                        <div  class="col s12 titulo div2">Este documento será encaminhado para outros setores?</div>
                         {%if tipologia.relacaoInterna == True%}
                             <div class="col s12">Sim</div>
                         {%else%}
@@ -101,8 +105,8 @@
                     </div>
 
 
-                    <div id="relacaoExterna" class="row">
-                        <div  class="col s12 titulo">Este documento será encaminhado para algum órgão externo ao Ifes?</div>
+                    <div id="relacaoExterna" class="row div1">
+                        <div  class="col s12 titulo div2">Este documento será encaminhado para algum órgão externo ao Ifes?</div>
                         {%if tipologia.relacaoExterna == True%}
                             <div class="col s12">Sim</div>
                         {%else%}
@@ -110,29 +114,29 @@
                         {%endif%}
                     </div>
 
-                <div class="row" id="periodoAcumulo">
-                            <div  class="col s12 titulo">Qual o período de abrangência deste tipo de documento?</div>
-                            <div  class="col s1 titulo">De</div>
+                <div class="row div1" id="periodoAcumulo">
+                            <div  class="col s12 titulo div2">Qual o período de abrangência deste tipo de documento?</div>
+                            <div  class="col s1 titulo">De:</div>
                             <div class="col s5">{{tipologia.inicioAcumulo}}</div>
 
-                            <div  class="col s1 titulo">Até</div>
+                            <div  class="col s1 titulo">Até:</div>
                             <div class="col s5">{{tipologia.fimAcumulo}}</div>
                 </div>
 
-                <div class="row" id="quantidadeAcumulada">
-                            <div  class="col s12 titulo">Qual a quantidade e a forma de armazenamento deste documento?</div>
+                <div class="row div1" id="quantidadeAcumulada">
+                            <div  class="col s12 titulo div2">Qual a quantidade e a forma de armazenamento deste documento?</div>
                             <div class="col s6">{{tipologia.quantidadeAcumulada}}</div>
                             <div class="col s6">{{tipologia.tipoAcumulo}}</div>
                 </div>
 
-                <div id="embasamentoLegal" class="row">
-                    <div  class="col s12 titulo">Embasamento Legal:</div>
+                <div id="embasamentoLegal" class="row div1">
+                    <div  class="col s12 titulo div2">Embasamento Legal:</div>
                     <div class="col s12">{{tipologia.embasamentoLegal}}</div>
                 </div>
 
 
-                <div id="informacaoOutrosDocumentos" class="row">
-                    <div  class="col s12 titulo">Informações registradas em outros documentos:</div>
+                <div id="informacaoOutrosDocumentos" class="row div1">
+                    <div  class="col s12 titulo div2">Informações registradas em outros documentos:</div>
                     {% if tipologia.informacaoOutrosDocumentos == True%}
                         <div class="col s12">Sim</div>
                     {%else%}
@@ -141,15 +145,18 @@
                     </div>
 
 
-                <div id="restricaoAcesso" class="row">
-                    <div  class="col s12 titulo">O documento contém informações que necessitam de restrição de acesso?</div>
+                <div id="restricaoAcesso" class="row div1">
+                    <div  class="col s12 titulo div2">O documento contém informações que necessitam de restrição de acesso?</div>
                     {%for restricao in tipologia.restricaoAcesso.all%}
-                        <div class="col s12 escolhido"> <i class="material-icons tiny">trending_flat</i> {{restricao}}</div>
+                        <div class="col s12 escolhido"> <i class="material-icons tiny">done</i> {{restricao}}</div>
 
                     {%endfor%}
                 </div>
-
-                <a href="/levantamento_list" id="botao_voltar" class="btn right orange darken-4">Voltar</a>
+                
+                <br/><br/>
+                <div class="row">
+                    <a href="/levantamento_list" id="botao_voltar" class="btn right orange darken-4">Voltar</a>
+                </div>
             </div>
         </div>
     </div>

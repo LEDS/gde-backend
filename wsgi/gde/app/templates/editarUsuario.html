@@ -7,6 +7,8 @@
                   action="{% url 'app.views.user_detail' pk=user.pk%}">
                 {% csrf_token %}
                 <h3 class="center-align">Editar dados cadastrais</h3>
+                <div class="divider"></div>
+                <div class="section"></div>
                 <script>
                 setorCampus = {{setorCampus|safe}};
                 function vinculaSetorCampusDinamicamente(jQuery){

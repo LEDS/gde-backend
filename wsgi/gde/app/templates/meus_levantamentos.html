@@ -2,14 +2,17 @@
 {% block title %}Meus Levantamentos{% endblock %}
 {% block content %}
 <div class="container">
-    <div id="MeusLevantamentos" class="row subtitulo2">
+    <div id="MeusLevantamentos" class="row">
     <h4 class="center subtitulo2">Meus Levantamentos</h4>
             <br/>
+
+        <div class="divider"></div>
+        <div class="section"></div>
         <div class="col-lg-8 ">
             <form>
                 {% csrf_token %}
 
-                <br/><br/>
+                <br/>
 
                 <table>
                     <thead>
