@@ -20,10 +20,30 @@ from django.http import JsonResponse
 @csrf_protect
 def cadastroUsuario(request):
     setores = Setor.objects.all()
+    campi = Campus.objects.all()
     setor_campus = dict()
-    for (campus,setor) in [(setor.campus.id,setor.id) for setor in setores]:
-            setor_campus[setor] = campus
-    setor_campus_json = json.dumps(setor_campus)
+    #setores_id = []
+    #setores_nome = []
+    setores_no_campus = dict()
+    informacoes_setores_campus = dict()
+    setor_campus_json = ''
+    
+    
+    for campus in campi:
+        setores_id = []
+        setores_nome = []
+        campus_json =dict()
+        for setor in setores:
+            if setor.campus.id == campus.id:
+                setores_id.append(setor.id)
+                setores_nome.append(setor.nome)    
+        campus_json['setores_id'] = setores_id
+        campus_json['setores_nome'] = setores_nome
+
+        setores_no_campus[campus.id] = campus_json
+
+    setor_campus_json = json.dumps(setores_no_campus)
+
     if request.method == 'POST':
         formUser = FormUser(request.POST)
         formParcialSetor = FormParcialSetor(request.POST)
@@ -50,7 +70,7 @@ def cadastroUsuario(request):
         formUsuario = FormUsuario()
         formParcialSetor = FormParcialSetor()
 
-    return render(request, 'cadastroUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario, 'setorCampus':setor_campus_json})
+    return render(request, 'cadastroUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario, 'setorCampus':setor_campus_json} )
 
 @csrf_protect
 @login_required

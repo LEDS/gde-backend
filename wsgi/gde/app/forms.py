@@ -133,7 +133,7 @@ class FormParcialSetor(ModelForm):
         model = Setor
         exclude = ['nome', 'sigla', 'funcao', 'historico']
         widgets = {
-            'campus': Select(attrs={'id':'id-campus','class':' selectField'})
+            'campus' : Select(attrs={'id':'id-campus','class':' selectField', 'onchange':'tentaVincularSetorCampusDinamicamente()'}),
                     }
 
 
@@ -142,7 +142,7 @@ class FormUsuario(ModelForm):
         model = Usuario
         fields = ['setor']
         widgets = {
-            'setor': Select(attrs={'id':'id-setor','class':' selectField'}),
+            'setor': Select(attrs={'id':'id-setor','class':' selectField', 'disabled':'disabled'}),
         }
 
 class FormResposta(ModelForm):
