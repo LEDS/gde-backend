@@ -14,7 +14,7 @@
 
 
     </head>
-    <body class = "backgroundColor">
+    <body class = "backgroundColor" onload="$('.tap-target').tapTarget('open')">
         <div class="page-header navbar-fixed">
             <nav>
                 <div class="nav-wrapper green darken-4 z-depth-2" >
@@ -52,7 +52,7 @@
                 </div>
             </nav>
         </div>
-        
+     
         <div class="container white bordaredonda" >
             {% block content %}
         </div>
@@ -66,6 +66,9 @@
         <script type="text/javascript">
         //menu mobile
             $(".button-collapse").sideNav();
+            $('.tapTarget').tapTarget('open');
+            $('.tapTarget').tapTarget('close');
+            
         </script>
 
     </body>

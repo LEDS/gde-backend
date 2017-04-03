@@ -12,28 +12,22 @@
                 <script>
                 setorCampus = {{setorCampus|safe}};
                 function vinculaSetorCampusDinamicamente(jQuery){
-                    jQuery('#id-setor>option').
-                        each(
-                            function(_,obj){
-                                if(parseInt(obj.value)){
-                                    $(obj).
-                                        addClass(
-                                            ''+setorCampus[''+obj.value]
-                                        )
-                                }
-                            }
-                        )
-                    ;
-                    $("#id-setor").chained("#id-campus");
-                };
-                function tentaVincularSetorCampusDinamicamente(){
-                    if(typeof($)==='undefined'){
-                        setTimeout(function(){tentaVincularSetorCampusDinamicamente();},100);
-                    }else{
-                        vinculaSetorCampusDinamicamente($);
+                    console.log(setorCampus);
+                    $('#id-setor').find('option').remove();
+                    var id_campus = $('#id-campus option:selected').val();
+                    var lista_setores_id = setorCampus[id_campus].setores_id;
+                    var lista_setores_nomes = setorCampus[id_campus].setores_nome;
+
+                    var cont = 0;
+                    for(var setor in lista_setores_id){
+                        $('#id-setor').append("<option value="+lista_setores_id[setor]+">"+lista_setores_nomes[cont]+"</option>");
+                        cont++;
                     }
-                }
-                tentaVincularSetorCampusDinamicamente();
+                    
+                    $('#id-setor').removeAttr("disabled");
+                    $('#id-setor').material_select();
+                };
+                
                 </script>
                 {% if messages %}
                 <div class="col s12">
