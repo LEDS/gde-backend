@@ -35,7 +35,7 @@ class FormAtividade(ModelForm):
 class FormSetor(ModelForm):
     class Meta:
         model = Setor
-        fields = ['campus', 'nome', 'sigla', 'funcao', 'historico']
+        fields = ['campus', 'nome', 'sigla', 'id_unidade', 'id_unidade']
         widgets = {
             'campus': Select(attrs={'id':'id-campus','class':' selectField'}),
              'nome': TextInput(attrs={'class':'validate'})
@@ -131,7 +131,7 @@ class FormUser(ModelForm):
 class FormParcialSetor(ModelForm):
     class Meta:
         model = Setor
-        exclude = ['nome', 'sigla', 'funcao', 'historico']
+        exclude = ['nome', 'sigla', 'id_unidade_responsavel', 'id_unidade']
         widgets = {
             'campus' : Select(attrs={'id':'id-campus','class':' selectField', 'onchange':'tentaVincularSetorCampusDinamicamente()'}),
                     }

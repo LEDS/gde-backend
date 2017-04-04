@@ -230,9 +230,9 @@ def cadastrar_setor(request):
             campus = form.cleaned_data['campus']
             nome = form.cleaned_data['nome']
             sigla = form.cleaned_data['sigla']
-            funcao = form.cleaned_data['funcao']
-            historico = form.cleaned_data['historico']
-            Setor.objects.create(nome=nome, sigla=sigla, funcao=funcao, historico=historico, campus=campus)
+            id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
+            id_unidade = form.cleaned_data['id_unidade']
+            Setor.objects.create(nome=nome, sigla=sigla, id_unidade_responsavel=id_unidade_responsavel, id_unidade=id_unidade, campus=campus)
             return HttpResponseRedirect(request.POST.get('next'))
     else:
         form = FormSetor()
@@ -251,8 +251,8 @@ def setor_edit(request, pk):
             setor.campus = form.cleaned_data['campus']
             setor.nome = form.cleaned_data['nome']
             setor.sigla = form.cleaned_data['sigla']
-            setor.funcao = form.cleaned_data['funcao']
-            setor.historico = form.cleaned_data['historico']
+            setor.id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
+            setor.id_unidade = form.cleaned_data['id_unidade']
             setor.save()
             return HttpResponseRedirect(request.POST.get('next'))
     else:

@@ -27,6 +27,9 @@ for row in data:
 		campus = Campus()
 		setor = Setor()
 		setor.nome = row[5]
+		setor.id_unidade_responsavel = row[0]
+		setor.id_unidade = row[1]
+		setor.sigla = row[3]
 		campus.nome = row[4]
 		if Campus.objects.filter(nome=campus.nome).exists():
 			# campus = Campus.objects.get(nome=campus.nome)
