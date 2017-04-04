@@ -44,3 +44,6 @@ function busca_atributos(){
                 });
             }
         }
+
+
+
