@@ -14,7 +14,7 @@
 
 
     </head>
-    <body class = "backgroundColor" onload="$('.tap-target').tapTarget('open')">
+    <body class = "backgroundColor">
         <div class="page-header navbar-fixed">
             <nav>
                 <div class="nav-wrapper green darken-4 z-depth-2" >
@@ -52,24 +52,19 @@
                 </div>
             </nav>
         </div>
+
+        <!-- NAO RETIRAR ESSES SCRIPTS DESTA POSICAO-->
+        <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+        <!-- _____________________________________ -->
      
         <div class="container white bordaredonda" >
             {% block content %}
         </div>
 
         {% endblock %}
-        <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/jquery.chained.min.js' %}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-        <script type="text/javascript">
-        //menu mobile
-            $(".button-collapse").sideNav();
-            $('.tapTarget').tapTarget('open');
-            $('.tapTarget').tapTarget('close');
-            
-        </script>
-
     </body>
 </html>
