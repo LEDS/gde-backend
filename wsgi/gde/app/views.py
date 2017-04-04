@@ -1,4 +1,4 @@
-from app.models import EspecieDocumental, Setor, Campus, Atividade, Usuario, Tipologia, Fase
+from app.models import EspecieDocumental, Setor, Campus, Atividade, Usuario, Tipologia, Fase, Resposta
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.hashers import make_password, check_password
@@ -20,10 +20,30 @@ from django.http import JsonResponse
 @csrf_protect
 def cadastroUsuario(request):
     setores = Setor.objects.all()
+    campi = Campus.objects.all()
     setor_campus = dict()
-    for (campus,setor) in [(setor.campus.id,setor.id) for setor in setores]:
-            setor_campus[setor] = campus
-    setor_campus_json = json.dumps(setor_campus)
+    #setores_id = []
+    #setores_nome = []
+    setores_no_campus = dict()
+    informacoes_setores_campus = dict()
+    setor_campus_json = ''
+    
+    
+    for campus in campi:
+        setores_id = []
+        setores_nome = []
+        campus_json =dict()
+        for setor in setores:
+            if setor.campus.id == campus.id:
+                setores_id.append(setor.id)
+                setores_nome.append(setor.nome)    
+        campus_json['setores_id'] = setores_id
+        campus_json['setores_nome'] = setores_nome
+
+        setores_no_campus[campus.id] = campus_json
+
+    setor_campus_json = json.dumps(setores_no_campus)
+
     if request.method == 'POST':
         formUser = FormUser(request.POST)
         formParcialSetor = FormParcialSetor(request.POST)
@@ -50,7 +70,7 @@ def cadastroUsuario(request):
         formUsuario = FormUsuario()
         formParcialSetor = FormParcialSetor()
 
-    return render(request, 'cadastroUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario, 'setorCampus':setor_campus_json})
+    return render(request, 'cadastroUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario, 'setorCampus':setor_campus_json} )
 
 @csrf_protect
 @login_required
@@ -210,9 +230,9 @@ def cadastrar_setor(request):
             campus = form.cleaned_data['campus']
             nome = form.cleaned_data['nome']
             sigla = form.cleaned_data['sigla']
-            funcao = form.cleaned_data['funcao']
-            historico = form.cleaned_data['historico']
-            Setor.objects.create(nome=nome, sigla=sigla, funcao=funcao, historico=historico, campus=campus)
+            id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
+            id_unidade = form.cleaned_data['id_unidade']
+            Setor.objects.create(nome=nome, sigla=sigla, id_unidade_responsavel=id_unidade_responsavel, id_unidade=id_unidade, campus=campus)
             return HttpResponseRedirect(request.POST.get('next'))
     else:
         form = FormSetor()
@@ -231,8 +251,8 @@ def setor_edit(request, pk):
             setor.campus = form.cleaned_data['campus']
             setor.nome = form.cleaned_data['nome']
             setor.sigla = form.cleaned_data['sigla']
-            setor.funcao = form.cleaned_data['funcao']
-            setor.historico = form.cleaned_data['historico']
+            setor.id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
+            setor.id_unidade = form.cleaned_data['id_unidade']
             setor.save()
             return HttpResponseRedirect(request.POST.get('next'))
     else:
@@ -343,11 +363,15 @@ def levantamento_edit(request, pk):
         form = FormTipologia(instance=tipologia, setor=setor)
     return render(request, 'editar_levantamento.html', {'form': form, 'tipologia': tipologia})
 
-@csrf_protect
 @login_required
 def levantamento_view(request, pk):
     tipologia = get_object_or_404(Tipologia, pk=pk)
     return render(request, 'visualizar_levantamento.html',{'tipologia':tipologia})
+
+@login_required
+def resposta_view(request, pk):
+    resposta = get_object_or_404(Resposta, pk=pk)
+    return render(request, 'resposta_formulario.html',{'resposta':resposta})
 
 @login_required()
 def cadastrar_tipologia(request):
