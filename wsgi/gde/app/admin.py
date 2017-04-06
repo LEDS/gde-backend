@@ -32,7 +32,7 @@ admin.site.register(ClassificaArquivosIfes)
 
 class TipologiaAdmin(admin.ModelAdmin):
     list_display = ('setor','usuario',  'nome', 'identificacao', 'atividade', 'get_status', 'acao_responder')
-    list_filter = ('setor','usuario',  'nome', 'identificacao', 'atividade')
+    list_filter = ('setor','usuario', 'dataEnvio',  'nome', 'identificacao', 'atividade', 'especieDocumental', 'historico','finalidade', 'nome','elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna','tipoAcumulo', 'embasamentoLegal','informacaoOutrosDocumentos', 'restricaoAcesso', 'fases', 'inicioAcumulo', 'fimAcumulo','quantidadeAcumulada')
     fields = [ 'setor', 'usuario', 'atividade', 'producaoSetor', 'especieDocumental', 'historico','finalidade', 'nome', 'identificacao',
         'elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna',
         ('inicioAcumulo', 'fimAcumulo') ,('quantidadeAcumulada','tipoAcumulo'), 'embasamentoLegal',
@@ -40,7 +40,7 @@ class TipologiaAdmin(admin.ModelAdmin):
 
     def get_status(self, obj):
         return obj.resposta.status
-    get_status.short_description = 'Status da resposta'
+    get_status.short_description = 'Status'
 
     def get_urls(self):
         urls = super().get_urls()
@@ -49,47 +49,71 @@ class TipologiaAdmin(admin.ModelAdmin):
                r'^(?P<id_tipologia>.+)/resposta/$',
                 self.admin_site.admin_view(self.processa_resposta),
                 name='processa_resposta',
-            )
+            ),
+            url(
+               r'^(?P<id_tipologia>.+)/visualiza/$',
+                self.admin_site.admin_view(self.visualiza_resposta),
+                name='visualiza_resposta',
+            ),
+
+            url(
+               r'^(?P<id_tipologia>.+)/editar/$',
+                self.admin_site.admin_view(self.edita_resposta),
+                name='edita_resposta',
+            ),
+
+            url(
+               r'^(?P<pk>.+)/visualiza_resposta/$',
+                self.admin_site.admin_view(self.visualizar_resposta_servidor),
+                name='visualizar_resposta_servidor',
+            ),
+
         ]
         return custom_urls + urls
-    def acao_responder(self, obj):
-        return format_html(
 
-                '<a class="button" href="{}">Resposta</a>',
-                reverse('admin:processa_resposta', args=[obj.pk]),
-            )
+    def acao_responder(self, obj):
+        if hasattr(obj, 'resposta') == False:
+
+             return format_html(
+
+                        '<a class="button" href="{}">Responder</a>',
+                        reverse('admin:processa_resposta', args=[obj.pk]),
+                    )
+        else:
+            if obj.resposta.status == 'salvo':
+                 return format_html(
+
+                        '<a class="button" href="{}">Editar</a>',
+                        reverse('admin:edita_resposta', args=[obj.pk]),
+                    )
+            else:
+
+                return format_html(
+                '<a class="button" href="{}">Visualizar</a>',
+                        reverse('admin:visualiza_resposta', args=[obj.pk]),
+                    )
+        
     acao_responder.short_description = 'Resposta'
     acao_responder.allow_tags = True
 
-    def processa_resposta(self, request, id_tipologia, *args, **kwargs):
-        return self.processa_acao(
-            request=request,
-            id=id_tipologia,
-            form_acao=FormResposta,
-        )
-
-    def processa_acao(
-        self,
-        request,
-        id,
-        form_acao,
-    ):
-        tipologia = get_object_or_404(Tipologia, pk=id)
+    def processa_resposta(self, request, id_tipologia,*args, **kwargs):
+        tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
         response_data = {}
         if request.POST:
-            form_resposta = form_acao(request.POST)
+            form_resposta = FormResposta(request.POST)
             if form_resposta.is_valid():
                 if(request.POST.get('salvar')):
-                    status = 'Salvo'
+                    status = 'salvo'
                 elif(request.POST.get('enviar')):
                     status = 'enviado'
                 codigo = form_resposta.cleaned_data['codigo_ifes']
                 resposta = form_resposta.cleaned_data['resposta']
                 observacoes = form_resposta.cleaned_data['observacoes']
                 Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
-                self.message_user(request, 'Success')
-            else:
-                self.message_user(request, 'Error'+form_resposta)
+                fase_respondido = Fase.objects.get(nome='Analisado')
+                tipologia.fases = fase_respondido
+                tipologia.save()
+                self.message_user(request, status+' com sucesso!')
         else:
             if request.GET.get('codigo'):
                 codigo = request.GET.get('codigo')
@@ -106,7 +130,7 @@ class TipologiaAdmin(admin.ModelAdmin):
                 response_data['observacoes'] = conarq.observacoes
 
                 return JsonResponse(response_data)
-            form_resposta = form_acao()
+            form_resposta = FormResposta()
 
 
         context = self.admin_site.each_context(request)
@@ -117,6 +141,79 @@ class TipologiaAdmin(admin.ModelAdmin):
         return TemplateResponse(
             request,
             'cadastro_resposta.html',
+            context,
+        )
+
+
+    def visualiza_resposta(self, request, id_tipologia,*args, **kwargs):
+            resposta = Resposta.objects.get(tipologia_id=id_tipologia)
+            context = self.admin_site.each_context(request)
+            context['opts'] = self.model._meta
+            context['title'] = 'Visualizar resposta'
+            context['resposta'] = resposta
+            return TemplateResponse(
+            request,
+            'visualizar_resposta.html',
+            context,
+            )
+
+    def visualizar_resposta_servidor(self, request, pk,*args, **kwargs):
+            resposta = get_object_or_404(Resposta, pk=pk)
+            context = self.admin_site.each_context(request)
+            context['opts'] = self.model._meta
+            context['title'] = 'Vizualizar resposta'
+            context['resposta'] = resposta
+            return TemplateResponse(
+            request,
+            'resposta_formulario.html',
+            context,
+            )
+
+            
+
+    def edita_resposta(self, request, id_tipologia, *args, **kwargs):
+        resposta = Resposta.objects.get(tipologia_id=id_tipologia)
+        response_data = {}
+        if request.POST:
+            form_resposta = FormResposta(request.POST, instance=resposta)
+            if form_resposta.is_valid():
+                resposta = form_resposta.save(commit=False)
+                if request.POST.get('salvar'):
+                    status = 'salvo'
+                elif request.POST.get('enviar'):
+                    status = 'enviado'
+                resposta.codigo_ifes = form_resposta.cleaned_data['codigo_ifes']
+                resposta.resposta = form_resposta.cleaned_data['resposta']
+                resposta.observacoes = form_resposta.cleaned_data['observacoes']
+                resposta.status = status
+                resposta.save()
+                self.message_user(request, 'Resposta cadastrada com sucesso!')
+        else:
+            if request.GET.get('codigo'):
+                codigo = request.GET.get('codigo')
+                classe_ifes = ClassificaArquivosIfes.objects.get(codigo=codigo)
+                conarq = Conarq.objects.get(pk = classe_ifes.conarq.pk)
+                grupo_conarq = GrupoConarq.objects.get(pk=conarq.codGrupo.pk)
+                response_data['classe'] = grupo_conarq.codigo
+                response_data['nome_classe'] = grupo_conarq.nome
+                response_data['subclasse'] = conarq.codigo
+                response_data['assunto'] = conarq.assunto
+                response_data['fase_corrente'] = conarq.faseCorrente
+                response_data['fase_intermediaria'] = conarq.faseIntermediaria
+                response_data['destinacao_final'] = conarq.destinacaoFinal
+                response_data['observacoes'] = conarq.observacoes
+
+                return JsonResponse(response_data)
+            form_resposta = FormResposta(instance=resposta)
+
+        context = self.admin_site.each_context(request)
+        context['opts'] = self.model._meta
+        context['form'] = form_resposta
+        context['resposta'] = resposta
+        context['title'] = 'Editar resposta'
+        return TemplateResponse(
+            request,
+            'edita_resposta.html',
             context,
         )
 

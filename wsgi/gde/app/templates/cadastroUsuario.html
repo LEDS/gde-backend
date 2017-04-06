@@ -12,7 +12,6 @@
                 setorCampus = {{setorCampus|safe}};
                 
                 function tentaVincularSetorCampusDinamicamente(){
-                    console.log(setorCampus);
                     $('#id-setor').find('option').remove();
                     var id_campus = $('#id-campus option:selected').val();
                     var lista_setores_id = setorCampus[id_campus].setores_id;

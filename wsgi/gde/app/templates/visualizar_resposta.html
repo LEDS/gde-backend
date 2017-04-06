@@ -1,0 +1,22 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_static admin_modify %}
+{% block content %}
+<div id="content-main">
+   <fieldset class="module aligned">
+      <div id="resposta" class="form-row">
+        <label class="required">Resposta:</label>
+        {{resposta.resposta}}
+      </div>
+
+      <div id="observacoes" class="form-row">
+        <label class="required">Observações:</label>
+        {{resposta.observacoes}}
+      </div>
+
+      <div class="submit-row">
+        <a href="">Voltar</a>
+      </div>
+    </fieldset>
+
+</div>
+{% endblock %}

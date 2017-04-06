@@ -4,6 +4,10 @@
          <link rel="stylesheet" type="text/css" href="{% static 'admin/css/adicional.css' %}">
          <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
           <script type="text/javascript" src="{% static 'admin/js/adicional.js' %}"></script>
+
+          <script type="text/javascript">
+          window.onload = function () { busca_atributos() }
+          </script>
 {% endblock %}
 {% block content %}
 <div id="content-main">
@@ -69,7 +73,7 @@
     </fieldset>
     <div class="submit-row">
       <input type="submit" class="default" name="enviar" value="Enviar">
-      <input type="submit" class="default" name="visualizar" value="Visualizar resposta">
+      <a id="visualizar_resposta" class="default" href="{% url 'admin:visualizar_resposta_servidor' pk=resposta.pk%}" target="_blank">Visualizar resposta</a>
       <input type="submit" class="default" name="salvar" value="Salvar">
     </div>
   </form>
