@@ -21,7 +21,7 @@
                         <div class="col s12 m12"><span class="flow-text">{{resposta.observacoes}}</span></div>
     
                         <div  class="col s12 titulo div2">Link para aceeso a tipologia</div>
-                        <div class="col s12 m12"><span class="flow-text"><a href="#">tipologia</a></span></div>
+                        <div class="col s12 m12"><span class="flow-text"><a href="{% url 'levantamento_view' pk=resposta.tipologia.id %}">tipologia</a></span></div>
                     </div>
                     <br/>
                  <div class="row">
