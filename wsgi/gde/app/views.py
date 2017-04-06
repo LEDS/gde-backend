@@ -232,6 +232,8 @@ def cadastrar_setor(request):
             sigla = form.cleaned_data['sigla']
             id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
             id_unidade = form.cleaned_data['id_unidade']
+            funcao = form.cleaned_data['funcao']
+            historico = form.cleaned_data['historico']
             Setor.objects.create(nome=nome, sigla=sigla, id_unidade_responsavel=id_unidade_responsavel, id_unidade=id_unidade, campus=campus)
             return HttpResponseRedirect(request.POST.get('next'))
     else:
