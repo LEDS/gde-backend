@@ -1,5 +1,25 @@
+$(document).ready(function(){
+    if($("#MeusLevantamentos").length){
+    var estaLogado = localStorage.getItem("esta_logado");
+    if(estaLogado == 'false'){
+        $('#modal1').modal({
+            complete: function(){
+                $('.tap-target').tapTarget('open');
+            }
+        }).modal('open');
+       // $('.tap-target').tapTarget('open');
+        localStorage.setItem("esta_logado", 'true');
+    }
+    }
+    $(".modal").modal();
+})
+
 $(document).ready(function() {
     $('select').material_select();
+    $('select').on('contentChanged', function() {
+        // re-initialize (update)
+        $(this).material_select();
+      });
   });
 $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
@@ -54,7 +74,7 @@ $('#formAtividade').on('submit', function(event){
 function insere_atividade(val, text) {
     $('#id_atividade').append(
         $('<option></option>').val(val).html(text)
-    );
+    ).trigger('contentChanged');
 }
 
 var json1;
@@ -73,8 +93,8 @@ function create_post() {
                 $('#erro_atividade').show(); // remove the value from the input
                 }
             else{
+                $('#formularioAtividade').modal('close');
                 insere_atividade(json.resposta, json.nome_atividade);
-                $('#formularioAtividade').closeModal();
                 $('#loader').hide();
                 Materialize.toast('Atividade criada com sucesso!', 4000);
                 $('#id_descricao').val('');
@@ -92,4 +112,3 @@ function create_post() {
             }
         });
 };
-

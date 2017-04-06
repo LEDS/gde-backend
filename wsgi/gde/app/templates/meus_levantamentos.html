@@ -63,7 +63,7 @@
     </div>
        
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-          <a id="menu" href="{% url 'app.views.cadastrar_tipologia' %}" class="btn btn-floating btn-large waves-effect waves-light blue "><i class="material-icons">add</i></a>
+          <a id="menu" href="{% url 'app.views.cadastrar_tipologia' %}" class="btn btn-floating btn-large  waves-light blue "><i class="material-icons">add</i></a>
         </div>
     <!-- Tap Target Structure -->
       <div class="blue tap-target" data-activates="menu">
@@ -72,12 +72,17 @@
           <p class="white-text">Click neste botão para criar um novo formulário</p>
          </div>
     </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Sobre o Sistema</h4>
+      <p>O SLED – Sistema de Levantamento de Documentos foi desenvolvido para que possamos conhecer melhor os documentos institucionais e assim poder dar a eles um tratamento adequado. A metodologia de Levantamento Documental se baseia nas funções arquivísticas de identificação, classificação e avaliação de documentos.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
 </div>
-<script type="text/javascript">
-    var estaLogado = localStorage.getItem("esta_logado");
-    if(estaLogado == 'false'){
-        $('.tap-target').tapTarget('open')
-        localStorage.setItem("esta_logado", 'true');
-    }
-</script>
+
 {% endblock content %}

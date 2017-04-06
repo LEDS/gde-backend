@@ -131,7 +131,7 @@ class FormUser(ModelForm):
 class FormParcialSetor(ModelForm):
     class Meta:
         model = Setor
-        exclude = ['nome', 'sigla', 'id_unidade_responsavel', 'id_unidade']
+        exclude = ['nome', 'sigla', 'id_unidade_responsavel', 'id_unidade', 'funcao', 'historico']
         widgets = {
             'campus' : Select(attrs={'id':'id-campus','class':' selectField', 'onchange':'tentaVincularSetorCampusDinamicamente()'}),
                     }

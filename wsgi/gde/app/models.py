@@ -37,6 +37,8 @@ class Setor(models.Model):
     sigla = models.CharField(max_length=20, null=True, blank=False, unique=False)
     id_unidade = models.IntegerField(null=True, blank=False)
     id_unidade_responsavel = models.IntegerField(null=True, blank=False)
+    funcao = models.CharField(max_length=250, null=True, blank=False, unique=False)
+    historico = models.CharField(max_length=250, null=True, blank=True, unique=False)
 
     def __str__(self):
         return self.nome
