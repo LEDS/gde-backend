@@ -60,7 +60,7 @@ def cadastroUsuario(request):
             user.last_name=sobrenome
             user.first_name=nome
             user.save()
-            setor_campus = Setor.objects.get(nome=setor, campus=campus)
+            setor_campus = Setor.objects.get(pk=setor.pk, campus=campus)
             Usuario.objects.create(user=user, setor=setor_campus)
             return HttpResponseRedirect(request.POST.get('next'))
 
@@ -315,10 +315,11 @@ def campus_remove(request, pk):
     return redirect('app.views.campi_list')
 
 @csrf_protect
-
 @login_required
 def levantamento_list(request):
-    tipologias = Tipologia.objects.all
+    user = request.user
+    usuario = Usuario.objects.get(user=user)
+    tipologias = Tipologia.objects.all().filter(usuario=usuario)
     return render(request, 'meus_levantamentos.html', {'tipologias': tipologias})
 
 
@@ -373,10 +374,11 @@ def resposta_view(request, pk):
     resposta = get_object_or_404(Resposta, pk=pk)
     return render(request, 'resposta_formulario.html',{'resposta':resposta})
 
-@login_required()
+@csrf_protect
+@login_required
 def cadastrar_tipologia(request):
     user = request.user
-    usuario = Usuario.objects.get(user=user)
+    usuario = Usuario.objects.get(user=user.pk)
     setor = usuario.setor
     response_data = {}
     if request.POST:
@@ -393,11 +395,11 @@ def cadastrar_tipologia(request):
             response_data['resposta'] = '0'
             return JsonResponse(response_data)
         else:
-            if request.POST.get('submit_enviar') == "0":
-                fase = Fase.objects.get(nome='Aguardando Resposta')
-            elif request.POST.get('submit_salvar') == "1":
-                fase = Fase.objects.get(nome='Levantamento')
             if form.is_valid():
+                if request.POST.get('submit_enviar') == "0":
+                    fase = Fase.objects.get(nome='Aguardando Resposta')
+                elif request.POST.get('submit_salvar') == "1":
+                    fase = Fase.objects.get(nome='Levantamento')
                 especieDocumental = form.cleaned_data['especieDocumental']
                 finalidade = form.cleaned_data['finalidade']
                 nome = form.cleaned_data['nome']

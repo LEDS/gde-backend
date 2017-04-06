@@ -1,7 +1,6 @@
 import csv,sys,os
 
-project_dir="/home/lucas/LEDs/gdeSSH/wsgi/gde/gde/"
-
+project_dir= os.path.dirname(os.path.abspath(__file__))+'/gde'
 sys.path.append(project_dir)
 
 os.environ['DJANGO_SETTINGS_MODULE']='settings'
@@ -11,8 +10,7 @@ import django
 django.setup()
 
 from app.models import Setor, Campus
-
-data = csv.reader(open("/home/lucas/LEDs/gdeSSH/setor.csv"),delimiter=",")
+data = csv.reader(open("setor.csv"),delimiter=",")
 
 # campus = Campus()
 # setor = Setor()

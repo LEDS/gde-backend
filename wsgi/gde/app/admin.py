@@ -32,11 +32,17 @@ admin.site.register(ClassificaArquivosIfes)
 
 class TipologiaAdmin(admin.ModelAdmin):
     list_display = ('setor','usuario',  'nome', 'identificacao', 'atividade', 'get_status', 'acao_responder')
-    list_filter = ('setor','usuario', 'dataEnvio',  'nome', 'identificacao', 'atividade', 'especieDocumental', 'historico','finalidade', 'nome','elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna','tipoAcumulo', 'embasamentoLegal','informacaoOutrosDocumentos', 'restricaoAcesso', 'fases', 'inicioAcumulo', 'fimAcumulo','quantidadeAcumulada')
-    fields = [ 'setor', 'usuario', 'atividade', 'producaoSetor', 'especieDocumental', 'historico','finalidade', 'nome', 'identificacao',
+    list_filter = ('fases', 'usuario', 'dataEnvio',  'nome', 'identificacao', 'atividade', 'especieDocumental', 'historico','finalidade', 'nome','elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna','tipoAcumulo', 'embasamentoLegal','informacaoOutrosDocumentos', 'restricaoAcesso', 'inicioAcumulo', 'fimAcumulo','quantidadeAcumulada')
+    fields = [ 'setor', 'usuario', 'fases','atividade', 'producaoSetor', 'especieDocumental', 'historico','finalidade', 'nome', 'identificacao',
         'elemento', 'suporte', 'formaDocumental','quantidadeVias', 'genero', 'anexo', 'relacaoInterna', 'relacaoExterna',
         ('inicioAcumulo', 'fimAcumulo') ,('quantidadeAcumulada','tipoAcumulo'), 'embasamentoLegal',
         'informacaoOutrosDocumentos', 'restricaoAcesso']
+
+    def get_queryset(self, request):
+        qs = super(TipologiaAdmin, self).get_queryset(request)
+        if request.user.is_superuser:
+            return qs
+        return qs.filter(fases="Aguardando Resposta")
 
     def get_status(self, obj):
         return obj.resposta.status
@@ -99,20 +105,31 @@ class TipologiaAdmin(admin.ModelAdmin):
     def processa_resposta(self, request, id_tipologia,*args, **kwargs):
         tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
         response_data = {}
+        id_resposta = ''
         if request.POST:
             form_resposta = FormResposta(request.POST)
             if form_resposta.is_valid():
-                if(request.POST.get('salvar')):
-                    status = 'salvo'
-                elif(request.POST.get('enviar')):
-                    status = 'enviado'
+                
                 codigo = form_resposta.cleaned_data['codigo_ifes']
                 resposta = form_resposta.cleaned_data['resposta']
-                observacoes = form_resposta.cleaned_data['observacoes']
-                Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
-                fase_respondido = Fase.objects.get(nome='Analisado')
-                tipologia.fases = fase_respondido
-                tipologia.save()
+                observacoes = form_resposta.cleaned_data['observacoes']                
+                if(request.POST.get('salvar')):
+                    status = 'salvo'
+                    if Resposta.objects.filter(tipologia=tipologia).exists():
+                        resposta = Resposta.objects.get(tipologia=tipologia)
+                        resposta.codigo_ifes = form_resposta.cleaned_data['codigo_ifes']
+                        resposta.resposta = form_resposta.cleaned_data['resposta']
+                        resposta.observacoes = form_resposta.cleaned_data['observacoes']
+                        resposta.status = status
+                        resposta.save()
+                    else:
+                        Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
+                elif(request.POST.get('enviar')):
+                    status = 'enviado'
+                    Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
+                    fase_respondido = Fase.objects.get(nome='Analisado')
+                    tipologia.fases = fase_respondido
+                    tipologia.save()
                 self.message_user(request, status+' com sucesso!')
         else:
             if request.GET.get('codigo'):
@@ -172,6 +189,7 @@ class TipologiaAdmin(admin.ModelAdmin):
             
 
     def edita_resposta(self, request, id_tipologia, *args, **kwargs):
+        tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
         resposta = Resposta.objects.get(tipologia_id=id_tipologia)
         response_data = {}
         if request.POST:
@@ -182,12 +200,15 @@ class TipologiaAdmin(admin.ModelAdmin):
                     status = 'salvo'
                 elif request.POST.get('enviar'):
                     status = 'enviado'
+                    fase_respondido = Fase.objects.get(nome='Analisado')
+                    tipologia.fases = fase_respondido
+                    tipologia.save()
                 resposta.codigo_ifes = form_resposta.cleaned_data['codigo_ifes']
                 resposta.resposta = form_resposta.cleaned_data['resposta']
                 resposta.observacoes = form_resposta.cleaned_data['observacoes']
                 resposta.status = status
                 resposta.save()
-                self.message_user(request, 'Resposta cadastrada com sucesso!')
+                self.message_user(request, status+' com sucesso!')
         else:
             if request.GET.get('codigo'):
                 codigo = request.GET.get('codigo')

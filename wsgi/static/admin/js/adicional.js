@@ -36,7 +36,7 @@ function busca_atributos(){
 
                     // handle a non-successful response
                     error : function(xhr,errmsg,err) {
-                        $("#loader").hide();
+                        $('#loader').hide();
                         $('#results').html("<div class='alert-box alert radius' data-alert>Opss! Nós encontramos um erro!: "+errmsg+
                             " <a href='#' class='close'>&times;</a></div>"); // add the error to the dom
                         console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
@@ -45,5 +45,7 @@ function busca_atributos(){
             }
         }
 
-
+function exibirLinkVisualizar(){
+    $('#link_visualizar_resposta').html("<a id='visualizar_resposta' class='default' href='{% url 'admin:visualizar_resposta_servidor' pk=resposta.pk%}' target='_blank'>Visualizar resposta</a>");
+}
 
