@@ -70,7 +70,13 @@
     <div class="submit-row">
       <input type="submit" class="default" name="enviar" value="Enviar">
       <div id="link_visualizar_resposta"></div>
-      <input type="submit" class="default" name="salvar" value="Salvar" onclick="exibirLinkVisualizar()">
+      <input type="submit" class="default" name="salvar" value="Salvar">
+      
+      {% if resposta != None %}
+        <div id="exibirLinkVisualizar">
+          <a id="visualizar_resposta" class="default" href="{% url 'admin:visualizar_resposta_servidor' pk=resposta%}" target="_blank">Visualizar resposta</a>
+        </div>
+      {% endif %}
     </div>
   </form>
 </div>

@@ -45,7 +45,3 @@ function busca_atributos(){
             }
         }
 
-function exibirLinkVisualizar(){
-    $('#link_visualizar_resposta').html("<a id='visualizar_resposta' class='default' href='{% url 'admin:visualizar_resposta_servidor' pk=resposta.pk%}' target='_blank'>Visualizar resposta</a>");
-}
-

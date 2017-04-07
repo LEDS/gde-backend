@@ -373,7 +373,7 @@ def levantamento_view(request, pk):
 
 @login_required
 def resposta_view(request, pk):
-    resposta = get_object_or_404(Resposta, pk=pk)
+    resposta = Resposta.objects.get(tipologia=pk)
     return render(request, 'resposta_formulario.html',{'resposta':resposta})
 
 @csrf_protect
