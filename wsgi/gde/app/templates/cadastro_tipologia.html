@@ -42,21 +42,6 @@
                 <br/>
                 <div class="fields">
 
-
-                {% if form.historico.help_text %}
-                    <div id="historico" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.historico.help_text}}">
-                {%else%}
-                    <div id="historico" class="row">
-                {%endif%}
-                        {% if form.historico.errors %}
-                            {% for erro in form.historico.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
-                            {% endfor %}
-                        {% endif %}
-                        <div class="col s12 titulo">{{form.historico.label}}</div>
-                        <div class="col s12">{{form.historico}}</div>
-                    </div>
-
                 {% if form.nome.help_text %}
                     <div id="nome" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.nome.help_text}}">
                 {%else%}
@@ -69,6 +54,20 @@
                         {% endif %}
                         <div  class="col s12 titulo">{{form.nome.label}}</div>
                         <div class="col s12">{{form.nome}}</div>
+                    </div>
+
+                     {% if form.historico.help_text %}
+                    <div id="historico" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{form.historico.help_text}}">
+                {%else%}
+                    <div id="historico" class="row">
+                {%endif%}
+                        {% if form.historico.errors %}
+                            {% for erro in form.historico.errors %}
+                                <div class="col s12">{{erro|escape}}</div>
+                            {% endfor %}
+                        {% endif %}
+                        <div class="col s12 titulo">{{form.historico.label}}</div>
+                        <div class="col s12">{{form.historico}}</div>
                     </div>
 
                 {% if form.producaoSetor.help_text %}

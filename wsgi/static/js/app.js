@@ -7,7 +7,6 @@ $(document).ready(function(){
                 $('.tap-target').tapTarget('open');
             }
         }).modal('open');
-       // $('.tap-target').tapTarget('open');
         localStorage.setItem("esta_logado", 'true');
     }
     }
