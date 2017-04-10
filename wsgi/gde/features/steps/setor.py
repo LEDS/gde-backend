@@ -53,9 +53,6 @@ def step_impl(context):
     br.get_screenshot_as_file('/tmp/screenshot.png')
 
     br.find_element_by_name('nome').send_keys('setorTeste')
-    br.find_element_by_name('sigla').send_keys('ST')
-    br.find_element_by_name('funcao').send_keys('funcao')
-    br.find_element_by_name('historico').send_keys('historico1')
     br.find_element_by_name('submit').click()
     
     assert br.find_element_by_name('csrfmiddlewaretoken').is_enabled()

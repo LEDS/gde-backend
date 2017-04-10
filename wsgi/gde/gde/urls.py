@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
@@ -50,8 +50,5 @@ urlpatterns = [
                   url(r'^tipologia/$', cadastrar_tipologia, name="cadastrar_tipologia"),
                   url(r'^levantamento/(?P<pk>\d+)/view/$', levantamento_view, name='levantamento_view'),
                   url(r'^tipologia/(?P<pk>\d+)/resposta/$', resposta_view, name='resposta_view'),
-                  #url(r'^processa_resposta/$', adminMethod.processa_resposta, name='processa_resposta'),
-
-
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

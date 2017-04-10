@@ -26,7 +26,7 @@ class EspecieDocumental(models.Model):
         return self.nome
 
 class Campus(models.Model):
-    nome = models.CharField(max_length=30, null=True, blank=False, unique=True)
+    nome = models.CharField(max_length=500, null=True, blank=False, unique=True)
 
     def __str__(self):
         return self.nome
