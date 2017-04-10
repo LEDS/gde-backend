@@ -49,8 +49,6 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = (
-    'jet.dashboard',
-    'jet',
     'app',
     'behave_django',
     'django.contrib.admin',
@@ -114,7 +112,7 @@ else:
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'gde',
             'USER': 'postgres',
-            'PASSWORD': '123456',
+            'PASSWORD': '135246',
             'HOST': 'localhost',
             'PORT': '5432',
         }

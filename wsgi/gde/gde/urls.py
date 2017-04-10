@@ -23,8 +23,6 @@ from app.views import *
 from app import admin as adminMethod
 
 urlpatterns = [
-                  url(r'^jet/', include('jet.urls', 'jet')),
-                  url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
                   url(r'^admin/', admin.site.urls),
                   url(r'^register/$', cadastroUsuario),
                   url(r'^home/$', home),
