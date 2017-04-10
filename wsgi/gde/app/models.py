@@ -33,8 +33,10 @@ class Campus(models.Model):
 
 class Setor(models.Model):
     campus = models.ForeignKey(Campus, null=True, blank=False, verbose_name='Campus')
-    nome = models.CharField(max_length=20, null=True, blank=False, unique=False)
+    nome = models.CharField(max_length=200, null=True, blank=False, unique=False)
     sigla = models.CharField(max_length=20, null=True, blank=False, unique=False)
+    id_unidade = models.IntegerField(null=True, blank=False)
+    id_unidade_responsavel = models.IntegerField(null=True, blank=False)
     funcao = models.CharField(max_length=250, null=True, blank=False, unique=False)
     historico = models.CharField(max_length=250, null=True, blank=True, unique=False)
 
@@ -92,37 +94,32 @@ class TipoAcumulo(models.Model):
         return self.nome
 
 class Tipologia(models.Model):
-    atividade = models.ForeignKey(Atividade, related_name='atividade')
-    setor = models.ForeignKey(Setor, related_name='setor')
-    usuario = models.ForeignKey(Usuario, related_name='usuario')
-    fases = models.ForeignKey(Fase, related_name='fases')
-    especieDocumental = models.ForeignKey(EspecieDocumental,related_name='especieDocumental')
-    finalidade = models.TextField(null=True, blank=False, unique=False)
-    nome = models.CharField(max_length=50, blank=False, unique=True)
-    historico = models.CharField(max_length=50,null=True, blank=True)
-    identificacao = models.CharField(max_length=50, blank=False, unique=True)
-    elemento = models.ManyToManyField(Elemento, related_name='elemento')
-    suporte = models.ForeignKey(Suporte, related_name='suporte')
-    formaDocumental = models.BooleanField(choices=((True, 'Original'), (False, 'Copia')), blank=False)
-    genero = models.ManyToManyField(Genero, related_name='genero')
-    anexo = models.BooleanField(choices=gera_sim_nao(), blank=False)
-    relacaoInterna = models.BooleanField(choices=gera_sim_nao(), blank=False)
-    relacaoExterna = models.BooleanField(choices=gera_sim_nao(), blank=False)
-    inicioAcumulo = models.IntegerField(choices=gera_anos(1900), blank=False)
-    quantidadeVias = models.BooleanField(choices=gera_sim_nao(), blank=False)
-    fimAcumulo = models.IntegerField(choices=gera_anos(1900), blank=False)
-    quantidadeAcumulada = models.IntegerField(choices=gera_inteiros_positivos(100),blank=True)
-    tipoAcumulo = models.ForeignKey(TipoAcumulo, related_name='tipoAcumulo', blank=True, null=True)
-    embasamentoLegal = models.CharField(max_length=50, null=True, blank=False, unique=False)
-    informacaoOutrosDocumentos = models.BooleanField(choices=gera_sim_nao(), blank=False)
-    restricaoAcesso = models.ManyToManyField(RestricaoAcesso, related_name='restricaoAcesso')
-    producaoSetor = models.BooleanField(choices=((True, 'Produzido neste setor'), (False, 'Recebido por este setor')),blank=False)
-    dataEnvio = models.DateField(auto_now=True, null=True)
-
-
-    def display_element(self):
-        return ', '.join([elemento.nome for elemento in self.elemento.all()[:3]])
-    display_element.short_description = 'Elemento'
+    atividade = models.ForeignKey(Atividade, related_name='atividade', verbose_name='Atividade')
+    setor = models.ForeignKey(Setor, related_name='setor', verbose_name='Setor')
+    usuario = models.ForeignKey(Usuario, related_name='usuario', verbose_name='Usuário')
+    fases = models.ForeignKey(Fase, related_name='fases', verbose_name='Status')
+    especieDocumental = models.ForeignKey(EspecieDocumental,related_name='especieDocumental', verbose_name='Espécie documental')
+    finalidade = models.TextField('Finalidade', null=True, blank=False, unique=False)
+    nome = models.CharField('Nome', max_length=50, blank=False, unique=True)
+    historico = models.CharField('Histórico', max_length=50,null=True, blank=True)
+    identificacao = models.CharField('Identificação', max_length=50, blank=False, unique=True)
+    elemento = models.ManyToManyField(Elemento, related_name='elemento', verbose_name='Elemento')
+    suporte = models.ForeignKey(Suporte, related_name='suporte', verbose_name='Suporte')
+    formaDocumental = models.BooleanField('Forma Documental', choices=((True, 'Original'), (False, 'Copia')), blank=False)
+    genero = models.ManyToManyField(Genero, related_name='genero', verbose_name='Gênero')
+    anexo = models.BooleanField('Anexo', choices=gera_sim_nao(), blank=False)
+    relacaoInterna = models.BooleanField('Relação interna', choices=gera_sim_nao(), blank=False)
+    relacaoExterna = models.BooleanField('Relação externa', choices=gera_sim_nao(), blank=False)
+    inicioAcumulo = models.IntegerField('Início', choices=gera_anos(1900), blank=False)
+    quantidadeVias = models.BooleanField('Quantidade de vias', choices=gera_sim_nao(), blank=False)
+    fimAcumulo = models.IntegerField('Fim', choices=gera_anos(1900), blank=False)
+    quantidadeAcumulada = models.IntegerField('Quantidade acumulada', choices=gera_inteiros_positivos(100),blank=True)
+    tipoAcumulo = models.ForeignKey(TipoAcumulo, related_name='tipoAcumulo', blank=True, null=True, verbose_name='Tipo de acúmulo')
+    embasamentoLegal = models.CharField('Embasamento legal', max_length=50, null=True, blank=False, unique=False)
+    informacaoOutrosDocumentos = models.BooleanField('Informações em outros documentos', choices=gera_sim_nao(), blank=False)
+    restricaoAcesso = models.ManyToManyField(RestricaoAcesso, related_name='restricaoAcesso', verbose_name='Restrições de acesso')
+    producaoSetor = models.BooleanField('Produzido pelo setor', choices=((True, 'Produzido neste setor'), (False, 'Recebido por este setor')),blank=False)
+    dataEnvio = models.DateField('Data de envio', auto_now=True, null=True)
 
     def __str__(self):
         return 'setor:'+self.setor.nome+'usuário:'+self.usuario.user.username+'espécie:'+\
@@ -130,7 +127,7 @@ class Tipologia(models.Model):
 
 
 class GrupoConarq(models.Model):
-    codigo = models.IntegerField(blank=False,unique=True)
+    codigo = models.CharField(max_length=50,blank=False,null=True)
     nome = models.CharField(blank=False,max_length=150)
 
     def __str__(self):
@@ -138,7 +135,7 @@ class GrupoConarq(models.Model):
 
 class Conarq(models.Model):
     codGrupo = models.ForeignKey(GrupoConarq,related_name="codGrupo",blank=False)
-    cod = models.IntegerField(blank=False,unique=True)
+    codigo = models.CharField(max_length=50,blank=False,null=True)
     assunto = models.CharField(max_length=150,blank=False,null=True)
     faseCorrente = models.CharField(max_length=150,blank=False,null=True)
     faseIntermediaria = models.CharField(max_length=150,blank=False,null=True)
@@ -147,12 +144,24 @@ class Conarq(models.Model):
     def __str__(self):
         return self.assunto
 
+class ClassificaArquivosIfes(models.Model):
+    codigo = models.CharField(max_length=50,blank=False,null=True)
+    conarq = models.ForeignKey(Conarq, related_name="conarq", blank=False)
+
+    def __str__(self):
+        return self.codigo
 
 class Resposta(models.Model):
-    grupo = models.ForeignKey(GrupoConarq,related_name="grupo",blank=False)
-    codigo = models.ForeignKey(Conarq,related_name="codigo",blank=False)
+    tipologia = models.OneToOneField(Tipologia, related_name="resposta", on_delete=models.CASCADE, blank=False)
+    codigo_ifes = models.ForeignKey(ClassificaArquivosIfes,related_name="codigo_ifes",blank=False)
     resposta = models.TextField(blank=False)
     observacoes = models.TextField(null=True)
+    status = models.CharField(max_length=100,blank=False,null=True)
+
+
+
 
     def __str__(self):
         return self.resposta
+
+

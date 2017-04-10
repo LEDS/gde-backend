@@ -1,15 +1,19 @@
 {% extends 'base.html' %}
 {% block title %}Meus Levantamentos{% endblock %}
 {% block content %}
+
 <div class="container">
-    <div id="MeusLevantamentos" class="row subtitulo2">
+    <div id="MeusLevantamentos" class="row">
     <h4 class="center subtitulo2">Meus Levantamentos</h4>
             <br/>
+
+        <div class="divider"></div>
+        <div class="section"></div>
         <div class="col-lg-8 ">
             <form>
                 {% csrf_token %}
 
-                <br/><br/>
+                <br/>
 
                 <table>
                     <thead>
@@ -28,13 +32,19 @@
                             <td id="status">{{tipologia.fases}}</td>
                             <td>
                                 {%if tipologia.fases.nome == "Levantamento"%}
-                                    <a name=visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_edit' pk=tipologia.pk %}">
+                                    <a name=editar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_edit' pk=tipologia.pk %}">
                                     <i class="material-icons">mode_edit</i>
                                     </a>
                                 {%else%}
-                                    <a  name="editar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_view' pk=tipologia.pk %}">
+                                    <a  name="visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_view' pk=tipologia.pk %}">
                                         <i class="material-icons">visibility</i>
                                     </a>
+                                {%endif%}
+                                {%if tipologia.resposta%}
+                                    <a  name="visualizar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'resposta_view' pk=tipologia.pk %}">
+                                        <i class="material-icons">email</i>
+                                    </a>
+
                                 {%endif%}
                             </td>
                         </tr>
@@ -42,13 +52,37 @@
                     </tbody>
             </table>
 
-            <div class="fixed-action-btn" style="bottom: 100px; right: 150px;">
-                <a href="{% url 'app.views.cadastrar_tipologia' %}" class="cadastrar btn-floating btn-large waves-effect waves-light orange darken-4">
+            <!--<div class="fixed-action-btn" style="bottom: 100px; right: 150px;">
+                <a id="cad" href="{% url 'app.views.cadastrar_tipologia' %}" class="cadastrar btn-floating btn-large waves-effect waves-light orange darken-4">
                     <i class="material-icons">add</i>
                 </a>
-                </div>
+                
+                </div>-->
             </form>
         </div>
     </div>
+       
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a id="menu" href="{% url 'app.views.cadastrar_tipologia' %}" class="btn btn-floating btn-large  waves-light blue "><i class="material-icons">add</i></a>
+        </div>
+    <!-- Tap Target Structure -->
+      <div class="blue tap-target" data-activates="menu">
+        <div class="tap-target-content">
+          <h5 class="white-text">Adicionando novo Formulario</h5>
+          <p class="white-text">Click neste botão para criar um novo formulário</p>
+         </div>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Sobre o Sistema</h4>
+      <p>O SLED – Sistema de Levantamento de Documentos foi desenvolvido para que possamos conhecer melhor os documentos institucionais e assim poder dar a eles um tratamento adequado. A metodologia de Levantamento Documental se baseia nas funções arquivísticas de identificação, classificação e avaliação de documentos.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
 </div>
+
 {% endblock content %}

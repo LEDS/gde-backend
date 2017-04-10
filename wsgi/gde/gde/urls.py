@@ -14,14 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from app.views import *
+from app import admin as adminMethod
 
 urlpatterns = [
+                  url(r'^jet/', include('jet.urls', 'jet')),
+                  url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
                   url(r'^admin/', admin.site.urls),
                   url(r'^register/$', cadastroUsuario),
                   url(r'^home/$', home),
@@ -48,6 +51,9 @@ urlpatterns = [
                   url(r'^levantamento/(?P<pk>\d+)/edit/$', levantamento_edit, name='levantamento_edit'),
                   url(r'^tipologia/$', cadastrar_tipologia, name="cadastrar_tipologia"),
                   url(r'^levantamento/(?P<pk>\d+)/view/$', levantamento_view, name='levantamento_view'),
+                  url(r'^tipologia/(?P<pk>\d+)/resposta/$', resposta_view, name='resposta_view'),
+                  #url(r'^processa_resposta/$', adminMethod.processa_resposta, name='processa_resposta'),
+
 
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

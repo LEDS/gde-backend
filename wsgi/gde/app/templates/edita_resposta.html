@@ -1,0 +1,82 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_static admin_modify %}
+{% block extrahead %}{{ block.super }}
+         <link rel="stylesheet" type="text/css" href="{% static 'admin/css/adicional.css' %}">
+         <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+          <script type="text/javascript" src="{% static 'admin/js/adicional.js' %}"></script>
+
+          <script type="text/javascript">
+          window.onload = function () { busca_atributos() }
+          </script>
+{% endblock %}
+{% block content %}
+<div id="content-main">
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% if form.non_field_errors|length > 0 %}
+      <p class="errornote">
+          "Please correct the errors below."
+      </p>
+      {{ form.non_field_errors }}
+    {% endif %}
+    <fieldset class="module aligned">
+        <div id="codigo" class="form-row">
+          {{ form.codigo_ifes.errors }}
+          {{ form.codigo_ifes.label_tag }}
+          {{ form.codigo_ifes }}
+          <a href="#">Link pdf</a>
+          {% if form.codigo_ifes.field.help_text %}
+          <p class="help">
+            {{ form.codigo_ifes.field.help_text|safe }}
+          </p>
+          {% endif %}
+          <br>
+          <div id="div_tabela">
+            <table id="tabela" >
+              <tr>
+                <th>Classe</th>
+                <th>Descrição da classe</th>
+                <th>Subclasse</th>
+                <th>Assunto</th>
+                <th>Fase corrente</th>
+                <th>Fase intermediária</th>
+                <th>Destinação Final</th>
+                <th>Observações</th>
+              </tr>
+              
+
+            </table>
+          </div>
+        </div>
+
+        <div id="resposta" class="form-row">
+            {{ form.resposta.errors }}
+            {{ form.resposta.label_tag }}
+            {{ form.resposta }}
+            {% if form.resposta.field.help_text %}
+            <p class="help">
+              {{ form.resposta.field.help_text|safe }}
+            </p>
+            {% endif %}
+        </div>
+
+      <div id="observacoes" class="form-row">
+            {{ form.observacoes.errors }}
+            {{ form.observacoes.label_tag }}
+            {{ form.observacoes }}
+            {% if form.observacoes.field.help_text %}
+            <p class="help">
+              {{ form.observacoes.field.help_text|safe }}
+            </p>
+            {% endif %}
+        </div>
+
+    </fieldset>
+    <div class="submit-row">
+      <input type="submit" class="default" name="enviar" value="Enviar">
+      <a id="visualizar_resposta" class="default" href="{% url 'admin:visualizar_resposta_servidor' pk=resposta.pk%}" target="_blank">Visualizar resposta</a>
+      <input type="submit" class="default" name="salvar" value="Salvar">
+    </div>
+  </form>
+</div>
+{% endblock %}
