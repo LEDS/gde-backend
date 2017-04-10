@@ -57,7 +57,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'password_reset',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -149,3 +148,9 @@ STATICFILES_DIRS = [
 
 
 LOGIN_URL = '/'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'projetogde@gmail.com'
+EMAIL_HOST_PASSWORD = 'ifesledsgde'
+EMAIL_PORT = 587

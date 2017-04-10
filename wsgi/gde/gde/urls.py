@@ -23,12 +23,12 @@ from app.views import *
 from app import admin as adminMethod
 
 urlpatterns = [
-                  include('password_reset.urls'),
+                  url('^', include('django.contrib.auth.urls')),
                   url(r'^admin/', admin.site.urls),
-                  url(r'^register/$', cadastroUsuario),
+                  url(r'^register/$', cadastroUsuario, name='cadastro_usuario'),
                   url(r'^home/$', home),
                   url(r'^user/(?P<pk>[\d]+)/$', user_detail),
-                  url(r'^$', auth_views.login, {'template_name': 'login.html'}),
+                  url(r'^$', auth_views.login, {'template_name': 'login.html'}, name='login'),
                   url(r'^logout/$', auth_views.logout, {'next_page': '/'}),
                   url(r'^especieDocumental/$', especieDocumental),
                   url(r'^especieDocumental/(?P<pk>\d+)/edit/$', especieDocumental_edit, name='especieDocumental_edit'),
