@@ -23,6 +23,7 @@ from app.views import *
 from app import admin as adminMethod
 
 urlpatterns = [
+                  include('password_reset.urls'),
                   url(r'^admin/', admin.site.urls),
                   url(r'^register/$', cadastroUsuario),
                   url(r'^home/$', home),
@@ -50,6 +51,7 @@ urlpatterns = [
                   url(r'^tipologia/$', cadastrar_tipologia, name="cadastrar_tipologia"),
                   url(r'^levantamento/(?P<pk>\d+)/view/$', levantamento_view, name='levantamento_view'),
                   url(r'^tipologia/(?P<pk>\d+)/resposta/$', resposta_view, name='resposta_view'),
+
                   #url(r'^processa_resposta/$', adminMethod.processa_resposta, name='processa_resposta'),
 
 
