@@ -23,7 +23,10 @@ from app.views import *
 from app import admin as adminMethod
 
 urlpatterns = [
-                  url('^', include('django.contrib.auth.urls')),
+                  url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
+                  url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
+                  url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',auth_views.password_reset_confirm, name='password_reset_confirm'),
+                  url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'),
                   url(r'^admin/', admin.site.urls),
                   url(r'^register/$', cadastroUsuario, name='cadastro_usuario'),
                   url(r'^home/$', home),
@@ -51,9 +54,5 @@ urlpatterns = [
                   url(r'^tipologia/$', cadastrar_tipologia, name="cadastrar_tipologia"),
                   url(r'^levantamento/(?P<pk>\d+)/view/$', levantamento_view, name='levantamento_view'),
                   url(r'^tipologia/(?P<pk>\d+)/resposta/$', resposta_view, name='resposta_view'),
-
-                  #url(r'^processa_resposta/$', adminMethod.processa_resposta, name='processa_resposta'),
-
-
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

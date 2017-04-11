@@ -2,7 +2,21 @@
 {% block title %}Meus Levantamentos{% endblock %}
 {% block content %}
 
+  <!-- Tap Target Structure -->
+  <div data-role="none" id="tap" class="blue tap-target" data-activates="menu">
+    <div class="tap-target-content">
+      <h5 class="white-text">Adicionando novo Formulario</h5>
+      <p class="white-text">Click neste botão para criar um novo formulário</p>
+    </div>
+  </div>
+
+
 <div class="container">
+
+    <a id="menu" style="margin-top: 30px; margin-right: 0px !important; " href="{% url 'app.views.cadastrar_tipologia' %}" class="btn-floating btn-large red right blue">
+      <i class="large material-icons ">add</i>
+    </a>
+
     <div id="MeusLevantamentos" class="row">
     <h4 class="center subtitulo2">Meus Levantamentos</h4>
             <br/>
@@ -51,27 +65,10 @@
                         {% endfor %}
                     </tbody>
             </table>
-
-            <!--<div class="fixed-action-btn" style="bottom: 100px; right: 150px;">
-                <a id="cad" href="{% url 'app.views.cadastrar_tipologia' %}" class="cadastrar btn-floating btn-large waves-effect waves-light orange darken-4">
-                    <i class="material-icons">add</i>
-                </a>
-                
-                </div>-->
             </form>
         </div>
     </div>
-       
-        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-          <a id="menu" href="{% url 'app.views.cadastrar_tipologia' %}" class="btn btn-floating btn-large  waves-light blue "><i class="material-icons">add</i></a>
-        </div>
-    <!-- Tap Target Structure -->
-      <div class="blue tap-target" data-activates="menu">
-        <div class="tap-target-content">
-          <h5 class="white-text">Adicionando novo Formulario</h5>
-          <p class="white-text">Click neste botão para criar um novo formulário</p>
-         </div>
-    </div>
+
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
