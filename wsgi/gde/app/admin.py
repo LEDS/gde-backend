@@ -9,6 +9,7 @@ from django.template.response import TemplateResponse
 from .forms import FormResposta
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
+from django.core.mail import EmailMessage
 
 
 admin.site.register(Campus)
@@ -98,6 +99,8 @@ class TipologiaAdmin(admin.ModelAdmin):
 
     def processa_resposta(self, request, id_tipologia,*args, **kwargs):
         tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
+        usuario = tipologia.usuario
+        email_usuario = usuario.user.email
         response_data = {}
         resposta = None
         id_resposta = ''
@@ -132,10 +135,14 @@ class TipologiaAdmin(admin.ModelAdmin):
                         resposta.status = status
                         resposta.save()
                     else:
-                        Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
+                        resposta = Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
+                assunto = 'Resposta referente a tipologia ' + tipologia.nome
+                corpo = 'Sua tipologia foi respondida, para acessar a resposta acesse:'
+                email = EmailMessage(assunto, corpo, to=[email_usuario])
+                email.send()
                 self.message_user(request, status+' com sucesso!')
         else:
             if request.GET.get('codigo'):
