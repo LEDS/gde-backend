@@ -74,7 +74,7 @@ class FormTipologia(ModelForm):
             'especieDocumental':'Espécie documental:',
             'identificacao':'Identificações no documento:',
             'formaDocumental':'Forma documental:',
-            'elemento':'Marque os itens presentes neste documento:',
+            'elemento':'Quais dos itens abaixo estão presentes neste documento:',
             'suporte':'Em qual suporte a informação circula?',
             'anexo':'Este documento pussui anexo?',
             'genero':'Qual o gênero predominante do documento?',
@@ -85,9 +85,9 @@ class FormTipologia(ModelForm):
             'inicioAcumulo':'Qual o período de abrangência deste tipo de documento?',
             'quantidadeAcumulada':'Qual a quantidade e a forma de armazenamento deste documento?',
             'quantidadeVias':'Produz mais de uma via deste documento?',
-            'embasamentoLegal':'Embasamento Legal:',
-            'informacaoOutrosDocumentos':'Informações registradas em outros documentos:',
-            'restricaoAcesso':'O documento contém informações que necessitam de restrição de acesso?',
+            'embasamentoLegal':'você gostaria de citar algumas das normativas ou legislações que embasam as ações sobre este documento?',
+            'informacaoOutrosDocumentos':'As informações presentes neste documento também podem  ser encontradas em outros tipos de documentos?',
+            'restricaoAcesso':'Caso, este documento contenha informações que necessitam de restrição de acesso, marque-as abaixo:',
             'historico':'Nome do setor presente no documento (se for diferente do nome atual do setor):',
         }
 
