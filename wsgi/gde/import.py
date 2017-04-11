@@ -18,9 +18,9 @@ for row in data:
 		setor = Setor()
 		setor.id_unidade_responsavel = row[0]
 		setor.id_unidade = row[1]
-		campus.nome = row[3] + "-" + row[4]
+		campus.nome = row[4]
 		setor.sigla = row[3]
-		setor.nome = row[5]
+		setor.nome = row[3] + " - " + row[5]
 		if Campus.objects.filter(nome=campus.nome).exists():
 			campus = Campus.objects.get(nome=campus.nome)
 			campus = Campus.objects.get(pk=campus.id)
