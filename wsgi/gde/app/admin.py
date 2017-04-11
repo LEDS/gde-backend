@@ -139,7 +139,7 @@ class TipologiaAdmin(admin.ModelAdmin):
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
-                assunto = 'Resposta referente a tipologia ' + tipologia.nome
+                assunto = 'Sled - Resposta da tipologia ' + tipologia.nome
                 corpo = 'Sua tipologia foi respondida, para acessar a resposta acesse:'
                 email = EmailMessage(assunto, corpo, to=[email_usuario])
                 email.send()
