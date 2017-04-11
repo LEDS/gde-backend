@@ -5,7 +5,7 @@ import datetime
 
 def gera_anos(anoInicial):
     YEAR_CHOICES = []
-    for r in range(anoInicial, (datetime.datetime.now().year+1)):
+    for r in range((datetime.datetime.now().year), anoInicial, -1):
         YEAR_CHOICES.append((r,r))
     return YEAR_CHOICES
 

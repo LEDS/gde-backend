@@ -16,6 +16,23 @@ from django.http import JsonResponse
 
 
 
+def login():
+    next = request.POST.get('next', request.GET.get('next', ''))
+    if request.method == "POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            if user.is_active:
+                login(request, user)
+                if next:
+                    return HttpResponseRedirect(next)
+                return HttpResponseRedirect('/home')
+            else:
+                return HttpResponse('Inactive user')
+        else:
+            return HttpResponseRedirect(settings.LOGIN_URL)
+    return render(request, "/")
 
 @csrf_protect
 def cadastroUsuario(request):
@@ -371,7 +388,6 @@ def levantamento_view(request, pk):
     tipologia = get_object_or_404(Tipologia, pk=pk)
     return render(request, 'visualizar_levantamento.html',{'tipologia':tipologia})
 
-@login_required
 def resposta_view(request, pk):
     resposta = Resposta.objects.get(tipologia=pk)
     return render(request, 'resposta_formulario.html',{'resposta':resposta})
@@ -435,4 +451,3 @@ def cadastrar_tipologia(request):
         formAtividade = FormAtividade()
 
     return render(request, 'cadastro_tipologia.html', {'form': form, 'formAtividade':formAtividade})
-
