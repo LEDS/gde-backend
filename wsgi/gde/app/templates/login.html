@@ -13,41 +13,41 @@
          </div>
      </div>
     {% endif %}
-    <div class="row">
-        <div id= "form-login" class="col s4 offset-s4">
-            <div class="card-panel  light-green lighten-5 z-depth-2 bordaredonda">
-                <form id="login-form" method="post"
-                      action="{% url 'django.contrib.auth.views.login' %}">
-                    {% csrf_token %}
+        <form id="login-form" method="post"
+              action="{% url 'django.contrib.auth.views.login' %}">
+            {% csrf_token %}
 
-                    <div class="input-field">
-                        <i class="material-icons prefix">account_circle</i>
-                        <label for="id_username">Siape</label>
-                        <input id="id_username" name="username"
-                                   type="text" class="validate">
-                    </div>
-
-                    <div class="input-field">
-                            <i class="material-icons prefix">lock</i>
-                            <label for="id_password">Senha</label>
-                            <input id="id_password" name="password"
-                                       type="password" class="validate">
-                    </div>
-
-                    <br/><br/>
-
-                    <button id="botao-login" class="btn  green darken-4 z-depth-1" type="submit" name="action">Login</button>
-                    <input type="hidden" name="next" value="/levantamento_list" />
-                    <ul class="center hide-on-med-and-down">
-                          <li><a class="green-text text-darken-4" href="{% url 'password_reset' %}">Esqueceu a senha?</a></li>
-                    </ul>
-                    <ul class="center hide-on-med-and-down">
-                          <li><strong>Ainda não tem uma conta?</strong><br/><a class="green-text text-darken-4" href="{% url 'app.views.cadastroUsuario' %}">Cadastre-se</a></li>
-                    </ul>
-                </form>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <label for="id_username">Siape</label>
+                <input id="id_username" name="username"
+                           type="text" class="validate">
             </div>
-        </div>
-    </div>
+
+            <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <label for="id_password">Senha</label>
+                    <input id="id_password" name="password"
+                               type="password" class="validate">
+            </div>
+
+            <br/><br/>
+            <div class="conteiner-botao">
+                <button id="botao-login" class="btn  green darken-4 z-depth-1" type="submit" name="action">Login</button>
+                {% if not request.GET.next %}
+                    <input type="hidden" name="next" value="/levantamento_list">
+                {%else%}
+                    <input type="hidden" name="next" value="{{request.GET.next}}">
+                {%endif%}
+                <ul class="center hide-on-med-and-down">
+                      <li><a class="green-text text-darken-4" href="{% url 'password_reset' %}">Esqueceu a senha?</a></li>
+                </ul>
+                <ul class="center hide-on-med-and-down">
+                      <li><strong>Ainda não tem uma conta?</strong><br/><a class="green-text text-darken-4" href="{% url 'app.views.cadastroUsuario' %}">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </form>
+
     <script type="text/javascript">
         localStorage.setItem("esta_logado", 'false');
     </script>

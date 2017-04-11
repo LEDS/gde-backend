@@ -7,7 +7,7 @@
 {% endblock %}
 {% block content %}
 <div id="content-main">
-  <form action="" method="POST">
+  <form action="" method="POST" id="cadastro-resposta">
     {% csrf_token %}
     {% if form.non_field_errors|length > 0 %}
       <p class="errornote">
@@ -68,9 +68,9 @@
 
     </fieldset>
     <div class="submit-row">
-      <input type="submit" class="default" name="enviar" value="Enviar">
+      <input type="submit" class="default" id="enviar" name="enviar" value="Enviar">
       <div id="link_visualizar_resposta"></div>
-      <input type="submit" class="default" name="salvar" value="Salvar">
+      <input type="submit" class="default" id="salvar" name="salvar" value="Salvar">
       
       {% if resposta != None %}
         <div id="exibirLinkVisualizar">

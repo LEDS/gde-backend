@@ -44,4 +44,3 @@ function busca_atributos(){
                 });
             }
         }
-
