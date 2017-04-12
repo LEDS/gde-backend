@@ -10,7 +10,9 @@ $(document).ready(function(){
         localStorage.setItem("esta_logado", 'true');
     }
     }
+    $('.tooltipped').tooltip({delay: 50, html: true});
     $(".modal").modal();
+    
 })
 
 $(document).ready(function() {
@@ -25,12 +27,6 @@ $('.datepicker').pickadate({
     selectYears: 15, // Creates a dropdown of 15 years to control year
     format: 'yyyy-mm-dd'
 });
-
-$(document).ready(function(){
-    $('.tooltipped').tooltip({delay: 50, html:true});
-});
-
-
 
 function submitform()
 {
@@ -108,3 +104,16 @@ function create_post() {
             }
         });
 };
+
+
+function botaoSalvar(){
+    $("#valor_botao").val("1");
+    $('#tipologia-form').submit();
+}
+
+function botaoSim(){
+    $("#valor_botao").val("0");
+    $('#tipologia-form').submit();
+}
+
+

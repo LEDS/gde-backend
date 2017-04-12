@@ -140,11 +140,11 @@ class TipologiaAdmin(admin.ModelAdmin):
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
-                dominio = settings.DEFAULT_DOMAIN
-                assunto = 'Sled - Notificação de resposta '
-                corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + dominio+ '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
-                email = EmailMessage(assunto, corpo, to=[email_usuario])
-                email.send()
+                    dominio = settings.DEFAULT_DOMAIN
+                    assunto = 'Sled - Notificação de resposta '
+                    corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + dominio+ '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
+                    email = EmailMessage(assunto, corpo, to=[email_usuario])
+                    email.send()
                 self.message_user(request, status+' com sucesso!')
         else:
             if request.GET.get('codigo'):
@@ -208,6 +208,8 @@ class TipologiaAdmin(admin.ModelAdmin):
 
     def edita_resposta(self, request, id_tipologia, *args, **kwargs):
         tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
+        usuario = tipologia.usuario
+        email_usuario = usuario.user.email
         resposta = Resposta.objects.get(tipologia_id=id_tipologia)
         response_data = {}
         if request.POST:
@@ -221,6 +223,11 @@ class TipologiaAdmin(admin.ModelAdmin):
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
+                    dominio = settings.DEFAULT_DOMAIN
+                    assunto = 'Sled - Notificação de resposta '
+                    corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + dominio+ '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
+                    email = EmailMessage(assunto, corpo, to=[email_usuario])
+                    email.send()
                 resposta.codigo_ifes = form_resposta.cleaned_data['codigo_ifes']
                 resposta.resposta = form_resposta.cleaned_data['resposta']
                 resposta.observacoes = form_resposta.cleaned_data['observacoes']

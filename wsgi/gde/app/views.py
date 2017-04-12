@@ -16,32 +16,11 @@ from django.http import JsonResponse
 
 
 
-
-def login():
-    next = request.POST.get('next', request.GET.get('next', ''))
-    if request.method == "POST":
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = auth.authenticate(username=username, password=password)
-        if user is not None:
-            if user.is_active:
-                login(request, user)
-                if next:
-                    return HttpResponseRedirect(next)
-                return HttpResponseRedirect('/home')
-            else:
-                return HttpResponse('Inactive user')
-        else:
-            return HttpResponseRedirect(settings.LOGIN_URL)
-    return render(request, "/")
-
 @csrf_protect
 def cadastroUsuario(request):
     setores = Setor.objects.all()
     campi = Campus.objects.all()
     setor_campus = dict()
-    #setores_id = []
-    #setores_nome = []
     setores_no_campus = dict()
     informacoes_setores_campus = dict()
     setor_campus_json = ''
@@ -93,15 +72,34 @@ def cadastroUsuario(request):
 @csrf_protect
 @login_required
 def user_detail(request, pk):
+
     user = get_object_or_404(User, pk=pk)
     usuario = get_object_or_404(Usuario, pk=Usuario.objects.get(user=user).id)
     setor = get_object_or_404(Setor,  pk=usuario.setor.id)
 
     setores = Setor.objects.all()
+    campi = Campus.objects.all()
     setor_campus = dict()
-    for (campus__,setor__) in [(setor.campus.id,setor.id) for setor in setores]:
-            setor_campus[setor__] = campus__
-    setor_campus_json = json.dumps(setor_campus)
+    setores_no_campus = dict()
+    informacoes_setores_campus = dict()
+    setor_campus_json = ''
+    
+    
+    for campus in campi:
+        setores_id = []
+        setores_nome = []
+        campus_json =dict()
+        for setor in setores:
+            if setor.campus.id == campus.id:
+                setores_id.append(setor.id)
+                setores_nome.append(setor.nome)    
+        campus_json['setores_id'] = setores_id
+        campus_json['setores_nome'] = setores_nome
+
+        setores_no_campus[campus.id] = campus_json
+
+    setor_campus_json = json.dumps(setores_no_campus)
+
 
     if request.POST:
         formUser = FormUser(request.POST, instance=user)
@@ -130,7 +128,7 @@ def user_detail(request, pk):
         formUser = FormUser(instance=user)
         formParcialSetor = FormParcialSetor(instance=setor)
         formUsuario = FormUsuario(instance=usuario)
-    return render(request, 'editarUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario,'setorCampus':setor_campus_json})
+    return render(request, 'editarUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario, 'setorCampus':setor_campus_json})
 
 @csrf_protect
 @login_required
@@ -414,9 +412,9 @@ def cadastrar_tipologia(request):
             return JsonResponse(response_data)
         else:
             if form.is_valid():
-                if request.POST.get('submit_enviar') == "0":
+                if request.POST.get('valor') == "0":
                     fase = Fase.objects.get(nome='Aguardando Resposta')
-                elif request.POST.get('submit_salvar') == "1":
+                elif request.POST.get('valor') == "1":
                     fase = Fase.objects.get(nome='Levantamento')
                 especieDocumental = form.cleaned_data['especieDocumental']
                 finalidade = form.cleaned_data['finalidade']

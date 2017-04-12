@@ -42,7 +42,7 @@
                             <td id="nome">{{ tipologia.nome }}</td>
                             <td id="status">{{tipologia.fases}}</td>
                             <td>
-                                {%if tipologia.fases.nome == "Levantamento"%}
+                                {%if tipologia.fases.nome == "Levantamento" %}
                                     <a name=editar" class="btn-floating waves-effect waves-light teal darken-1" href="{% url 'levantamento_edit' pk=tipologia.pk %}">
                                     <i class="material-icons">mode_edit</i>
                                     </a>
@@ -78,5 +78,6 @@
     </div>
   </div>
 </div>
+
 
 {% endblock content %}

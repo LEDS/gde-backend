@@ -44,8 +44,6 @@ ALLOWED_HOSTS = [
     #'www.example.com', # Second DNS alias (set up in the app)
 ]
 
-DEFAULT_DOMAIN = '127.0.0.1:8000'
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -112,7 +110,7 @@ else:
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'gde',
             'USER': 'postgres',
-            'PASSWORD': '135246',
+            'PASSWORD': '123456',
             'HOST': 'localhost',
             'PORT': '5432',
         }
@@ -149,8 +147,13 @@ STATICFILES_DIRS = [
 
 LOGIN_URL = '/'
 
+#Configuração do servidor de email
+#início
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'projetogde@gmail.com'
 EMAIL_HOST_PASSWORD = 'ifesledsgde'
 EMAIL_PORT = 587
+#fim
+
+DEFAULT_DOMAIN = '127.0.0.1:8000'
