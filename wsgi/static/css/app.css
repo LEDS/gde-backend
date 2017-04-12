@@ -180,3 +180,18 @@
     width: 100%;
     text-align: center;
 }
+
+.erro{
+    width: 100%;
+}
+
+.erro2{
+    margin-top: 20px;
+
+}
+.errorlist li:hover{
+    background-color: #ffffff !important
+}
+.errorlist li{
+    color: #31BFF7 !important
+}

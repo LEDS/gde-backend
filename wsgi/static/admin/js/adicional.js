@@ -44,3 +44,21 @@ function busca_atributos(){
                 });
             }
         }
+
+function disable(){
+    $('#salvar').attr('disabled', 'true');
+    localStorage.setItem('disable', 'true');
+}
+
+
+function enable(){
+    localStorage.setItem('disable', 'false');
+}
+
+$(document).ready(function(){
+    if(localStorage.getItem('disable') === 'true'){
+        disable();
+    }
+    $('#enviar').on('click', disable);
+    $('.responder').on('click', enable);
+});

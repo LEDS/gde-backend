@@ -78,20 +78,20 @@ class TipologiaAdmin(admin.ModelAdmin):
 
              return format_html(
 
-                        '<a class="button" href="{}">Responder</a>',
+                        '<a onclick="javascript:localStorage.setItem(\'disable\', \'false\');" class="button" href="{}">Responder</a>',
                         reverse('admin:processa_resposta', args=[obj.pk]),
                     )
         else:
             if obj.resposta.status == 'salvo':
                  return format_html(
 
-                        '<a class="button" href="{}">Editar</a>',
+                        '<a class="button editar" href="{}">Editar</a>',
                         reverse('admin:edita_resposta', args=[obj.pk]),
                     )
             else:
 
                 return format_html(
-                '<a class="button" href="{}">Visualizar</a>',
+                '<a class="button visualizar" href="{}">Visualizar</a>',
                         reverse('admin:visualiza_resposta', args=[obj.pk]),
                     )
         
