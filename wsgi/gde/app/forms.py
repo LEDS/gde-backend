@@ -88,7 +88,7 @@ class FormTipologia(ModelForm):
             'embasamentoLegal':'É importante que você destaque aqui algumas das normativas ou legislações que embasam as ações sobre este tipo de documento, cite-as:',
             'informacaoOutrosDocumentos':'As informações presentes neste documento também podem  ser encontradas em outros tipos de documentos?',
             'restricaoAcesso':'Caso este documento contenha informações que necessitam de restrição de acesso, marque-as abaixo:',
-            'historico':'Nome do setor presente no documento (se for diferente do nome atual do setor):',
+            'historico':'Nome do setor presente no documento:',
         }
 
         help_texts={

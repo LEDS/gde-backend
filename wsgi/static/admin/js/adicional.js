@@ -50,6 +50,10 @@ function disable(){
     localStorage.setItem('disable', 'true');
 }
 
+function disableEdit(){
+    $('#editar_salvar').attr('disabled', 'true');
+    localStorage.setItem('disable', 'true');
+}
 
 function enable(){
     localStorage.setItem('disable', 'false');
@@ -60,5 +64,6 @@ $(document).ready(function(){
         disable();
     }
     $('#enviar').on('click', disable);
-    $('.responder').on('click', enable);
+    $('#editar_enviar').on('click', disableEdit);
 });
+
