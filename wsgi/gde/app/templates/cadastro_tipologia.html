@@ -15,7 +15,7 @@
                     <div class="indeterminate"></div>
                 </div>
                 <div class="modal-content row">
-                    <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="post">
+                    <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="POST">
                         {% csrf_token %}
                 {% if formAtividade.descricao.help_text %}
                     <div id="descricao" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{formAtividade.descricao.help_text}}">
@@ -36,7 +36,7 @@
 
             </div>
 
-            <form id="tipologia-form" method="post"
+            <form id="tipologia-form" method="POST"
                   action="{% url 'app.views.cadastrar_tipologia' %}">
                 {% csrf_token %}
                 <br/>
@@ -367,10 +367,10 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Não</a>
-                                <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" name="submit_enviar" value="0">Sim</button>
+                                <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" name="submit_enviar" value="0" onclick="$('#tipologia-form').submit()">Sim</button>
                             </div>
                           </div>
-                        <button id="botao_salvar" class="btn right orange darken-4" type="submit" name="submit_salvar" value="1">Salvar</button>
+                        <button id="botao_salvar" class="btn right orange darken-4" type="submit" name="submit_salvar" value="1" onclick="$('#tipologia-form').submit()">Salvar</button>
                         <input type="hidden" name="next" value="/levantamento_list" />
                     </div>
                 </div>

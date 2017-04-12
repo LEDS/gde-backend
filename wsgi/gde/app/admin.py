@@ -10,6 +10,7 @@ from .forms import FormResposta
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.core.mail import EmailMessage
+from django.conf import settings
 
 
 admin.site.register(Campus)
@@ -139,8 +140,9 @@ class TipologiaAdmin(admin.ModelAdmin):
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
+                dominio = settings.DEFAULT_DOMAIN
                 assunto = 'Sled - Notificação de resposta '
-                corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + request.get_host() + '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
+                corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + dominio+ '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
                 email = EmailMessage(assunto, corpo, to=[email_usuario])
                 email.send()
                 self.message_user(request, status+' com sucesso!')

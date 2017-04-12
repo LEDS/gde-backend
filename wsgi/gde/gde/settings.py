@@ -44,7 +44,7 @@ ALLOWED_HOSTS = [
     #'www.example.com', # Second DNS alias (set up in the app)
 ]
 
-
+DEFAULT_DOMAIN = '127.0.0.1:8000'
 
 # Application definition
 

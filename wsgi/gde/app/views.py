@@ -16,6 +16,7 @@ from django.http import JsonResponse
 
 
 
+
 def login():
     next = request.POST.get('next', request.GET.get('next', ''))
     if request.method == "POST":
@@ -402,7 +403,6 @@ def cadastrar_tipologia(request):
     if request.POST:
         formAtividade = FormAtividade(request.POST)
         form = FormTipologia(request.POST, setor=setor)
-        #form.errors['atividade'] = None
         if request.POST.get('botao_cadastrar') == "3":
             if formAtividade.is_bound and formAtividade.is_valid():
                 descricao = formAtividade.cleaned_data['descricao']
