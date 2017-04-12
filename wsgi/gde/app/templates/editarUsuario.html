@@ -11,8 +11,8 @@
                 <div class="section"></div>
                 <script>
                 setorCampus = {{setorCampus|safe}};
-                function vinculaSetorCampusDinamicamente(jQuery){
-                    console.log(setorCampus);
+                
+                function tentaVincularSetorCampusDinamicamente(){
                     $('#id-setor').find('option').remove();
                     var id_campus = $('#id-campus option:selected').val();
                     var lista_setores_id = setorCampus[id_campus].setores_id;
@@ -26,8 +26,7 @@
                     
                     $('#id-setor').removeAttr("disabled");
                     $('#id-setor').material_select();
-                };
-                
+                }
                 </script>
                 {% if messages %}
                 <div class="col s12">

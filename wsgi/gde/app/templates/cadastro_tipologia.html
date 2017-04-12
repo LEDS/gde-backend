@@ -15,14 +15,14 @@
                     <div class="indeterminate"></div>
                 </div>
                 <div class="modal-content row">
-                    <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="post">
+                    <form id="formAtividade" action="{% url 'app.views.cadastrar_tipologia' %}" method="POST">
                         {% csrf_token %}
                 {% if formAtividade.descricao.help_text %}
                     <div id="descricao" class="row tooltipped" data-position="top" data-delay="50" data-tooltip="{{formAtividade.descricao.help_text}}">
                 {%else%}
                     <div id="descricao" class="row">
                 {%endif%}
-                        <div class="col s12" style="display:none" id="erro_atividade">Atividade já cadastrada!</div>
+                        <div class="col s12 erro" style="display:none" id="erro_atividade">Atividade já cadastrada!</div>
                         <div class="col s12 titulo">{{formAtividade.descricao.label}}</div>
                         <div class="col s12">{{formAtividade.descricao}}</div>
                     </div>
@@ -36,7 +36,7 @@
 
             </div>
 
-            <form id="tipologia-form" method="post"
+            <form id="tipologia-form" method="POST"
                   action="{% url 'app.views.cadastrar_tipologia' %}">
                 {% csrf_token %}
                 <br/>
@@ -49,7 +49,7 @@
                 {%endif%}
                         {% if form.nome.errors %}
                             {% for erro in form.nome.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.nome.label}}</div>
@@ -63,7 +63,7 @@
                 {%endif%}
                         {% if form.historico.errors %}
                             {% for erro in form.historico.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div class="col s12 titulo">{{form.historico.label}}</div>
@@ -77,7 +77,7 @@
                 {%endif%}
                         {% if form.producaoSetor.errors %}
                             {% for erro in form.producaoSetor.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.producaoSetor.label}}</div>
@@ -91,7 +91,7 @@
                 {%endif%}
                         {% if form.finalidade.errors %}
                             {% for erro in form.finalidade.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.finalidade.label}}</div>
@@ -105,7 +105,7 @@
                 {%endif%}
                         {% if form.atividade.errors %}
                             {% for erro in form.atividade.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div class="col s12 titulo">{{form.atividade.label}}</div>
@@ -124,7 +124,7 @@
                 {%endif%}
                         {% if form.especieDocumental.errors %}
                             {% for erro in form.especieDocumental.errors %}
-                                <div class="col s12 ">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.especieDocumental.label}}</div>
@@ -138,7 +138,7 @@
                 {%endif%}
                         {% if form.identificacao.errors %}
                             {% for erro in form.identificacao.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.identificacao.label}}</div>
@@ -153,7 +153,7 @@
                 {%endif%}
                         {% if form.elemento.errors %}
                             {% for erro in form.elemento.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div class="col s12 titulo">{{form.elemento.label}}</div>
@@ -167,7 +167,7 @@
                 {%endif%}
                         {% if form.suporte.errors %}
                             {% for erro in form.suporte.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.suporte.label}}</div>
@@ -181,7 +181,7 @@
                 {%endif%}
                         {% if form.formaDocumental.errors %}
                             {% for erro in form.formaDocumental.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.formaDocumental.label}}</div>
@@ -195,7 +195,7 @@
                 {%endif%}
                         {% if form.quantidadeVias.errors %}
                             {% for erro in form.quantidadeVias.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.quantidadeVias.label}}</div>
@@ -209,7 +209,7 @@
                 {%endif%}
                         {% if form.genero.errors %}
                             {% for erro in form.genero.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.genero.label}}</div>
@@ -223,7 +223,7 @@
                 {%endif%}
                         {% if form.anexo.errors %}
                             {% for erro in form.anexo.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.anexo.label}}</div>
@@ -238,7 +238,7 @@
                 {%endif%}
                         {% if form.relacaoInterna.errors %}
                             {% for erro in form.relacaoInterna.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.relacaoInterna.label}}</div>
@@ -253,7 +253,7 @@
                 {%endif%}
                         {% if form.relacaoExterna.errors %}
                             {% for erro in form.relacaoExterna.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.relacaoExterna.label}}</div>
@@ -269,12 +269,12 @@
                     {%endif%}
                             {% if form.inicioAcumulo.errors %}
                                 {% for erro in form.inicioAcumulo.errors %}
-                                    <div class="col s6">{{erro|escape}}</div>
+                                    <div class="col s6 erro">{{erro|escape}}</div>
                                 {% endfor %}
                             {% endif %}
                              {% if form.fimAcumulo.errors %}
                                 {% for erro in form.fimAcumulo.errors %}
-                                    <div class="col s6">{{erro|escape}}</div>
+                                    <div class="col s6 erro">{{erro|escape}}</div>
                                 {% endfor %}
                             {% endif %}
                             <div  class="col s12 titulo">{{form.inicioAcumulo.label}}</div>
@@ -295,12 +295,12 @@
                     {%endif%}
                             {% if form.quantidadeAcumulada.errors %}
                                 {% for erro in form.quantidadeAcumulada.errors %}
-                                    <div class="col s6">{{erro|escape}}</div>
+                                    <div class="col s6 erro">{{erro|escape}}</div>
                                 {% endfor %}
                             {% endif %}
                             {% if form.tipoAcumulo.errors %}
                                 {% for erro in form.tipoAcumulo.errors %}
-                                    <div class="col s6">{{erro|escape}}</div>
+                                    <div class="col s6 erro">{{erro|escape}}</div>
                                 {% endfor %}
                             {% endif %}
                             <div  class="col s12 titulo">{{form.quantidadeAcumulada.label}}</div>
@@ -316,7 +316,7 @@
                 {%endif%}
                         {% if form.embasamentoLegal.errors %}
                             {% for erro in form.embasamentoLegal.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.embasamentoLegal.label}}</div>
@@ -331,7 +331,7 @@
                 {%endif%}
                         {% if form.informacaoOutrosDocumentos.errors %}
                             {% for erro in form.informacaoOutrosDocumentos.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.informacaoOutrosDocumentos.label}}</div>
@@ -346,7 +346,7 @@
                 {%endif%}
                         {% if form.restricaoAcesso.errors %}
                             {% for erro in form.restricaoAcesso.errors %}
-                                <div class="col s12">{{erro|escape}}</div>
+                                <div class="col s12 erro">{{erro|escape}}</div>
                             {% endfor %}
                         {% endif %}
                         <div  class="col s12 titulo">{{form.restricaoAcesso.label}}</div>
@@ -358,7 +358,7 @@
                 <br/><br/>
                 <div class="row">
                     <div class="input-field">
-                        <button id="botao_enviar"  data-target="modal" class="btn right orange darken-4 ">Enviar</button>
+                        <button id="botao_enviar"  data-target="modal" class="btn right orange darken-4">Enviar</button>
                          <!-- Modal Structure -->
                           <div id="modal" class="modal">
                             <div class="modal-content">
@@ -367,10 +367,11 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Não</a>
-                                <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" name="submit_enviar" value="0">Sim</button>
+                                <button id="botao_sim" type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat" name="submit_enviar" value="0" onclick="botaoSim()">Sim</button>
                             </div>
                           </div>
-                        <button id="botao_salvar" class="btn right orange darken-4" type="submit" name="submit_salvar" value="1">Salvar</button>
+                        <button id="botao_salvar" class="btn right orange darken-4" type="submit" name="submit_salvar" value="1" onclick="botaoSalvar()">Salvar</button>
+                        <input type="hidden" name="valor" id="valor_botao"/>
                         <input type="hidden" name="next" value="/levantamento_list" />
                     </div>
                 </div>

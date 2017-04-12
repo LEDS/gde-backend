@@ -193,5 +193,9 @@
     background-color: #ffffff !important
 }
 .errorlist li{
-    color: #31BFF7 !important
+    color: red !important
+}
+
+.erro{
+    color: red;
 }

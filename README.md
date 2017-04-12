@@ -28,10 +28,11 @@ Este repositório contém o código do sistema web, que foi desenvolvido em Pyth
     * pip install -r requirements.txt
 7. Para realizar a criação das tabelas no banco de dados, vá até a pasta 'wsgi/gde' e execute o comando:
     * python3 manage.py migrate   
-8. Para acriação de um usuário com direitos administrativos no sistema, execute o comando:
-    * python3 manage.py createsuperuser    
+8. Para a criação de um usuário com direitos administrativos no sistema, execute o comando:
+    * python3 manage.py createsuperuser 
+9. Para fazer a pré-carga dos dados no banco, esteja na pasta gde/wsgi/gde e execute o comando:
+	* python3 import.py
 
-    
 ### Executando o projeto
 
 Para executar o projeto vá até a pasta 'wsgi/gde', com o ambiente virtual ativado, e execute o comando:
@@ -41,3 +42,27 @@ Para executar o projeto vá até a pasta 'wsgi/gde', com o ambiente virtual ativ
 O servidor estará disponível no endereço:
 
     http://localhost:8000/
+
+
+### Configurando as informações do servidor de email
+
+1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde
+2- Edite as variáveis das linhas 154 a 158
+
+### Configurando o domínio do site
+
+1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde
+2- Edite a variável DEFAULT_DOMAIN na linha 159 informando o novo domínio
+
+
+/** Considerações **/
+
+### Para alterar o assunto e corpo do email de resposta
+
+1- acesse o arquivo admin.py localizado na pasta gde/wsgi/gde/app
+2- Altere as strings contidas nas variáveis assunto e corpo, das linhas 227 e 228, respectivamente
+
+### Para alterar o banco de dados
+
+1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde
+2- Edite as variáveis das linhas 110 a 115
