@@ -46,23 +46,23 @@ O servidor estará disponível no endereço:
 
 ### Configurando as informações do servidor de email
 
-1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde
+1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde  
 2- Edite as variáveis das linhas 154 a 158
 
 ### Configurando o domínio do site
 
-1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde
+1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde  
 2- Edite a variável DEFAULT_DOMAIN na linha 159 informando o novo domínio
 
 
-/** Considerações **/
+## Considerações 
 
 ### Para alterar o assunto e corpo do email de resposta
 
-1- acesse o arquivo admin.py localizado na pasta gde/wsgi/gde/app
+1- acesse o arquivo admin.py localizado na pasta gde/wsgi/gde/app  
 2- Altere as strings contidas nas variáveis assunto e corpo, das linhas 227 e 228, respectivamente
 
 ### Para alterar o banco de dados
 
-1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde
+1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde  
 2- Edite as variáveis das linhas 110 a 115
