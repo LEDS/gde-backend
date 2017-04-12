@@ -85,7 +85,7 @@ class TipologiaAdmin(admin.ModelAdmin):
             if obj.resposta.status == 'salvo':
                  return format_html(
 
-                        '<a class="button editar" href="{}">Editar</a>',
+                        '<a onclick="javascript:localStorage.setItem(\'disable\', \'false\');" class="button editar" href="{}">Editar</a>',
                         reverse('admin:edita_resposta', args=[obj.pk]),
                     )
             else:

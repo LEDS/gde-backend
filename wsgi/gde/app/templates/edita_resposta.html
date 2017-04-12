@@ -74,9 +74,9 @@
 
     </fieldset>
     <div class="submit-row">
-      <input  type="submit" class="default" name="enviar" value="Enviar">
+      <input  type="submit" class="default" id="editar_enviar" name="enviar" value="Enviar">
       <a id="visualizar_resposta" class="default" href="{% url 'admin:visualizar_resposta_servidor' pk=resposta.pk%}" target="_blank">Visualizar resposta</a>
-      <input type="submit" class="default" name="salvar" value="Salvar">
+      <input type="submit" class="default" id="editar_salvar" name="salvar" value="Salvar">
     </div>
   </form>
 </div>
