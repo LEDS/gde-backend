@@ -13,7 +13,7 @@ from app.models import Conarq, GrupoConarq, ClassificaArquivosIfes
 data = csv.reader(open("codigos.csv"),delimiter=",")
 
 for row in data:
-	if row[0] != 'Classe_Geral':
+	if row[0] != 'Classe_Geral_grupo_conarq':
 		conarq = Campus()
 		grupoConarq = Setor()
 		classificaArquivosIfes = ClassificaArquivosIfes()

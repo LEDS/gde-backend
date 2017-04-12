@@ -23,12 +23,10 @@ for row in data:
 		setor.nome = row[3] + " - " + row[5]
 		if Campus.objects.filter(nome=campus.nome).exists():
 			campus = Campus.objects.get(nome=campus.nome)
-			campus = Campus.objects.get(pk=campus.id)
 			setor.campus = campus
 			setor.save()
 		else:
 			campus.save()
 			campus = Campus.objects.get(nome=campus.nome)
-			campus = Campus.objects.get(pk=campus.id)
 			setor.campus = campus
 			setor.save()
