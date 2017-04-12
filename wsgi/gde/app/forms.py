@@ -80,14 +80,14 @@ class FormTipologia(ModelForm):
             'genero':'Qual o gênero predominante do documento?',
             'nome':'Nome do documento:',
             'finalidade':'Ação que gerou este documento / Objetivo para o qual foi produzido:',
-            'relacaoInterna':'Este documento será encaminhado para outros setores?',
+            'relacaoInterna':'Este documento será encaminhado para outros setores internos?',
             'relacaoExterna':'Este documento será encaminhado para algum órgão externo ao Ifes?',
             'inicioAcumulo':'Qual o período de abrangência deste tipo de documento?',
             'quantidadeAcumulada':'Qual a quantidade e a forma de armazenamento deste documento?',
             'quantidadeVias':'Produz mais de uma via deste documento?',
-            'embasamentoLegal':'você gostaria de citar algumas das normativas ou legislações que embasam as ações sobre este documento?',
+            'embasamentoLegal':'É importante que você destaque aqui algumas das normativas ou legislações que embasam as ações sobre este tipo de documento, cite-as:',
             'informacaoOutrosDocumentos':'As informações presentes neste documento também podem  ser encontradas em outros tipos de documentos?',
-            'restricaoAcesso':'Caso, este documento contenha informações que necessitam de restrição de acesso, marque-as abaixo:',
+            'restricaoAcesso':'Caso este documento contenha informações que necessitam de restrição de acesso, marque-as abaixo:',
             'historico':'Nome do setor presente no documento (se for diferente do nome atual do setor):',
         }
 
