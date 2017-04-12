@@ -9,7 +9,7 @@ import django
 
 django.setup()
 
-from app.models import Setor, Campus
+from app.models import Setor, Campus, Conarq, GrupoConarq, ClassificaArquivosIfes
 data = csv.reader(open("setor.csv"),delimiter=",")
 
 for row in data:
@@ -30,3 +30,29 @@ for row in data:
 			campus = Campus.objects.get(nome=campus.nome)
 			setor.campus = campus
 			setor.save()
+
+data = csv.reader(open("codigos.csv"),delimiter=",")
+for row in data:
+	if row[0] != 'Classe_Geral_grupo_conarq':
+		conarq = Conarq()
+		grupoConarq = GrupoConarq()
+		classificaArquivosIfes = ClassificaArquivosIfes()
+		conarq.codigo = row[1]
+		conarq.assunto = row[3]
+		conarq.faseCorrente = row[4]
+		conarq.faseIntermediaria = row[5]
+		conarq.destinacaoFinal = row[6]
+		conarq.observacoes = row[7]
+		grupoConarq.codigo = row[0]
+		grupoConarq.nome = row[8]
+		classificaArquivosIfes.codigo = row[2]
+		if GrupoConarq.objects.filter(codigo=grupoConarq.codigo).exists():
+			conarq.codGrupo = GrupoConarq.objects.get(codigo=grupoConarq.codigo)
+			conarq.save()
+			classificaArquivosIfes.conarq = conarq
+		else:
+			grupoConarq.save()
+			conarq.codGrupo = grupoConarq
+			conarq.save()
+			classificaArquivosIfes.conarq = conarq
+		classificaArquivosIfes.save()
