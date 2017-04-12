@@ -25,7 +25,6 @@ before_script:
 - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 script:
 - cd wsgi/gde
-- python manage.py behave
 - python manage.py makemigrations
 - python manage.py migrate
 - cd ..
