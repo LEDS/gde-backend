@@ -11,6 +11,11 @@ Este repositório contém o código do sistema web, que foi desenvolvido em Pyth
 * **python3-dev**
 * **PostgreSQL >= 9.3**
 * **PhantomJs >= 2.1**
+*  **sqlparse>=0.2.3**
+
+## Observação
+
+**Para que não ocorra nenhum erro durante a instalação exclua o banco de dados já criado de uma instalação anterior.**
 
 ### Processo de Instalação
 
