@@ -47,7 +47,7 @@ Este repositório contém o código do sistema web, que foi desenvolvido em Pyth
 
 		python3 manage.py createsuperuser 
 
-9. Para fazer a pré-carga dos dados no banco, esteja na pasta gde/wsgi/gde e execute o comando:
+9. Para fazer a carga dos arquivos csv's no banco, esteja na pasta gde/wsgi/gde e execute o comando:
 
 		python3 import.py
 
