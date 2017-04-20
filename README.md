@@ -92,3 +92,17 @@ O servidor estará disponível no endereço:
 
 1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde  
 2- Edite as variáveis das linhas 110 a 115
+
+### Para alimentar o banco de dados com as informações de campus e setores
+
+1- Abra o arquivo "setores do ifes.xlsx" localizado na pasta gde/wsgi/gde  
+2- Acrescente os dados dos novos campus/setores  
+3- Exporte o arquivo para o mesmo local(gde/wsgi/gde) com o nome setor.csv, substituindo o antigo arquivo que existe neste local  
+4- Execute o comando: python3 import.py.
+
+### Para alimentar o banco de dados com as informações de novos códigos do Conarq, grupo Conarq e código do Ifes
+
+1- Abra o arquivo "Tabelas Unificadas Completas.ods" localizado na pasta gde/wsgi/gde  
+2- Acrescente os dados dos novos códigos do Conarq, grupo Conarq e código do Ifes  
+3- Exporte o arquivo com o formato .csv para o mesmo local(gde/wsgi/gde) com o nome codigos.csv, substituindo o antigo arquivo que existe neste local  
+4- Execute o comando: python3 import.py.
