@@ -39,15 +39,23 @@ Este repositório contém o código do sistema web, que foi desenvolvido em Pyth
 
 		pip install -r requirements.txt
 
-7. Para realizar a criação das tabelas no banco de dados, vá até a pasta 'wsgi/gde' e execute o comando:
+7. Ainda no terminal execute o comando:
+
+		pip install django whitenoise
+
+8. Para  reunir todos os arquivos estáticos que ele precisa no servidor, vá até a pasta 'wsgi/gde' execute o comando:
+
+		python manage.py collectstatic
+
+9. Para realizar a criação das tabelas no banco de dados, vá até a pasta 'wsgi/gde' e execute o comando:
 
 		python3 manage.py migrate   
 
-8. Para a criação de um usuário com direitos administrativos no sistema, execute o comando:
+10. Para a criação de um usuário com direitos administrativos no sistema, execute o comando:
 
 		python3 manage.py createsuperuser 
 
-9. Para fazer a carga dos arquivos csv's no banco, esteja na pasta gde/wsgi/gde e execute o comando:
+11. Para fazer a carga dos arquivos csv's no banco, esteja na pasta gde/wsgi/gde e execute o comando:
 
 		python3 import.py
 
