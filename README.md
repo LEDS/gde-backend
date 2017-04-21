@@ -11,6 +11,11 @@ Este repositório contém o código do sistema web, que foi desenvolvido em Pyth
 * **python3-dev**
 * **PostgreSQL >= 9.3**
 * **PhantomJs >= 2.1**
+*  **sqlparse>=0.2.3**
+
+## Observação
+
+**Para que não ocorra nenhum erro durante a instalação exclua o banco de dados já criado de uma instalação anterior.**
 
 ### Processo de Instalação
 
@@ -34,15 +39,23 @@ Este repositório contém o código do sistema web, que foi desenvolvido em Pyth
 
 		pip install -r requirements.txt
 
-7. Para realizar a criação das tabelas no banco de dados, vá até a pasta 'wsgi/gde' e execute o comando:
+7. Ainda no terminal execute o comando:
+
+		pip install django whitenoise
+
+8. Para  reunir todos os arquivos estáticos que ele precisa no servidor, vá até a pasta 'wsgi/gde' execute o comando:
+
+		python manage.py collectstatic
+
+9. Para realizar a criação das tabelas no banco de dados, vá até a pasta 'wsgi/gde' e execute o comando:
 
 		python3 manage.py migrate   
 
-8. Para a criação de um usuário com direitos administrativos no sistema, execute o comando:
+10. Para a criação de um usuário com direitos administrativos no sistema, execute o comando:
 
 		python3 manage.py createsuperuser 
 
-9. Para fazer a pré-carga dos dados no banco, esteja na pasta gde/wsgi/gde e execute o comando:
+11. Para fazer a carga dos arquivos csv's no banco, esteja na pasta gde/wsgi/gde e execute o comando:
 
 		python3 import.py
 
@@ -79,3 +92,17 @@ O servidor estará disponível no endereço:
 
 1- Abra o arquivo settings.py localizado na pasta gde/wsgi/gde/gde  
 2- Edite as variáveis das linhas 110 a 115
+
+### Para alimentar o banco de dados com as informações de campus e setores
+
+1- Abra o arquivo "setores do ifes.xlsx" localizado na pasta gde/wsgi/gde  
+2- Acrescente os dados dos novos campus/setores  
+3- Exporte o arquivo para o mesmo local(gde/wsgi/gde) com o nome setor.csv, substituindo o antigo arquivo que existe neste local  
+4- Execute o comando: python3 import.py.
+
+### Para alimentar o banco de dados com as informações de novos códigos do Conarq, grupo Conarq e código do Ifes
+
+1- Abra o arquivo "Tabelas Unificadas Completas.ods" localizado na pasta gde/wsgi/gde  
+2- Acrescente os dados dos novos códigos do Conarq, grupo Conarq e código do Ifes  
+3- Exporte o arquivo com o formato .csv para o mesmo local(gde/wsgi/gde) com o nome codigos.csv, substituindo o antigo arquivo que existe neste local  
+4- Execute o comando: python3 import.py.

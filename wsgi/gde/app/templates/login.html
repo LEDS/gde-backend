@@ -5,7 +5,7 @@
 
     {% if form.errors %}
     <div class="row" style="margin:0px;">
-        <div class="col s4 offset-s4">
+        <div class="col s12 ">
             <p class="center-align card-panel teal lighten-2">
                 Usuário ou senha incorretos.
                 Tente novamente.
@@ -39,10 +39,10 @@
                 {%else%}
                     <input type="hidden" name="next" value="{{request.GET.next}}">
                 {%endif%}
-                <ul class="center hide-on-med-and-down">
+                <ul class="center">
                       <li><a class="green-text text-darken-4" href="{% url 'password_reset' %}">Esqueceu a senha?</a></li>
                 </ul>
-                <ul class="center hide-on-med-and-down">
+                <ul class="center">
                       <li><strong>Ainda não tem uma conta?</strong><br/><a class="green-text text-darken-4" href="{% url 'app.views.cadastroUsuario' %}">Cadastre-se</a></li>
                 </ul>
             </div>
