@@ -1,10 +1,1319 @@
-Classe_Geral_grupo_conarq,Classe_específica_conarq,Código_IFES,ASSUNTO,FASE_CORRENTE,FASE_INTER_MEDIÁRIA,DESTINAÇÃO_FINAL,OBSERVAÇÕES,NOME_GRUPO_CONARQ
-110,110,110,110 NORMATIZAÇÃO. REGULAMENTAÇÃO,Enquanto vigora,-,Guarda Permanente,-,100 ENSINO SUPERIOR
-120,120,120,120 CURSOS DE GRADUAÇÃO (INCLUSIVE NA MODALIDADE A DISTÂNCIA),-,-,-,-,100 ENSINO SUPERIOR
-121,121,121,"121 CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DOS CURSOS DE GRADUAÇÃO",-,-,-,-,100 ENSINO SUPERIOR
-121,1211,121.1,121.1 PROJETO PEDAGÓGICO DOS CURSOS,"Enquanto vigora",-,"Guarda Permanente",-,100 ENSINO SUPERIOR
-121,1212,121.2,121.2 CRIAÇÃO DE CURSOS. CONVERSÃO DE CURSOS,"Até a homologação do  ato",5 anos,"Guarda Permanente",-, 100 ENSINO SUPERIOR
-121,12121,121.21,121.21 AUTORIZAÇÃO. RECONHECIMENTO.RENOVAÇÃO DE RECONHECIMENTO,"Até a homologação do ato",5 anos,"Guarda Permanente",-, 100 ENSINO SUPERIOR
-121,1213,121.3,121.3 DESATIVAÇÃO DE CURSOS. EXTINÇÃO DE CURSOS,"Até a homologação do ato",5 anos,"Guarda Permanente",-,100 ENSINO SUPERIOR
-122,122,122,122 PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,-,-,-,-,100 ENSINO SUPERIOR
-122,1221,122.1,122.1 ESTRUTURA DO CURRÍCULO (GRADE OU MATRIZ CURRICULAR),Enquanto vigora,-,"Guarda Permanente",-,100 ENSINO SUPERIOR
+Classe Geral,Classe específica,Código IFES,"
+ASSUNTO",FASE CORRENTE,FASE INTER- MEDIÁRIA,"
+DESTINAÇÃO FINAL","
+OBSERVAÇÕES"
+100,100          ,100          ,"100           ENSINO SUPERIOR
+",,,,
+110,110          ,110          ,110            NORMATIZAÇÃO. REGULAMENTAÇÃO,"Enquanto
+       vigora",-,"Guarda
+Permanente",
+120,120          ,120          ,120               CURSOS DE GRADUAÇÃO (INCLUSIVE NA MODALIDADE A DISTÂNCIA),,,,
+121,121          ,121          ,"121             CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DOS CURSOS DE GRADUAÇÃO",,,,
+121,1211         ,121.1        ,121.1            PROJETO PEDAGÓGICO DOS CURSOS,"Enquanto 
+       vigora",-,"Guarda
+Permanente",
+121,1212         ,121.2        ,121.2            CRIAÇÃO DE CURSOS. CONVERSÃO DE CURSOS,"Até a homologação
+do
+ ato",5 anos,"Guarda
+Permanente",
+121,12121        ,121.21       ,121.21         AUTORIZAÇÃO. RECONHECIMENTO.RENOVAÇÃO  DE RECONHECIMENTO,"Até a homologação
+do
+ ato",5 anos,"Guarda
+Permanente",
+121,1213         ,121.3        ,121.3            DESATIVAÇÃO DE CURSOS. EXTINÇÃO DE CURSOS,"Até a homologação
+do 
+ato",5 anos,"Guarda
+Permanente",
+122,122          ,122          ,122             PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,,,,
+122,1221         ,122.1        ,122.1          ESTRUTURA DO CURRÍCULO (GRADE OU MATRIZ CURRICULAR),Enquanto vigora,-,"Guarda
+Permanente",
+122,1222         ,122.2        ,122.2          REFORMULAÇÃO CURRICULAR,Enquanto vigora,-,"Guarda
+Permanente",
+122,1223         ,122.3        ,122.3          DISCIPLINAS: PROGRAMAS DIDÁTICOS,Enquanto vigora,-,"Guarda
+Permanente",
+122,12231        ,122.31       ,122.31        OFERTA DE DISCIPLINAS,      2 anos,-,     Eliminação,
+122,12232        ,122.32       ,122.32        ATIVIDADES COMPLEMENTARES,Enquanto vigora,-,"Guarda
+Permanente",
+123,123          ,123          ,123           PLANEJAMENTO DA ATIVIDADE ACADÊMICA,,,,
+123,1231         ,123.1        ,123.1          CALENDÁRIO ACADÊMICO,Enquanto vigora,-,"Guarda
+Permanente",Guardar apenas um exemplar de cada publicação.
+123,1232         ,123.2        ,"123.2          AGENDA ACADÊMICA. GUIA DO CALOURO. GUIA DO
+ESTUDANTE. MANUAL DO ESTUDANTE",Enquanto vigora,-,"Guarda
+Permanente",Guardar apenas um exemplar de cada publicação.
+124,124          ,124          ,124            COLAÇÃO DE GRAU. FORMATURA,     5  anos,-,     Eliminação,
+124,1241         ,124.1        ,124.1         TERMO OU ATA DE COLAÇÃO DE GRAU,     5  anos,-,"Guarda
+Permanente",
+125,125          ,125          ,125             VIDA ACADÊMICA DOS ALUNOS DOS CURSOS DE GRADUAÇÃO,,,,
+125,1251         ,125.1        ,125.1          INGRESSO,,,,
+125,12511        ,125.11       ,125.11        PROCESSO DE SELEÇÃO (VESTIBULAR),,,,
+125,125111       ,125.111      ,125.111        PLANEJAMENTO. ORIENTAÇÕES,"Até a homologação
+do 
+evento",1 ano,"Guarda
+Permanente",
+125,125112       ,125.112      ,125.112        INSCRIÇÕES,"Até a homologação
+do 
+evento*",1 ano,     Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+125,125113       ,125.113      ,125.113       CONTROLE DE APLICAÇÃO DE PROVAS,"Até a homologação
+do 
+evento*",1 ano,     Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+125,125114       ,125.114      ,125.114       CORREÇÃO DE PROVAS,"Até a homologação
+do 
+evento*",1 ano,Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+125,125115       ,125.115      ,125.115       RECURSOS,"Até a homologação
+do 
+evento*",1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial.
+Eliminar os documentos após 2 anos do indeferimento."
+125,125116       ,125.116      ,125.116        RESULTADOS,"Até a homologação
+do 
+evento*",1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial."
+125,12512        ,125.12       ,125.12         REINGRESSO. ADMISSÃO DE GRADUADO. PORTADOR DE DIPLOMA. OBTENÇÃO DE NOVO TÍTULO,       5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+125,12513        ,125.13       ,125.13        TRANSFERÊNCIA,,,,
+125,125131       ,125.131      ,125.131       TRANSFERÊNCIA VOLUNTÁRIA OU FACULTATIVA,       5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+125,125132       ,125.132      ,125.132        TRANSFERÊNCIA EX OFFICIO,       5 anos,-,"Guarda
+Permanente",
+125,12514        ,125.14       ,"125.14            REOPÇÃO DE CURSO. MUDANÇA DE CURSO.
+TRANSFERÊNCIA INTERNA",       5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+125,12519        ,125.19       ,125.19        OUTRAS FORMAS DE INGRESSO. ALUNO CONVÊNIO REDE   PÚBLICA.  ALUNO ESPECIAL. ALUNO VISITANTE. CONTINUIDADE DE ESTUDOS. MANDADO JUDICIAL.  MATRÍCULA DE CORTESIA READMISSÃO.  REFUGIADOS POLÍTICOS. REINTEGRAÇÃO REVINCULAÇÃO.,       5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+125,1252         ,125.2        ,125.2         REGISTROS ACADÊMICOS,,,,
+125,12521        ,125.21       ,125.21        MATRÍCULA. REGISTRO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,   Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+125,12522        ,125.22       ,"125.22        INSCRIÇÃO EM DISCIPLINAS. MATRÍCULA SEMESTRAL EM
+DISCIPLINA","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,  Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+125,12524        ,125.24       ,125.24         TRANCAMENTO,,,,
+125,125241       ,125.241      ,125.241       DISCIPLINA. MATRÍCULA PARCIAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,  Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+125,125242       ,125.242      ,125.242       TOTAL DE CURSO. MATRÍCULA TOTAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,  Eliminação,
+125,12525        ,125.25       ,125.25         DESLIGAMENTO,,,,
+125,125251       ,125.251      ,125.251       ABANDONO DE CURSO,      5  anos,25 anos,  Eliminação,
+125,125252       ,125.252      ,125.252       JUBILAÇÃO,      5  anos,25 anos, Eliminação,
+125,125253       ,125.253      ,125.253       RECUSA DE MATRÍCULA,     5  anos,25 anos, Eliminação,
+125,12526        ,125.26       ,125.26             PRORROGAÇÃO DE PRAZO PARA CONCLUSÃO DO CURSO,     5  anos,25 anos, Eliminação,
+125,1253         ,125.3        ,125.3            AVALIAÇÃO ACADÊMICA  ,,,,
+125,12531        ,125.31       ,"125.31         PROVAS. EXAMES. TRABALHOS (INCLUSIVE
+VERIFICAÇÕES SUPLEMENTARES)","Devolução ao aluno
+após o registro das notas",-,-,Eliminar os documentos não devolvidos após 1 ano do registro das notas.
+125,12532        ,125.32       ,"125.32         TRABALHO DE CONCLUSÃO DE CURSO. TRABALHO FINAL DE
+CURSO","Devolução ao aluno
+após o registro das notas",-, Eliminação,Eliminar os documentos não devolvidos após 1 ano do registro das notas.
+125,125323       ,125.323      ,125.323       PRORROGAÇÃO DE PRAZO PARA ENTREGA E APRESENTAÇÃO,"Até o registro 
+das
+notas",1 ano,  Eliminação,
+125,12533        ,125.33       ,"125.33        REGISTRO DE CONTEÚDO PROGRAMÁTICO MINISTRADO,
+RENDIMENTO E FREQUÊNCIA",10 anos,10 anos,  Eliminação,
+125,1253         ,125.3        ,125.3         DISTINÇÃO ACADÊMICA E MÉRITO,     5  anos,-,"Guarda
+  Permanente",Eliminar os documentos após 2 anos do indeferimento.
+125,1254         ,125.4        ,125.4         DOCUMENTAÇÃO ACADÊMICA,,,,
+125,12541        ,125.41       ,125.41        HISTÓRICO ESCOLAR. INTEGRALIZAÇÃO CURRICULAR,Enquanto o aluno mantiver o vínculo com a instituição de ensino,5 anos,"Guarda
+  Permanente","Eliminar as versões parciais, cujas informações encontram-se recapituladas na versão integral do histórico escolar."
+125,12542        ,125.42       ,125.42        EMISSÃO DE DIPLOMA,,,,
+125,125421       ,125.421      ,125.421        EXPEDIÇÃO,       5  anos,5 anos,  Eliminação,"No caso das instituições de ensino que utilizam os assentamentos individuais para formação do processo d e registro de diplomas, utilizar os prazos de guarda e a destinação final dos assentamentos individuais."
+125,125422       ,125.422      ,125.422       REGISTRO,      5  anos,5 anos,"Guarda
+   Permanente",A documentação de solicitação de registro de diplomas das instituições particulares de ensino superior deverá ser devolvida para as mesmas após o registro. Eliminar os diplomas não entregues 2 anos após a emissão.
+125,1254         ,125.4        ,125.4         APOSTILA,      5  anos,5 anos,"Guarda
+   Permanente",
+125,1254         ,125.4        ,125.4         RECONHECIMENTO E REVALIDAÇÃO,      5   anos,5 anos,"Guarda
+  Permanente","Para os casos de indeferimento, a documentação será devolvida ao requerente. Eliminar os documentos não devolvidos após 2 anos do indeferimento.
+CPAD: Em reunião realizada no dia 08 de fevereiro de 2012 a comissão aprovou a guarda permanente dos documentos indeferidos."
+125,125425       ,125.425      ,125.425       VERIFICAÇÃO DE AUTENTICIDADE,      5  anos,5 anos,  Eliminação,"
+"
+125,12543        ,125.43       ,"125.43        ASSENTAMENTOS INDIVIDUAIS DOS ALUNOS (DOSSIÊS
+DOS ALUNOS)","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",*,  Eliminação,*O prazo total de guarda dos documentos é de 100 anos.
+125,1255         ,125.5        ,125.5          REGIME DE EXERCÍCIO DOMICILIAR,,,,
+125,12551        ,125.51       ,125.51        ALUNA GESTANTE,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos,  Eliminação,
+125,12552        ,125.52       ,"125.52        ALUNO PORTADOR DE AFECÇÕES, INFECÇÕES E
+TRAUMATISMOS","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos, Eliminação,
+125,1256         ,125.6        ,125.6         MONITORIAS. ESTÁGIOS NÃO OBRIGATÓRIOS. PROGRAMAS DE INICIAÇÃO À DOCÊNCIA,,,,
+125,12561        ,125.61       ,125.61         MONITORIAS,    3  anos,2 anos,"Guarda
+  Permanente",
+,,,,,,,
+125,125611       ,125.611      ,125.611       PROCESSO DE SELEÇÃO,     3  anos,2 anos,   Eliminação,
+125,125612       ,125.612      ,"125.612       INDICAÇÃO, ACEITE E SUBSTITUIÇÃO DE MONITOR E
+ORIENTADOR",     3  anos,2 anos,   Eliminação,
+125,125613       ,125.613      ,125.613       AVALIAÇÃO,     3  anos,2 anos,"Guarda
+ Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+125,12562        ,125.62       ,125.62        ESTÁGIOS NÃO OBRIGATÓRIOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos,  Eliminação,
+125,1258         ,125.8        ,"125.8         REGIME DISCIPLINAR DOS ALUNOS: PENALIDADES
+(ADVERTÊNCIA OU REPREENSÃO, SUSPENSÃO E EXPULSÃO)",Até a conclusão do caso,10 anos,Guarda permanente,"A produção, manuseio, consulta,transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em vigor."
+130,130          ,130          ,130           CURSOS DE PÓS-GRADUAÇÃO STRICTO SENSU (INCLUSIVE NA MODALIDADE A DISTÂNCIA),,,,
+131,131          ,131          ,"131           CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DOS CURSOS DE PÓS-GRADUAÇÃO STRICTO SENSU",,,,
+131,1311         ,131.1        ,131.1         PROJETO PEDAGÓGICO DOS CURSOS,Enquanto        vigora,-," Guarda
+   Permanente",
+131,1312         ,131.2        ,131.2         CRIAÇÃO DE CURSOS. CRIAÇÃO DE PROGRAMAS,Até a homologação do ato,5 anos,"Guarda
+  Permanente",
+131,13121        ,131.21       ,131.21        AUTORIZAÇÃO. RECONHECIMENTO. RENOVAÇÃO DE RECONHECIMENTO,Até a homologação do ato,5 anos,"Guarda
+  Permanente",
+131,1313         ,131.3        ,131.3          DESATIVAÇÃO DE CURSOS. EXTINÇÃO DE CURSOS,Até a homologação do ato,5 anos,"Guarda
+  Permanente",
+131,1314         ,131.4        ,131.4          CREDENCIAMENTO PARA ORIENTAÇÃO,      5 anos,10 anos,     Eliminação,
+132,132          ,132          ,132             PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,,,,
+132,1321         ,132.1        ,132.1          ESTRUTURA DO CURRÍCULO (GRADE OU MATRIZ CURRICULAR),Enquanto vigora,-," Guarda
+Permanente",
+132,1322         ,132.2        ,132.2           REFORMULAÇÃO CURRICULAR (INCLUSIVE CRIAÇÃO DE NOVAS ÁREAS DE CONCENTRAÇÃO),Enquanto vigora,-," Guarda
+    Permanente",
+132,1323         ,132.3        ,132.3           DISCIPLINAS: PROGRAMAS DIDÁTICOS,Enquanto vigora,-," Guarda
+    Permanente",
+132,13231        ,132.31       ,132.31        OFERTA DE DISCIPLINAS,     5 anos,5 anos,   Eliminação,
+133,133          ,133          ,133            PLANEJAMENTO DA ATIVIDADE ACADÊMICA,Enquanto vigora,-,"Guarda
+   Permanente",
+134,134          ,134          ,134            VIDA ACADÊMICA DOS ALUNOS DOS CURSOS DE PÓS-GRADUAÇÃO STRICTO SENSU,,,,
+134,1341         ,134.1        ,134.1         INGRESSO,,,,
+134,13411        ,134.11       ,134.11        PROCESSO DE SELEÇÃO,,,,
+134,134111       ,134.111      ,134.111       PLANEJAMENTO. ORIENTAÇÕES,Até a homologação do ato,1 ano,"Guarda
+  Permanente",
+134,134112       ,134.112      ,134.112       INSCRIÇÕES,Até a homologação do evento*,1 ano,   Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+134,134113       ,134.113      ,134.113       CONTROLE DE APLICAÇÃO DE PROVAS,Até a homologação do evento*,1 ano,    Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+134,134114       ,134.114      ,134.114         CORREÇÃO DE PROVAS,Até a homologação do evento*,1 ano,    Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+134,134115       ,134.115      ,134.115        RECURSOS,Até a homologação do evento*,1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial. Eliminar os documentos após 2 anos do indeferimento."
+134,134116       ,134.116      ,134.116       RESULTADOS,Até a homologação do evento*,-,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial. Eliminar os documentos após 2 anos do indeferimento."
+134,13412        ,134.12       ,134.12        TRANSFERÊNCIA,      5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+134,13413        ,134.13       ,134.13        MUDANÇA DE NÍVEL,Enquanto o aluno mantiver o vínculo com a instituição de ensino,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+134,13419        ,134.19       ,134.19         OUTRAS FORMAS DE INGRESSO ALUNO ESPECIAL REINTEGRAÇÃO,    5  anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+134,1342         ,134.2        ,134.2          REGISTROS ACADÊMICOS,,,,
+134,13421        ,134.21       ,134.21         MATRÍCULA. REGISTRO,Enquanto o aluno mantiver o vínculo com a instituição de ensino,5 anos,    Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+134,13422        ,134.22       ,"134.22         INSCRIÇÃO EM DISCIPLINAS. MATRÍCULA SEMESTRAL EM
+DISCIPLINA","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,    Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+,,,,,,,
+134,13423        ,134.23       ,"134.23        ISENÇÃO DE DISCIPLINAS. DISPENSA DE DISCIPLINAS.
+APROVEITAMENTO DE ESTUDOS","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,   Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+134,13424        ,134.24       ,134.24        TRANCAMENTO,,,,
+134,134241       ,134.241      ,134.241       DISCIPLINA. MATRÍCULA PARCIAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,  Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+134,134242       ,134.242      ,134.242        TOTAL DE CURSO. MATRÍCULA TOTAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,  Eliminação,
+134,13425        ,134.25       ,134.25         DESLIGAMENTO,,,,
+134,134251       ,134.251      ,134.251       ABANDONO DE CURSO,     5  anos,25 anos, Eliminação,
+134,134252       ,134.252      ,134.252       JUBILAÇÃO,     5  anos,25 anos, Eliminação,
+134,134253       ,134.253      ,134.253       RECUSA DE MATRÍCULA,     5  anos,25 anos, Eliminação,
+134,1343         ,134.3        ,134.3         AVALIAÇÃO ACADÊMICA,,,,
+134,13431        ,134.31       ,134.31        PROVAS. EXAMES. TRABALHOS,"Devolução ao aluno
+após o registro das notas",-,-,Eliminar os documentos não devolvidos 1 ano após o registro das notas.
+134,13432        ,134.32       ,134.32        EXAME DE QUALIFICAÇÃO,,,,
+134,134321       ,134.321      ,"134.321        INDICAÇÃO, ACEITE E SUBSTITUIÇÃO DE ORIENTADOR E CO-ORIENTADOR","Até a conclusão do
+       curso",1 ano,  Eliminação,
+134,134322       ,134.322      ,134.322       BANCAS EXAMINADORAS: INDICAÇÃO E ATUAÇÃO,"Até a conclusão do
+       curso",1 ano,   Eliminação,
+134,134323       ,134.323      ,134.323        PRORROGAÇÃO DE PRAZO PARA O EXAME DE QUALIFICAÇÃO,"Até a conclusão 
+do
+       curso",1 ano,   Eliminação,
+134,134324       ,134.324      ,134.324        PROJETO DE QUALIFICAÇÃO,"Até a conclusão 
+do
+        curso",1 ano,"Guarda
+Permanente",
+134,13433        ,134.33       ,134.33         DEFESA DE DISSERTAÇÃO E TESE,,,,
+134,134331       ,134.331      ,"134.331       INDICAÇÃO, ACEITE E SUBSTITUIÇÃO DE ORIENTADOR E CO-ORIENTADOR","Até a conclusão
+ do
+       curso",1 ano,     Eliminação,
+134,134332       ,134.332      ,134.332       BANCAS EXAMINADORAS: INDICAÇÃO E ATUAÇÃO,"Até a conclusão 
+do
+        curso",1 ano,"Guarda
+Permanente",
+134,134333       ,134.333      ,134.333        PRORROGAÇÃO DE PRAZO PARA A DEFESA,"Até a conclusão 
+do
+        curso",1 ano,      Eliminação,
+134,134334       ,134.334      ,134.334       DISSERTAÇÃO E TESE,"Até a conclusão
+ do
+       curso",1 ano,"Guarda
+Permanente",
+134,13434        ,134.34       ,"134.34         REGISTRO DE CONTEÚDO PROGRAMÁTICO MINISTRADO, RENDIMENTO E FREQUÊNCIA",10 anos,10 anos,     Eliminação,
+134,1344         ,134.4        ,134.4          DOCUMENTAÇÃO ACADÊMICA,,,,
+134,13441        ,134.41       ,134.41        HISTÓRICO ESCOLAR. INTEGRALIZAÇÃO CURRICULAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,"Guarda
+Permanente","Eliminar as versões parciais, cujas informações encontram-se recapituladas na versão integral do histórico escolar."
+134,13442        ,134.42       ,134.42        EMISSÃO DE DIPLOMA,,,,
+134,134421       ,134.421      ,134.421       EXPEDIÇÃO,     5 anos,5 anos,   Eliminação,"No caso das instituições de ensino que utilizam os assentamentos individuais para formação do processo de registro de diploma, utilizar os prazos de guarda e destinação dos assentamentos individuais."
+,,,,,,,
+134,134422       ,134.422      ,134.422       REGISTRO,     5  anos,5 anos,"Guarda
+Permanente",A documentação de solicitação deregistro de diplomas das instituições de ensino superior particulares deverá ser devolvida para as mesmas após o registro. Eliminar os diplomas não entregues 2 anos após a emissão.
+134,134423       ,134.423      ,134.423       RECONHECIMENTO E REVALIDAÇÃO,    5  anos,5 anos,"Guarda
+Permanente","Para os casos de indeferimento, a documentação será devolvida ao requerente. Eliminar os documentos não devolvidos após 2 anos do indeferimento.
+CPAD: Em reunião realizada no dia 08 de fevereiro de 2012 a comissão aprovou a guarda permanente dos documentos indeferidos."
+134,134424       ,134.424      ,134.424        VERIFICAÇÃO DE AUTENTICIDADE,    5 anos,5 anos,    Eliminação,
+134,13443        ,134.43       ,134.43        ASSENTAMENTOS INDIVIDUAIS DOS ALUNOS (DOSSIÊ DOS ALUNOS),"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",*,   Eliminação,*O prazo total de guarda dos documentos é de 100 anos.
+134,1345         ,134.5        ,134.5         REGIME DE EXERCÍCIO DOMICILIAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos,  Eliminação,
+134,1346         ,134.6        ,134.6         MONITORIAS. ESTÁGIOS NÃO OBRIGATÓRIOS,,,,
+134,13461        ,134.61       ,134.61         MONITORIAS,     3  anos,2 anos,"Guarda
+  Permanente",
+134,134611       ,134.611      ,134.611       PROCESSO DE SELEÇÃO,     3 anos,2 anos,   Eliminação,
+134,134612       ,134.612      ,"134.612       INDICAÇÃO, ACEITE E SUBSTITUIÇÃO DE MONITOR E
+ORIENTADOR",     3  anos,2 anos,   Eliminação,
+134,134613       ,134.613      ,134.613       AVALIAÇÃO,     3  anos,2 anos,"Guarda
+  Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+134,13462        ,134.62       ,134.62          ESTÁGIOS NÃO OBRIGATÓRIOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos,  Eliminação,
+134,13463        ,134.63       ,134.63        FREQUÊNCIA DE MONITORES E ESTAGIÁRIOS,    5  anos,47 anos,  Eliminação,
+134,1347         ,134.7        ,134.7         MOBILIDADE ACADÊMICA. MOBILIDADE ESTUDANTIL. INTERCÂMBIO,,,,
+134,13471        ,134.71       ,134.71        NACIONAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",-,"Guarda
+  Permanente","Para os casos de indeferimento, a documentação será devolvida ao requerente. Eliminar os documentos não devolvidos após 2 anos do indeferimento."
+"
+
+
+","
+
+
+","
+
+
+","
+
+
+",,,,
+134,13472        ,134.72       ,134.72        INTERNACIONAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",-,"Guarda
+Permanente","Para os casos de indeferimento, a documentação será devolvida ao requerente. Eliminar os documentos não devolvidos após 2 anos do indeferimento."
+134,1348         ,134.8        ,"134.8         REGIME DISCIPLINAR DOS ALUNOS: PENALIDADES
+(ADVERTÊNCIA OU REPREENSÃO, SUSPENSÃO E EXPULSÃO)","Até a conclusão 
+do
+caso",10 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em vigor."
+140,140          ,140          ,140           CURSOS DE PÓS-GRADUAÇÃO LATO SENSU (INCLUSIVE NA MODALIDADE A DISTÂNCIA),,,,
+141,141          ,141          ,"141           CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DOS CURSOS DE PÓS-GRADUAÇÃO LATO SENSU",,,,
+141,1411         ,141.1        ,141.1         PROJETO PEDAGÓGICO DOS CURSOS,Enquanto vigora,-,"Guarda
+Permanente",
+141,1412         ,141.2        ,141.2         CRIAÇÃO DE CURSOS,"Até a homologação
+do
+ ato",5 anos,"Guarda
+Permanente",
+142,142          ,142          ,142            PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,,,,
+142,1421         ,142.1        ,142.1         ESTRUTURA DO CURRÍCULO (GRADE OU MATRIZ CURRICULAR),Enquanto vigora,-,"Guarda
+Permanente",
+142,1422         ,142.2        ,142.2          REFORMULAÇÃO CURRICULAR,Enquanto vigora,-,"Guarda
+Permanente",
+142,1423         ,142.3        ,142.3         DISCIPLINAS: PROGRAMAS DIDÁTICOS,Enquanto vigora,-,"Guarda
+Permanente",
+142,14231        ,142.31       ,142.31        OFERTA DE DISCIPLINAS,     2  anos,-,    Eliminação,
+143,143          ,143          ,143           PLANEJAMENTO DA ATIVIDADE ACADÊMICA,Enquanto vigora,-,"Guarda
+Permanente",Guardar apenas um exemplar do calendário.
+144,144          ,144          ,144           VIDA ACADÊMICA DOS ALUNOS DOS CURSOS DE PÓS-GRADUAÇÃO LATO SENSU,,,,
+144,1441         ,144.1        ,144.1         INGRESSO,,,,
+144,14411        ,144.11       ,144.11         PROCESSO DE SELEÇÃO,,,,
+144,144111       ,144.111      ,144.111          PLANEJAMENTO. ORIENTAÇÕES,"Até a homologação
+do 
+evento",1 ano,"Guarda
+Permanente",
+144,144112       ,144.112      ,144.112         INSCRIÇÕES,"Até a homologação
+do 
+evento*",1 ano,    Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+144,144113       ,144.113      ,144.113        CONTROLE DE APLICAÇÃO DE PROVAS,"Até a homologação
+do 
+evento*",1 ano,    Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+144,144114       ,144.114      ,144.114          CORREÇÃO DE PROVAS,"Até a homologação
+        do 
+      evento*",1 ano,    Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+144,144115       ,144.115      ,144.115        RECURSOS,"Até a homologação
+do 
+evento*",1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial.
+Eliminar os documentos após 2 anos do indeferimento."
+144,144116       ,144.116      ,144.116          RESULTADOS,"Até a homologação
+do 
+evento*",-,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial."
+114,11419        ,114.19       ,"114.19         OUTRAS FORMAS DE INGRESSO
+ALUNO ESPECIAL REINTEGRAÇÃO",      5  anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+144,1442         ,144.2        ,144.2           REGISTROS ACADÊMICOS,,,,
+144,14421        ,144.21       ,144.21         MATRÍCULA. REGISTRO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+144,14422        ,144.22       ,144.22          INSCRIÇÃO EM DISCIPLINAS. MATRÍCULA EM DISCIPLINA,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",-,Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+144,14423        ,144.23       ,144.23          ISENÇÃO DE DISCIPLINAS. DISPENSA DE DISCIPLINAS. APROVEITAMENTO DE ESTUDOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+144,14424        ,144.24       ,144.24           TRANCAMENTO,,,,
+144,144241       ,144.241      ,144.241         DISCIPLINA. MATRÍCULA PARCIAL,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+144,14442        ,144.42       ,144.42          EMISSÃO DE CERTIFICADO,,,,
+144,144421       ,144.421      ,144.421         EXPEDIÇÃO,      5  anos,5 anos,    Eliminação,"No caso das instituições de ensino que utilizam os assentamentos individuais para formação do processo de registro de certificado, utilizar os prazos e a destinação dos assentamentos. individuais."
+144,144422       ,144.422      ,"144.422        REGISTRO
+
+
+
+
+
+,
+
+
+
+
+
+
+REGISTRO",      5  anos,5 anos,"Guarda
+  Permanente",Eliminar os certificados não entregues 2 anos após a emissão.
+144,144423       ,144.423      ,144.423        RECONHECIMENTO E REVALIDAÇÃO,      5  anos,5 anos,"Guarda
+ Permanente","Para os casos de indeferimento, a documentação será devolvida ao requerente. Eliminar os documentos não devolvidos após 2 anos do indeferimento.
+CPAD: Em reunião realizada no dia 08 de fevereiro de 2012 a comissão aprovou a guarda permanente dos documentos indeferidos."
+144,144424       ,144.424      ,144.424       VERIFICAÇÃO DE AUTENTICIDADE,     5  anos,           5 anos,Eliminação,
+144,14443        ,144.43       ,144.43        ASSENTAMENTOS INDIVIDUAIS DOS ALUNOS (DOSSIÊS DOS ALUNOS),"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",*,  Eliminação,* O prazo total de guarda dos documentos é de 100 anos.
+144,1445         ,144.5        ,144.5         REGIME DE EXERCÍCIO DOMICILIAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos, Eliminação,
+144,1446         ,144.6        ,144.6         MONITORIAS. ESTÁGIOS NÃO OBRIGATÓRIOS,,,,
+144,14461        ,144.61       ,144.61        MONITORIAS,,,,
+144,144611       ,144.611      ,144.611       PROCESSO DE SELEÇÃO,    3   anos,2 anos,,Eliminação
+144,144612       ,144.612      ,"144.612        INDICAÇÃO, ACEITE E SUBSTITUIÇÃO DE MONITOR E
+ORIENTADOR",    3  anos,2 anos, Eliminação,
+144,144613       ,144.613      ,144.613       AVALIAÇÃO,    3  anos,2 anos,"Guarda
+  Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+144,14462        ,144.62       ,144.62         ESTÁGIOS NÃO OBRIGATÓRIOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos, Eliminação,
+144,14463        ,144.63       ,144.63        FREQUÊNCIA DE MONITORES E ESTAGIÁRIOS,    5  anos,47 anos, Eliminação,
+144,1447         ,144.7        ,"144.7          REGIME DISCIPLINAR DOS ALUNOS: PENALIDADES
+(ADVERTÊNCIA OU REPREENSÃO, SUSPENSÃO E EXPULSÃO)","Até a conclusão 
+do
+caso",10 anos,"           Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em  vigor."
+190,190          ,190          ,"190            OUTROS ASSUNTOS REFERENTES AO ENSINO SUPERIOR
+
+
+
+
+
+",,,,
+200,200          ,200          ,200           PESQUISA,,,,
+210,210          ,210          ,210           NORMATIZAÇÃO. REGULAMENTAÇÃO,Enquanto vigora,-,"Guarda
+Permanente",
+220,220          ,220          ,220           PROGRAMAS DE PESQUISA,,,,
+221,221          ,221          ,221           PROPOSIÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+222,222          ,222          ,222           AVALIAÇÃO. RESULTADOS,     5  anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+230,230          ,230          ,230           PROJETOS DE PESQUISA,,,,
+231,231          ,231          ,231            PROPOSIÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+232,232          ,232          ,232           AVALIAÇÃO. RESULTADOS,     5  anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+240,240          ,240          ,240           INICIAÇÃO CIENTÍFICA,,,,
+241,241          ,241          ,241           PROCESSO DE SELEÇÃO,     2  anos,2 anos,      Eliminação,
+242,242          ,242          ,242           CADASTRAMENTO DE BOLSISTAS,     5  anos,-,     Eliminação,
+243,243          ,243          ,243           FREQUÊNCIA DE BOLSISTAS,     5  anos,47 anos,    Eliminação,
+244,244          ,244          ,244           AVALIAÇÃO DE BOLSISTAS,     2  anos,2 anos," Guarda
+   Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+250,250          ,250          ,250            TRANSFERÊNCIA E INOVAÇÃO TECNOLÓGICA,,,,
+251,251          ,251          ,251            REGISTRO DA PROPRIEDADE INTELECTUAL,,,,
+251,2511         ,251.1        ,251.1          APOIO À REDAÇÃO DE PATENTES,Enquanto vigora,5 anos,"Guarda
+  Permanente",
+251,2512         ,251.2        ,251.2          APRESENTAÇÃO E ACOMPANHAMENTO,     5  anos,5 anos,"            Guarda
+Permanente",
+252,252          ,252          ,252             TRANSFERÊNCIA DE TECNOLOGIA,,,,
+252,2521         ,252.1        ,252.1          INFORMAÇÕES TÉCNICAS,Até a celebração do contrato,5 anos,  Eliminação,
+252,2522         ,252.2        ,252.2          CELEBRAÇÃO E ACOMPANHAMENTO DE CONTRATOS,Enquanto vigora,5 anos,"Guarda
+  Permanente",Eliminar o processo de averbação junto ao INPI após a confirmação e recebimento do certificado de averbação.
+252,2523         ,252.3        ,"252.3         PARCERIAS PARA EXPLORAÇÃO E DESENVOLVIMENTO DE
+INOVAÇÃO TECNOLÓGICA",Enquanto vigora,5 anos,"Guarda
+Permanente",
+253,253          ,253          ,253             DIVULGAÇÃO DE INFORMAÇÃO TECNOLÓGICA,,,,
+253,2531         ,253.1        ,253.1          INFORMAÇÃO TECNOLÓGICA INSTITUCIONAL,      5  anos,5 anos,"Guarda
+Permanente",
+253,2532         ,253.2        ,253.2          AVALIAÇÃO DA TRANSFERÊNCIA E INOVAÇÃO TECNOLÓGICA,     5  anos,5 anos,"Guarda
+Permanente",
+254,254          ,254          ,254            PROGRAMAS DE INCUBADORAS DE EMPRESAS,,,,
+254,2541         ,254.1        ,254.1          PROSPECÇÃO DE PROJETOS,Enquanto vigora,5 anos,"Guarda
+Permanente",
+254,2542         ,254.2        ,254.2          IMPLANTAÇÃO E ACOMPANHAMENTO DO PROGRAMA,,,,
+254,25421        ,254.21       ,254.21        PROCESSO DE SELEÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+254,25422        ,254.22       ,254.22        ADMISSÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",
+254,25423        ,254.23       ,254.23        CAPACITAÇÃO E DESENVOLVIMENTO,Enquanto vigora,5 anos,"Guarda
+Permanente",
+254,25424        ,254.24       ,254.24        AVALIAÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",
+260,260          ,260          ,260           ÉTICA EM PESQUISA,,,,
+261,261          ,261          ,261            PESQUISA EM SERES HUMANOS,,,,
+261,2611         ,261.1        ,261.1         COMITÊ DE ÉTICA,Enquanto vigora,5 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos seres humanos que participam das pesquisas, deverão observar medidas especiais de segurança, conforme legislação em vigor."
+263,2632         ,263.2        ,263.2         REGISTRO DA PESQUISA,Enquanto vigora,5 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos aos organismos geneticamente modificados e seus derivados, deverão observar medidas especiais de segurança, conforme legislação em vigor."
+290,290          ,290          ,290           OUTROS ASSUNTOS REFERENTES À PESQUISA,,,,
+300,300          ,300          ,300           EXTENSÃO,,,,
+310,310          ,310          ,310           NORMATIZAÇÃO. REGULAMENTAÇÃO,Enquanto   vigora,-,"Guarda
+Permanente",
+320,320          ,320          ,320           PROGRAMAS DE EXTENSÃO,,,,
+321,321          ,321          ,321           PROPOSIÇÃO,Enquanto  vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+322,322          ,322          ,322            AVALIAÇÃO. RESULTADOS,    5  anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+330,330          ,330          ,330            PROJETOS DE EXTENSÃO,,,,
+331,331          ,331          ,331            PROPOSIÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+344,344          ,344          ,344            FREQUÊNCIA,"Até a conclusão 
+do
+curso",1 ano,   Eliminação,
+345,345          ,345          ,345            EMISSÃO DE CERTIFICADO,     5  anos,5 anos,"Guarda
+Permanente",Eliminar os certificados não entregues após 2 anos da emissão.
+346,346          ,346          ,346           AVALIAÇÃO. RESULTADOS,     5  anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+350,350          ,350          ,350           EVENTOS DE EXTENSÃO,,,,
+351,351          ,351          ,351           PROPOSIÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+352,352          ,352          ,352           DIVULGAÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Guardar apenas um exemplar do material de cada evento.
+353,353          ,353          ,353           INSCRIÇÃO,"Até a conclusão
+ do
+evento",1 ano,     Eliminação,
+354,354          ,354          ,354           FREQUÊNCIA,"Até a conclusão 
+do
+evento",1 ano,    Eliminação,
+355,355          ,355          ,355            EMISSÃO DE CERTIFICADO,     5   anos,5 anos,"Guarda
+Permanente",Eliminar os certificados não entregues após 2 anos da emissão.
+356,356          ,356          ,356            AVALIAÇÃO. RESULTADOS,     5  anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+360,360          ,360          ,360            PRESTAÇÃO DE SERVIÇO,,,,
+361,361          ,361          ,361           PROPOSIÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+362,362          ,362          ,362            AVALIAÇÃO. RESULTADOS,       5  anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+370,370          ,370          ,370            DIFUSÃO E DIVULGAÇÃO DA PRODUÇÃO ACADÊMICA,,,,
+371,371          ,371          ,371            PROPOSIÇÃO,Enquanto vigora,5 anos,"Guarda
+Permanente",Eliminar as propostas não aprovadas após 2 anos.
+372,372          ,372          ,372           AVALIAÇÃO. RESULTADOS,     5   anos,5 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+380,380          ,380          ,380           PROGRAMA INSTITUCIONAL DE BOLSAS DE EXTENSÃO,,,,
+381,381          ,381          ,381            PROCESSO DE SELEÇÃO,     3  anos,2 anos,"Guarda
+Permanente",
+382,382          ,382          ,"382           INSCRIÇÃO E SELEÇÃO DE BOLSISTAS
+",       3  anos,2 anos,  Eliminação,
+383,383          ,383          ,383             FREQUÊNCIA DE BOLSISTAS,       5  anos,47 anos,   Eliminação,
+384,384          ,384          ,384            AVALIAÇÃO. RESULTADOS,      3  anos,2 anos,"Guarda
+Permanente","Eliminar os relatórios parciais, cujas informações encontram-se recapituladas nos relatórios finais."
+390,390          ,390          ,390            OUTROS ASSUNTOS REFERENTES À EXTENSÃO,,,,
+400,400          ,400          ,400            EDUCAÇÃO BÁSICA E PROFISSIONAL,,,,
+410,410          ,410          ,410            NORMATIZAÇÃO. REGULAMENTAÇÃO,Enquanto vigora,-,"Guarda
+Permanente",
+420,420          ,420          ,420            EDUCAÇÃO INFANTIL: CRECHES E PRÉ-ESCOLAR,,,,
+421,421          ,421          ,"421            CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DA EDUCAÇÃO INFANTIL",,,,
+421,4211         ,421.1        ,421.1         PROJETO PEDAGÓGICO,Enquanto vigora,-,"Guarda
+Permanente",
+421,4212         ,421.2        ,421.2         AUTORIZAÇÃO PARA FUNCIONAMENTO,"Até a homologação
+do ato",5 anos,"Guarda
+Permanente",
+422,422          ,422          ,422            PLANEJAMENTO E ORGANIZAÇÃO DAS ATIVIDADES PEDAGÓGICAS,Enquanto vigora,-,"Guarda
+Permanente",
+423,423          ,423          ,423            PLANEJAMENTO DA ATIVIDADE ESCOLAR,Enquanto vigora,-,"Guarda
+Permanente",
+424,424          ,424          ,424            REUNIÃO DE PROFESSORES,    5  anos,15 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em  vigor."
+425,425          ,425          ,425            VIDA ESCOLAR DOS ALUNOS DA EDUCAÇÃO INFANTIL,,,,
+425,4251         ,425.1        ,425.1          INGRESSO,,,,
+425,42511        ,425.11       ,425.11        PROCESSO DE SELEÇÃO,"Até a homologação
+do
+ evento",1 ano,Eliminação,
+425,425111       ,425.111      ,425.111       EDITAL. RESULTADO FINAL,"Até a homologação
+do
+evento",1 ano,"Guarda
+Permanente",
+425,42512        ,425.12       ,425.12         MANDADO JUDICIAL,      5  anos,-,"Guarda
+Permanente",
+425,4252         ,425.2        ,425.2          REGISTRO ESCOLAR,,,,
+425,42521        ,425.21       ,425.21        MATRÍCULA,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,Eliminação,
+425,4259         ,425.9        ,425.9         OUTROS ASSUNTOS REFERENTES À VIDA ESCOLAR DOS ALUNOS DA EDUCAÇÃO INFANTIL,,,,
+425,42591        ,425.91       ,425.91         FORMATURA,     5 anos,-,Eliminação,
+430,430          ,430          ,430           ENSINO FUNDAMENTAL (INCLUSIVE EDUCAÇÃO DE JOVENS E ADULTOS),,,,
+431,431          ,431          ,"431           CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DO ENSINO FUNDAMENTAL",,,,
+431,4311         ,431.1        ,431.1          PROJETO PEDAGÓGICO,Enquanto vigora,-,"Guarda
+Permanente",
+431,4312         ,431.2        ,431.2         AUTORIZAÇÃO PARA FUNCIONAMENTO,"Até a homologação
+do ato",5 anos,"Guarda
+Permanente",
+432,432          ,432          ,432           PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,,,,
+432,4321         ,432.1        ,432.1         REFORMULAÇÃO CURRICULAR,Enquanto vigora,-,"Guarda
+Permanente",
+432,4322         ,432.2        ,432.2         DISCIPLINAS: PROGRAMAS DIDÁTICOS,Enquanto vigora,-,"Guarda
+Permanente",
+433,433          ,433          ,433           PLANEJAMENTO DA ATIVIDADE ESCOLAR,Enquanto vigora,-,"Guarda
+Permanente",
+434,434          ,434          ,434           CONSELHOS DE CLASSE,      5  anos,15 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em  vigor."
+435,435          ,435          ,435           VIDA ESCOLAR DOS ALUNOS DO ENSINO FUNDAMENTAL,,,,
+435,4351         ,435.1        ,435.1         INGRESSO,,,,
+435,43511        ,435.11       ,435.11        PROCESSO DE SELEÇÃO,,,,
+435,435111       ,435.111      ,435.111       PLANEJAMENTO. ORIENTAÇÕES,Até a homologação do                        evento ,1 ano,"Guarda
+Permanente",
+435,435112       ,435.112      ,435.112       INSCRIÇÕES,"Até a homologação
+do 
+evento",1 ano,   Eliminação,
+435,435113       ,435.113      ,435.113        CONTROLE DE APLICAÇÃO DE PROVAS,"Até a homologação
+do 
+evento",1 ano,  Eliminação,
+435,435114       ,435.114      ,435.114        CORREÇÃO DE PROVAS,"Até a homologação
+do 
+evento",1 ano, Eliminação,
+435,435115       ,435.115      ,435.115       RECURSOS,"Até a homologação
+do 
+evento",1 ano,"Guarda
+   Permanente",
+435,435116       ,435.116      ,435.116        RESULTADOS,"Até a homologação
+do 
+evento",1 ano,"Guarda
+  Permanente",
+435,43512        ,435.12       ,435.12         TRANSFERÊNCIA,       5 anos,-,"Guarda
+  Permanente",Eliminar os documentos após 2 anos do indeferimento.
+435,43513        ,435.13       ,435.13        MANDADO JUDICIAL,      5  anos,-,"Guarda
+  Permanente",
+435,4352         ,435.2        ,435.2         REGISTRO ESCOLAR,,,,
+435,43521        ,435.21       ,435.21        MATRÍCULA,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+435,435211       ,435.211      ,"435.211       CANCELAMENTO DE MATRÍCULA: POR DESISTÊNCIA
+(VOLUNTÁRIA) OU POR JUBILAÇÃO (COMPULSÓRIA)",      5  anos,25 anos,Eliminação,
+435,4353         ,435.3        ,435.3         AVALIAÇÃO ESCOLAR,,,,
+435,43531        ,435.31       ,435.31        PROVAS. EXAMES. TRABALHOS,"Devolução ao aluno
+após o registro das notas",-,-,Eliminar os documentos não devolvidos ao final do ano letivo.
+435,43532        ,435.32       ,"435.32        REGISTRO DE CONTEÚDO PROGRAMÁTICO MINISTRADO, RENDIMENTO E FREQUÊNCIA",     10 anos,10 anos,    Eliminação,
+435,4354         ,435.4        ,435.4         DOCUMENTAÇÃO ESCOLAR,,,,
+435,43541        ,435.41       ,435.41        HISTÓRICO ESCOLAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,"Guarda
+Permanente","Eliminar as versões parciais, cujas informações encontram-se recapituladas na versão integral do histórico escolar."
+435,43542        ,435.42       ,435.42        EMISSÃO DE CERTIFICADO,      5  anos,5 anos,"Guarda
+Permanente",Eliminar os certificados não entregues 2 anos após a emissão.
+435,43543        ,435.43       ,"435.43        ASSENTAMENTOS INDIVIDUAIS DOS ALUNOS (DOSSIÊS
+DOS ALUNOS)","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",*,   Eliminação,*O prazo total de guarda dos documentos é de 100 anos.
+435,4355         ,435.5        ,435.5         REGIME DE EXERCÍCIO DOMICILIAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos,   Eliminação,
+435,4356         ,435.6        ,"435.6         REGIME DISCIPLINAR DOS ALUNOS: PENALIDADES
+(ADVERTÊNCIA OU REPREENSÃO, SUSPENSÃO E EXPULSÃO)","Até a conclusão do
+       caso ",15 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em vigor."
+435,4359         ,435.9        ,435.9         OUTROS ASSUNTOS REFERENTES À VIDA ESCOLAR DOS ALUNOS DO ENSINO FUNDAMENTAL,,,,
+435,43591        ,435.91       ,435.91        FORMATURA,       5  anos,-,    Eliminação,
+440,440          ,440          ,440           ENSINO MÉDIO (INCLUSIVE EDUCAÇÃO DE JOVENS E ADULTOS),,,,
+441,441          ,441          ,"441           CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DO ENSINO MÉDIO",,,,
+441,4411         ,441.1        ,441.1         PROJETO PEDAGÓGICO,Enquanto vigora,-,"Guarda
+Permanente",
+441,4412         ,441.2        ,441.2          AUTORIZAÇÃO PARA FUNCIONAMENTO,"Até a homologação
+      do ato",5 anos,"Guarda
+Permanente",
+442,442          ,442          ,442           PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,,,,
+,,,,,,,
+442,4421         ,442.1        ,442.1         REFORMULAÇÃO CURRICULAR,Enquanto vigora,-,"Guarda
+Permanente",
+442,4422         ,442.2        ,442.2         DISCIPLINAS: PROGRAMAS DIDÁTICOS,Enquanto vigora,-,"Guarda
+Permanente",
+443,443          ,443          ,443            PLANEJAMENTO DA ATIVIDADE ESCOLAR,Enquanto vigora,-,"Guarda
+Permanente",
+444,444          ,444          ,444           CONSELHOS DE CLASSE,     5 anos,15 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção  e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança,
+conforme legislação em vigor."
+445,445          ,445          ,445           VIDA ESCOLAR DOS ALUNOS DO ENSINO MÉDIO,,,,
+445,4451         ,445.1        ,445.1         INGRESSO,,,,
+445,44511        ,445.11       ,445.11        PROCESSO DE SELEÇÃO,,,,
+445,445111       ,445.111      ,445.111       PLANEJAMENTO. ORIENTAÇÕES,"Até a homologação
+   do                    evento",1 ano,"Guarda
+Permanente",
+445,445112       ,445.112      ,445.112       INSCRIÇÕES,"Até a homologação
+   do               evento *",1 ano,    Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+445,445113       ,445.113      ,445.113       CONTROLE DE APLICAÇÃO DE PROVAS,"Até a homologação
+       do            evento*   ",1 ano,   Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+445,445114       ,445.114      ,445.114        CORREÇÃO DE PROVAS,"Até a homologação
+do
+evento*",1 ano,   Eliminação,"*Aguardar o término da ação, no caso de
+ação judicial."
+445,445115       ,445.115      ,445.115       RECURSOS,"Até a homologação
+do
+      evento*",1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial.
+Eliminar os documentos após 2 anos do indeferimento."
+445,445116       ,445.116      ,445.116       RESULTADOS,"Até a homologação
+  do   evento*",1 ano,"Guarda
+  Permanente","*Aguardar o término da ação, no caso de ação judicial."
+445,44512        ,445.12       ,445.12        TRANSFERÊNCIA,,,,
+445,44519        ,445.19       ,"445.19        OUTRAS FORMAS DE INGRESSO MANDADO JUDICIAL
+REINTEGRAÇÃO",      5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+445,4452         ,445.2        ,445.2         REGISTRO ESCOLAR,,,,
+445,44521        ,445.21       ,445.21        MATRÍCULA,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,    Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+445,445211       ,445.211      ,"445.211       CANCELAMENTO DE MATRÍCULA: POR DESISTÊNCIA
+(VOLUNTÁRIA) OU POR JUBILAÇÃO (COMPULSÓRIA)",      5 anos,25 anos,   Eliminação,
+445,4453         ,445.3        ,445.3         AVALIAÇÃO ESCOLAR,,,,
+445,44531        ,445.31       ,445.31        PROVAS. EXAMES. TRABALHOS," Devolução
+ao aluno após os registros das notas.",-,-,Eliminar os documentos não devolvidos ao final do ano letivo.
+445,44532        ,445.32       ,"445.32        REGISTRO DE CONTEÚDO PROGRAMÁTICO MINISTRADO,
+RENDIMENTO E FREQUÊNCIA",    10 anos,10 anos,   Eliminação,
+445,4454         ,445.4        ,445.4         DOCUMENTAÇÃO ESCOLAR,,,,
+445,44541        ,445.41       ,445.41        HISTÓRICO ESCOLAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos," Guarda
+Permanente","Eliminar as versões parciais, cujas informações encontram-se recapituladas na versão integral do histórico escolar."
+445,44542        ,445.42       ,445.42        EMISSÃO DE CERTIFICADO,,,,
+445,445421       ,445.421      ,445.421       EXPEDIÇÃO,      5 anos,5 anos,   Eliminação,"No caso das instituições de ensino que utilizam os assentamentos individuais para formação do processo de registro de certificados, utilizar os prazos e a destinação dos assentamentos
+individuais."
+445,445422       ,445.422      ,445.422       REGISTRO,      5 anos,5 anos," Guarda
+    Permanente",Eliminar os certificados não entregues 2 anos após a emissão.
+445,44543        ,445.43       ,"445.43        ASSENTAMENTOS INDIVIDUAIS DOS ALUNOS (DOSSIÊS
+DOS ALUNOS)","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",*,    Eliminação,*O prazo total de guarda dos documentos é de 100 anos.
+445,4455         ,445.5        ,445.5         REGIME DE EXERCÍCIO DOMICILIAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos,   Eliminação,
+445,4456         ,445.6        ,445.6         MONITORIAS. ESTÁGIOS NÃO OBRIGATÓRIOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",52 anos,  Eliminação,
+445,4457         ,445.7        ,"445.7         REGIME DISCIPLINAR DOS ALUNOS: PENALIDADES
+(ADVERTÊNCIA OU REPREENSÃO, SUSPENSÃO EXPULSÃO)","Até a conclusão do
+        caso",15 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em vigor."
+445,4459         ,445.9        ,445.9         OUTROS ASSUNTOS REFERENTES À VIDA ESCOLAR DOS ALUNOS DO ENSINO MÉDIO,,,,
+445,44591        ,445.91       ,445.91        FORMATURA,      5  anos,-,  Eliminação,
+450,450          ,450          ,450            ENSINO TÉCNICO,,,,
+451,451          ,451          ,"451           CONCEPÇÃO, ORGANIZAÇÃO E FUNCIONAMENTO DO ENSINO TÉCNICO",,,,
+451,4511         ,451.1        ,451.1         PROJETO PEDAGÓGICO,Enquanto vigora,-,"Guarda
+Permanente",
+,,,,,,,
+451,4512         ,451.2        ,"451.2         CRIAÇÃO E RECONHECIMENTO DE CURSO. AUTORIZAÇÃO
+PARA FUNCIONAMENTO",Até a homologação    do ato,5  anos,"Guarda
+Permanente",
+452,452          ,452          ,452           PLANEJAMENTO E ORGANIZAÇÃO CURRICULAR,,,,
+452,4521         ,452.1        ,"452.1         ESTRUTURA DO CURRÍCULO (GRADE OU MATRIZ
+CURRICULAR)",Enquanto vigora,-,"Guarda
+Permanente",
+452,4522         ,452.2        ,452.2          REFORMULAÇÃO CURRICULAR,Enquanto vigora,-,"Guarda
+Permanente",
+452,4523         ,452.3        ,452.3          DISCIPLINAS: PROGRAMAS DIDÁTICOS,Enquanto vigora,-,"Guarda
+Permanente",
+452,45231        ,452.31       ,452.31         OFERTA DE DISCIPLINAS,     5 anos,5 anos,   Eliminação,
+452,45232        ,452.32       ,452.32        ESTÁGIOS OBRIGATÓRIOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",52 anos,   Eliminação,
+453,453          ,453          ,453           PLANEJAMENTO DA ATIVIDADE ESCOLAR,Enquanto vigora,-,"Guarda
+Permanente",
+454,454          ,454          ,454           CONSELHOS DE CLASSE,     5 anos,15 anos,"Guarda
+Permanente","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em vigor."
+455,455          ,455          ,455           COLAÇÃO DE GRAU. FORMATURA,     5 anos,-,  Eliminação,
+455,4551         ,455.1        ,455.1         TERMO OU ATA DE COLAÇÃO DE GRAU,     5 anos,-,"Guarda
+Permanente",
+456,456          ,456          ,456           VIDA ESCOLAR DOS ALUNOS DO ENSINO TÉCNICO,,,,
+456,4561         ,456.1        ,456.1         INGRESSO,,,,
+456,45611        ,456.11       ,456.11        PROCESSO DE SELEÇÃO,,,,
+456,456111       ,456.111      ,456.111       PLANEJAMENTO. ORIENTAÇÕES,"Até a homologação
+  do
+      evento",1 ano,"Guarda
+Permanente",
+456,456112       ,456.112      ,456.112       INSCRIÇÕES,"Até a homologação
+do          evento *",1 ano,   Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+,,,,,,,
+456,456113       ,456.113      ,456.113       CONTROLE DE APLICAÇÃO DE PROVAS,"Até a homologação
+do                evento*",1 ano,  Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+456,456114       ,456.114      ,456.114       CORREÇÃO DE PROVAS,"Até a homologação
+do
+       evento*",1 ano,   Eliminação,"*Aguardar o término da ação, no caso de ação judicial."
+456,456115       ,456.115      ,456.115       RECURSOS,"Até a homologação
+do
+       evento*",1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial.
+Eliminar os documentos após 2 anos do indeferimento."
+456,456116       ,456.116      ,456.116       RESULTADOS,"Até a homologação
+do
+      evento*",1 ano,"Guarda
+Permanente","*Aguardar o término da ação, no caso de ação judicial."
+456,45612        ,456.12       ,456.12        TRANSFERÊNCIA,,,,
+456,456121       ,456.121      ,456.121       TRANSFERÊNCIA VOLUNTÁRIA OU FACULTATIVA,     5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+456,456122       ,456.122      ,456.122       TRANSFERÊNCIA EX OFFICIO,     5 anos,-,"Guarda
+Permanente",
+456,45619        ,456.19       ,"456.19         OUTRAS FORMAS DE INGRESSO MANDADO JUDICIAL
+REINTEGRAÇÃO",     5 anos,-,"Guarda
+Permanente",Eliminar os documentos após 2 anos do indeferimento.
+456,4562         ,456.2        ,456.2         REGISTRO ESCOLAR,,,,
+456,45621        ,456.21       ,456.21        MATRÍCULA,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,   Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+456,456211       ,456.211      ,"456.211       CANCELAMENTO DE MATRÍCULA: POR DESISTÊNCIA
+(VOLUNTÁRIA) OU POR JUBILAÇÃO (COMPULSÓRIA)",      5 anos,25 anos,  Eliminação,
+456,45622        ,456.22       ,"456.22        ISENÇÃO DE DISCIPLINAS. DISPENSA DE DISCIPLINAS.
+APROVEITAMENTO DE ESTUDOS","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,  Eliminação,Eliminar os documentos após 2 anos do indeferimento.
+456,45623        ,456.23       ,456.23        TRANCAMENTO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,  Eliminação,
+456,4563         ,456.3        ,456.3         AVALIAÇÃO ESCOLAR,,,,
+456,45631        ,456.31       ,"456.31        PROVAS. EXAMES. TRABALHOS. RELATÓRIOS DE
+ESTÁGIOS","Devolução ao aluno
+após o registro das notas",-,-,Eliminar os documentos não devolvidos ao final do ano letivo.
+456,45632        ,456.32       ,"456.32         REGISTRO DE CONTEÚDO PROGRAMÁTICO MINISTRADO,
+RENDIMENTO E FREQUÊNCIA",    10 anos,10 anos,   Eliminação,
+456,4564         ,456.4        ,456.4          DOCUMENTAÇÃO ESCOLAR,,,,
+,,,,,,,
+456,45641        ,456.41       ,456.41         HISTÓRICO ESCOLAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,"Guarda
+Permanente","Eliminar as versões parciais, cujas informações encontram-se recapituladas na versão integral do histórico escolar."
+456,45642        ,456.42       ,456.42         EMISSÃO DE DIPLOMA,,,,
+456,456421       ,456.421      ,456.421        EXPEDIÇÃO,     5 anos,5 anos,  Eliminação,"No caso das instituições de ensino que utilizam os assentamentos individuais para formação do processo de registro de diplomas, utilizar os prazos e a
+destinação dos assentamentos individuais, conforme legislação em vigor."
+456,456422       ,456.422      ,456.422         REGISTRO,     5 anos,5 anos,"Guarda
+Permanente",Eliminar os diplomas não entregues 2 anos após a emissão.
+456,456423       ,456.423      ,456.423        VERIFICAÇÃO DE AUTENTICIDADE,     5 anos,5 anos, Eliminação,
+456,45643        ,456.43       ,"456.43          ASSENTAMENTOS INDIVIDUAIS DOS ALUNOS (DOSSIÊS
+DOS ALUNOS)","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",*,  Eliminação,*O prazo total de guarda dos documentos é de 100 anos.
+456,4565         ,456.5        ,456.5           REGIME DE EXERCÍCIO DOMICILIAR,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",2 anos, Eliminação,
+456,4566         ,456.6        ,"456.6          MONITORIAS. ESTÁGIOS NÃO OBRIGATÓRIOS. PROGRAMAS
+DE INICIAÇÃO TECNOLÓGICA","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",52 anos, Eliminação,
+456,4567         ,456.7        ,"456.7         REGIME DISCIPLINAR DOS ALUNOS: PENALIDADES (ADVERTÊNCIA OU REPREENSÃO, SUSPENSÃO E EXPULSÃO",Até a conclusão do caso,15 anos,"             Guarda 
+          Permanente
+","A produção, manuseio, consulta, transmissão, manutenção e guarda de dados, documentos e informações relativos à vida privada, à honra e a imagem dos alunos deverão observar medidas especiais de segurança, conforme legislação em vigor"
+490,490          ,490          ,490            OUTROS ASSUNTOS REFERENTES À EDUCAÇÃO BÁSICA E PROFISSIONAL,,,,
+500,500          ,500          ,500            ASSISTÊNCIA ESTUDANTIL,,,,
+510,510          ,510          ,510            NORMATIZAÇÃO. REGULAMENTAÇÃO,Enquanto vigora,-,"Guarda
+Permanente",
+520,520          ,520          ,"520            PROGRAMAS, CONVÊNIOS E PROJETOS DE CONCESSÃO DE BENEFÍCIOS E AUXÍLIOS AOS ALUNOS",,,,
+521,521          ,521          ,521            MORADIA ESTUDANTIL. MORADIA UNIVERSITÁRIA,,,,
+521,5211         ,521.1        ,521.1          PUBLICAÇÃO. DIVULGAÇÃO,   5  anos,5 anos,"Guarda
+Permanente",
+521,5212         ,521.2        ,521.2         INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,    Eliminação,
+521,5213         ,521.3        ,521.3          AVALIAÇÃO,    5   anos,5 anos,"Guarda
+Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+,,,,,,,
+522,522          ,522          ,522            ALIMENTAÇÃO,,,,
+522,5221         ,522.1        ,522.1         PUBLICAÇÃO. DIVULGAÇÃO,    5  anos,5 anos,"Guarda
+Permanente",
+522,5222         ,522.2        ,522.2         INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,    Eliminação,
+522,5223         ,522.3        ,522.3         AVALIAÇÃO, 5  anos,5 anos,"      Guarda 
+             Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+523,523          ,523          ,523            TRANSPORTE,,,,
+523,5231         ,523.1        ,523.1          PUBLICAÇÃO. DIVULGAÇÃO,      5 anos,5 anos,"Guarda
+Permanente",
+523,5232         ,523.2        ,523.2          INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,   Eliminação,
+523,5233         ,523.3        ,523.3          AVALIAÇÃO,     5 anos,5 anos,"Guarda
+Permanente",Eliminar os relatórios parciais cujasinformações encontram-se recapituladas nos relatórios finais.
+524,524          ,524          ,524            ASSISTÊNCIA À SAÚDE FÍSICA E MENTAL (INCLUSIVE REDE    CONVENIADA),,,,
+524,5241         ,524.1        ,524.1          PUBLICAÇÃO. DIVULGAÇÃO,     5  anos,5 anos,"Guarda
+Permanente",
+524,5242         ,524.2        ,524.2         INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,     Eliminação,
+524,5243         ,524.3        ,524.3          AVALIAÇÃO,     5 anos,5 anos,"Guarda
+Permanente",Eliminar os relatórios parciais cujasi nformações encontram-se recapituladas nos relatórios finais.
+525,525          ,525          ,525            INCLUSÃO SÓCIO EDUCACIONAL E DIGITAL,,,,
+525,5251         ,525.1        ,525.1              PUBLICAÇÃO. DIVULGAÇÃO,      5 anos,5 anos,"Guarda
+Permanente",
+525,5252         ,525.2        ,525.2          INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,     Eliminação,
+,,,,,,,
+525,5253         ,525.3        ,525.3          AVALIAÇÃO,     5 anos,5 anos,"Guarda
+Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+526,526          ,526          ,526             CULTURA. ESPORTE,,,,
+526,5261         ,526.1        ,526.1           PUBLICAÇÃO. DIVULGAÇÃO,     5 anos,5 anos,"Guarda
+Permanente",
+526,5262         ,526.2        ,526.2          INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,    Eliminação,
+526,5263         ,526.3        ,526.3          AVALIAÇÃO,     5 anos,5 anos,"             Guarda
+            Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+527,527          ,527          ,527            CRECHE,,,,
+527,5271         ,527.1        ,527.1          PUBLICAÇÃO. DIVULGAÇÃO,    5 anos,5 anos,"Guarda
+Permanente",
+527,5272         ,527.2        ,527.2         INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,  Eliminação,
+527,5273         ,527.3        ,527.3          AVALIAÇÃO,     5 anos,5 anos,"             Guarda 
+          Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+528,528          ,528          ,528           APOIO PEDAGÓGICO,,,,
+528,5281         ,528.1        ,528.1          PUBLICAÇÃO. DIVULGAÇÃO,     5 anos,5 anos,"            Guarda
+Permanente",
+528,5282         ,528.2        ,528.2          INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,Eliminação,
+528,5283         ,528.3        ,528.3         AVALIAÇÃO,      5 anos,5 anos,"            Guarda 
+         Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+529,529          ,529          ,"529           OUTROS ASSUNTOS REFERENTES A PROGRAMAS, CONVÊNIOS E PROJETOS DE CONCESSÃO DE BENEFÍCIOS E AUXÍLIOS AOS ALUNOS",,,,
+529,5291         ,529.1        ,"529.1          ATENDIMENTO AOS PORTADORES DE NECESSIDADES
+ESPECIAIS","Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",5 anos,"Guarda
+   Permanente",
+529,5292         ,529.2        ,529.2             AUXÍLIO PARA PARTICIPAÇÃO E REALIZAÇÃO DE EVENTOS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,Eliminação,
+529,5293         ,529.3        ,529.3          ISENÇÃO DE TAXAS ACADÊMICAS,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,Eliminação,
+,,,,,,,
+529,5294         ,529.4        ,529.4          CONCESSÃO DE MATERIAL DIDÁTICO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,    Eliminação,
+529,5295         ,529.5        ,529.5         BOLSA AUXÍLIO,,,,
+529,52951        ,529.51       ,529.51         PUBLICAÇÃO. DIVULGAÇÃO,     5  anos,5 anos,"Guarda
+Permanente",
+529,52952        ,529.52       ,529.52         INSCRIÇÃO. SELEÇÃO. ADMISSÃO. RENOVAÇÃO,"Enquanto o aluno
+mantiver o vínculo com a instituição de ensino",10 anos,    Eliminação,
+529,52953        ,529.53       ,529.53         AVALIAÇÃO,       5 anos,5 anos,"Guarda
+ Permanente",Eliminar os relatórios parciais cujas informações encontram-se recapituladas nos relatórios finais.
+590,590          ,590          ,590           OUTROS ASSUNTOS REFERENTES À ASSISTÊNCIA ESTUDANTIL,,,,
+900,900          ,900          ,900           ASSUNTOS DIVERSOS,,,,
+910,910A         ,910 A        ,910 A                           SOLENIDADES. COMEMORAÇÕES.   HOMENAGENS,"
+1 ano",,"
+Eliminação",
+910,910B         ,910 B        ,"910 B             PLANEJAMENTO, PROGRAMAÇÃO, DISCURSOS,  PALESTRAS E TRABALHOS APRESENTADOS POR TÉCNICOS DO ÓRGÃO","
+5 anos","
+5 anos","
+         Guarda 
+       Permanente",
+920,920A         ,920 A        ,"920 A             CONGRESSOS. CONFERÊNCIAS. SEMINÁRIOS.
+                 SIMPÓSIOS. ENCONTROS. CONVENÇÕES.
+
+                 CICLOS DE  PALESTRAS.
+                  MESAS REDONDAS","
+
+
+
+1 ano",,"
+
+
+
+Eliminação",
+920,920B         ,920 B        ,"920 B             PLANEJAMENTO, PROGRAMAÇÃO, DISCURSOS,   PALESTRAS E TRABALHOS APRESENTADOS POR TÉCNICOS DO ÓRGÃO","
+5 anos","
+5 anos","
+          Guarda 
+       Permanente",
+930,930A         ,930 A        ,930 A           FEIRAS. SALÕES. EXPOSIÇÕES.  MOSTRAS. FESTAS,"
+1 ano",,"
+Eliminação",
+930,930B         ,930 B        ,"930 B             PLANEJAMENTO,  PROGRAMAÇÃO, DISCURSOS, PALESTRAS E TRABALHOS APRESENTADOS POR TÉCNICOS DO ÓRGÃO","
+5 anos","
+5 anos","
+         Guarda 
+      Permanente",
+930,930C         ,930 C        ,930 C             CONCURSOS,1 ano,,               Eliminação,
+930,930D         ,930 D        ,"930 D                 PLANEJAMENTO, NORMAS, EDITAIS, HABILITAÇÃO DOS CANDIDATOS, JULGAMENTO DA  BANCA,  TRABALHOS CONCORRENTES, PREMIAÇÃO E RECURSOS","
+5 anos","
+5 anos","
+          Guarda 
+       Permanente",As normas deverão permanecer em fase corrente enquanto vigoram.
+940,940          ,940          ,940            VISITAS E VISITANTES,1 ano,,                Eliminação,
+990,990          ,990          ,990           ASSUNTOS TRANSITÓRIOS,,,,
+991,991          ,991          ,991            APRESENTAÇÃO. RECOMENDAÇÃO,1 ano,,Eliminação,
+992,992          ,992          ,992            COMUNICADOS E INFORMES,1 ano,,Eliminação,
+993,993          ,993          ,"993            AGRADECIMENTOS. CONVITES. FELICITAÇÕES.
+                                PÊSAMES","
+1 ano",,"
+Eliminação",
+994,994          ,994          ,994            PROTESTOS. REIVINDICAÇÕES. SUGESTÕES,1 ano,,Eliminação,
+995,995          ,995          ,"995                 PEDIDOS, OFERECIMENTOS E INFORMAÇÕES DIVERSAS","
+1 ano",,"
+Eliminação",
+996,996          ,996          ,"996               ASSOCIAÇÕES: CULTURAIS, DE AMIGOS E DE SERVIDORES","
+1ano",,"
+Eliminação",
+0,000,000   ADMINIS,000   ADMINISTRAÇÃO GERAL,,,,
+001,001          ,001          ,"001              MODERNIZAÇÃO E REFORMA ADMINISTRATIVAPROJETOS, ESTUDOS E NORMAS",Enquanto vigora,5 anos,Guarda permanente,
+002,002          ,002          ,"002              PLANOS, PROGRAMAS E PROJETOS DE TRABALHO",5 anos,9 anos,Guarda permanente,
+003,003          ,003          ,003              RELATÓRIOS DE ATIVIDADES,5 anos,9 anos,Guarda permanente,São  passíveis  de  eliminação  os  relatórios  cujas informações encontram-se recapituladas em outros.
+004,004          ,004          ,"004              ACORDOS. AJUSTES. CONTRATOS.
+CONVÊNIOS",Enquanto vigora,10 anos,Guarda permanente,
+010,010          ,010          ,"010           ORGANIZAÇÃO   E FUNCIONAMENTO NORMAS, REGULAMENTAÇÕES, DIRETRIZES, PROCEDI MENTOS, ESTUDOS E/OU DECISÕES DE CARÁTER GERAL",Enquanto vigora,5 anos,Guarda permanente,
+010,0101         ,010.1        ,010.1            REGISTRO NOS ÓRGÃOS COMPETENTES,Enquanto vigora,,Eliminação,
+010,0102         ,010.2        ,010.2            REGIMENTOS. REGULAMENTOS. ESTATUTOS. ORGANOGRAMAS. ESTRUTURAS,Enquanto vigora,5 anos,Guarda permanente,"Os originais dos atos publicados integrarão os arquivos dos gabinetes do presidente da República, governadores  e prefeitos, cuja temporalidade  será definida  quando  da  elaboração  de  tabela específica para suas atividades-fim."
+010,0103         ,010.3        ,010.3            AUDIÊNCIAS. DESPACHOS. REUNIÕES,2 anos,,Eliminação,
+011,011          ,011          ,011           COMISSÕES. CONSELHOS. GRUPOS DE TRABALHO. JUNTAS. COMITÊS,4 anos,5 anos,Eliminação,
+11,111,ATOS DE CRIAÇ,"ATOS DE CRIAÇÃO, ATAS, RELATÓRIOS",4 anos,5 anos,Guarda permanente,
+012,012          ,012          ,012           COMUNICAÇÃO SOCIAL,,,,
+012,0121         ,012.1        ,012.1            RELAÇÕES COM A IMPRENSA,1 ano,,Eliminação,
+012,01211        ,012.11       ,012.11               CREDENCIAMENTO DE JORNALISTAS,Enquanto vigora,,Eliminação,
+012,01212        ,012.12       ,"012.12               ENTREVISTAS. NOTICIÁRIOS.
+REPORTAGENS. EDITORIAIS",2 anos,,Eliminação,Os    documentos    cujas   informações   reflitam   a política do órgão são de guarda permanente.
+012,0122         ,012.2        ,012.2            DIVULGAÇÃO INTERNA,2 anos,,Eliminação,
+012,0123         ,012.3        ,"012.3            CAMPANHAS INSTITUCIONAIS.
+PUBLICIDADE",4 anos,10 anos,Guarda permanente,
+019,019          ,019          ,019           OUTROS ASSUNTOS REFERENTES  À ORGANIZAÇÃO E FUNCIONAMENTO,,,,"Este grupo será desenvolvido pelo órgão de acordo com a necessidade, bem  como  a temporalidade  e destinação."
+019,01901        ,019.01       ,019.01            INFORMAÇÕES SOBRE O ÓRGÃO,2 anos,,Eliminação,
+020,020          ,020          ,020           PESSOAL,,,,
+020,0201         ,020.1        ,"020.1           LEGISLAÇÃO NORMAS, REGULAMENTAÇÕES, DIRETRIZES, ESTATUTOS, REGULAMENTOS, PROCEDIMENTOS, ESTUDOS E/OU DECISÕES DE CARÁTER GERAL",Enquanto vigora,5 anos,Guarda permanente,"É  opcional  a  reprodução  dos  documentos previamente ao recolhimento, para que o órgão permaneça  com cópias para consulta."
+020,02011        ,020.11       ,"020.11          BOLETINS    ADMINISTRATIVO,    DE    PESSOAL E    DE SERVIÇO",10 anos,10 anos,Guarda permanente,
+020,0202         ,020.2        ,"020.2           IDENTIFICAÇÃO FUNCIONAL(INCLUSIVE CARTEIRA, CARTÃO, CRACHÁ, CREDENCIAL  E PASSAPORTE DIPLOMÁTICO)",Enquanto o servidor permanecer,,Eliminação,
+020,0203         ,020.3        ,020.3           OBRIGAÇÕES TRABALHISTAS E ESTATUTÁRIAS. RELAÇÕES  COM ÓRGÃOS NORMATIZADORES  DA ADMINISTRAÇÃO PÚBLICA. LEI DOS 2/3. RAIS,5 anos,5 anos,Eliminação,
+020,02031        ,020.31       ,020.31          RELAÇÕES COM OS CONSELHOS PROFISSIONAIS,2 anos,,Eliminação,"Os documentos  cujas informações possam  originar contenciosos  administrativos ou judiciais serão classificados nos assuntos  correspondentes  ao seu conteúdo, cujos prazos e destinação estão estabelecidos nesta tabela."
+020,0204         ,020.4        ,020.4           SINDICATOS. ACORDOS. DISSÍDIOS,5 anos,5 anos,Guarda permanente,
+020,0205         ,020.5        ,020.5           ASSENTAMENTOS INDIVIDUAIS. CADASTRO,Enquanto o servidor permanecer,,Eliminação,"O prazo total de guarda dos documentos  é de
+100 anos, independente do suporte. Serão transferidos ao arquivo intermediário após  a saída do servidor do órgão."
+021,021          ,021          ,021           RECRUTAMENTO E SELEÇÃO,,,,
+021,0211         ,021.1        ,021.1         CANDIDATOS  A CARGO E EMPREGO PÚBLICOS: INSCRIÇÃO E CURRICULUM VITAE,2 anos,,Eliminação,
+021,0212         ,021.2        ,"021.2          EXAMES DE SELEÇÃO(CONCURSOS PÚBLICOS) PROVAS E TÍTULOS, TESTES PSICOTÉCNICOS  E EXAMES MÉDICOS",6 anos,,Eliminação,
+021,02122        ,021.22       ,"021.22            CONSTITUIÇÃO DE BANCAS EXAMINADORAS, EDITAIS, EXEMPLARES ÚNICOS DE PROVAS, GABARITOS, RESULTADOS E RECURSOS",6 anos,5 anos,Guarda permanente,"É  opcional  a seleção  por amostragem  das provas dos   candidatos,   segundo   critérios  estabelecidos pela Comissão Permanente de Avaliação."
+022,022          ,022          ,022           APERFEIÇOAMENTO E TREINAMENTO,,,,
+022,0221         ,022.1        ,022.1            CURSOS(INCLUSIVE BOLSAS DE ESTUDO),,,,
+022,02211        ,022.11       ,022.11               PROMOVIDOS PELA INSTITUIÇÃO,5 anos,,Eliminação,
+022,022111       ,022.111      ,"022.111          PROPOSTAS, ESTUDOS, EDITAIS, PROGRAMAS, RELATÓRIOS FINAIS, EXEMPLARES ÚNICOS DE EXERCÍCIOS, RELAÇÃO DE PARTICIPANTES, AVALIAÇÃO E CONTROLE DE EXPEDIÇÃO DE CERTIFICADOS00",5 anos,5 anos,Guarda permanente,
+022,02212        ,022.12       ,022.12               PROMOVIDOS POR OUTRAS INSTITUIÇÕES,,,,Para os  documentos  comprobatórios  de participação utilizar os prazos e  a destinação  dos assentamentos  individuais 020.5.
+022,022121       ,022.121      ,022.121                 NO BRASIL,5 anos,,Eliminação,
+022,022122       ,022.122      ,022.122                 NO EXTERIOR,5 anos,,Eliminação,
+022,0222         ,022.2        ,022.2            ESTÁGIOS(INCLUSIVE BOLSAS DE ESTÁGIO),,,,
+022,02221        ,022.21       ,022.21              PROMOVIDOS PELA INSTITUIÇÃO,5 anos,,Eliminação,
+022,022211       ,022.211      ,"022.211           ESTUDOS, PROPOSTAS, PROGRAMAS, RELATÓRIOS FINAIS, RELAÇÃO DE PARTICIPANTES, AVALIAÇÃO E DECLARAÇÃO DE COMPROVAÇÃO DE ESTÁGIO",5 anos,5 anos,Guarda permanente,
+022,02222        ,022.22       ,022.22              PROMOVIDOS POR OUTRAS INSTITUIÇÕES,,,,Para os  documentos  comprobatórios  de participação utilizar os prazos e  a destinação  dos assentamentos  individuais 020.5.
+022,022221       ,022.221      ,022.221                NO BRASIL,5 anos,,Eliminação,
+022,022222       ,022.222      ,022.222                NO EXTERIOR,5 anos,,Eliminação,
+022,0229         ,022.9        ,022.9             OUTROS ASSUNTOS REFERENTES A APERFEIÇOAMENTO E TREINAMENTO,,,,"Este subgrupo será desenvolvido  pelo órgão de acordo com a necessidade, bem como a temporalidade e destinação."
+023,023          ,023          ,"023           QUADROS,TABELAS E POLÍTICA DE PESSOAL",,,,
+023,02301        ,023.01       ,023.01               ESTUDOS E PREVISÃO DE PESSOAL,5 anos,5 anos,Guarda permanente,
+023,02302        ,023.02       ,"023.02               CRIAÇÃO, CLASSIFICAÇÃO, TRANSFOR- MAÇÃO, TRANSPOSIÇÃO E REMUNE- RAÇÃO DE CARGOS E FUNÇÕES",5 anos,5 anos,Guarda permanente,
+023,02303        ,023.03       ,"023.03               REESTRUTURAÇÕES E ALTERAÇÕES SALARIAIS ASCENSÃO  E PROGRESSÃO FUNCIONAL AVALIAÇÃO DE DESEMPENHO ENQUADRAMENTO EQUIPARAÇÃO, REAJUSTE E REPOSIÇÃO SALARIAL PROMOÇÕES",5 anos,47 anos,Eliminação,
+023,0231         ,023.1        ,023.1           MOVIMENTAÇÃO DE PESSOAL,,,,
+023,02311        ,023.11       ,"023.11                                              ADMISSÃO.
+APROVEITAMENTO. CONTRATAÇÃO. NOMEAÇÃO. READMISSÃO. READAPTAÇÃO. RECONDUÇÃO. REINTEGRAÇÃO. REVERSÃO",5 anos,47 anos,Eliminação,
+023,02312        ,023.12       ,023.12            DEMISSÃO.  DISPENSA. EXONERAÇÃO. RESCISÃO CONTRATUAL. FALECIMENTO,5 anos,47 anos,Eliminação,
+023,02313        ,023.13       ,023.13                LOTAÇÃO. REMOÇÃO. TRANSFERÊNCIA. PERMUTA,4 anos,5 anos,Eliminação,
+023,02314        ,023.14       ,023.14               DESIGNAÇÃO. DISPONIBILIDADE. REDISTRIBUIÇÃO. SUBSTITUIÇÃO,5 anos,47 anos,Eliminação,
+023,02315        ,023.15       ,023.15               REQUISIÇÃO. CESSÃO,5 anos,47 anos,Eliminação,
+024,024          ,024          ,"024           DIREITOS, OBRIGAÇÕES E VANTAGENS",,,,
+024,0241         ,024.1        ,024.1            FOLHAS DE PAGAMENTO.  FICHAS FINAN- CEIRAS,5 anos,95 anos,Eliminação,
+024,02411        ,024.11       ,"024.11               SALÁRIOS,VENCIMENTOS,PROVENTOS E REMUNERAÇÕES",7 anos,,Eliminação,
+024,024111       ,024.111      ,024.111                 SALÁRIO-FAMÍLIA,5 anos,19 anos,Eliminação,"Para  os   casos   especiais   previstos   no   Regime Jurídico Único, o  prazo  total de  guarda  para  os documentos   referentes   à   concessão   de   salário família será de 100 anos."
+024,024112A      ,024.112A     ,024.112A                 ABONO OU PROVENTO PROVISÓRIO,7 anos,,Eliminação,
+024,024112B      ,024.112B     ,024.112B                            ABONO DE PERMANÊNCIA EM SERVIÇO,Até a homologação da aposentadoria,,Eliminação,
+024,024119       ,024.119      ,"024.119                 OUTROS SALÁRIOS, VENCIMENTOS, PROVENTOS E REMUNERAÇÕES",7 anos,,Eliminação,
+024,02412        ,024.12       ,024.12               GRATIFICAÇÕES(INCLUSIVE INCORPORAÇÕES),,,,
+024,024121       ,024.121      ,024.121                  DE FUNÇÃO,5 anos,47 anos,Eliminação,
+024,024122       ,024.122      ,024.122                  JETONS,7 anos,,Eliminação,
+024,024123       ,024.123      ,024.123                  CARGOS EM COMISSÃO,5 anos,47 anos,Eliminação,
+024,024124       ,024.124      ,024.124                  NATALINAS(DÉCIMO TERCEIRO SALÁRIO),7 anos,,Eliminação,
+024,024129       ,024.129      ,024.129                  OUTRAS GRATIFICAÇÕES,5 anos,47 anos,Eliminação,
+024,02413        ,024.13       ,024.13               ADICIONAIS,,,,
+024,024131       ,024.131      ,"024.131                  TEMPO DE SERVIÇO(ANUÊNIOS, (BIÊNIOS  E QÜINQÜÊNIOS)",5 anos,47 anos,Eliminação,
+024,024132       ,024.132      ,024.132                    NOTURNO,5 anos,47 anos,Eliminação,
+024,024133       ,024.133      ,024.133                  PERICULOSIDADE,5 anos,47 anos,Eliminação,
+024,024134       ,024.134      ,024.134                  INSALUBRIDADE,5 anos,47 anos,Eliminação,
+024,024135       ,024.135      ,024.135                  ATIVIDADES PENOSAS,5 anos,47 anos,Eliminação,
+024,024136       ,024.136      ,024.136                  SERVIÇOS EXTRAORDINÁRIOS(HORAS EXTRAS),5 anos,47 anos,Eliminação,
+024,024137       ,024.137      ,024.137                  FÉRIAS: ADICIONAL DE 1/3  E ABONO PECUNIÁRIO,7 anos,,Eliminação,
+024,024139       ,024.139      ,024.139                  OUTROS ADICIONAIS,5 anos,47 anos,Eliminação,
+024,02414        ,024.14       ,024.14               DESCONTOS,,,,
+024,024141       ,024.141      ,024.141              CONTRIBUIÇÃO SINDICAL DO SERVIDOR,7 anos,,Eliminação,
+024,024142       ,024.142      ,024.142              CONTRIBUIÇÃO PARA O PLANO DE SEGURIDADE SOCIAL,5 anos,47 anos,Eliminação,
+024,024143       ,024.143      ,024.143               IMPOSTO DE RENDA RETIDO NA FONTE (IRRF),7 anos,,Eliminação,
+024,024144       ,024.144      ,024.144               PENSÕES ALIMENTÍCIAS,5 anos,95 anos,Eliminação,
+024,024145       ,024.145      ,024.145                CONSIGNAÇÕES,7 anos,,Eliminação,
+024,024149       ,024.149      ,024.149               OUTROS DESCONTOS,7 anos,,Eliminação,
+024,02415        ,024.15       ,024.15               ENCARGOS PATRONAIS. RECOLHIMEN- TOS,,,,
+024,024151       ,024.151      ,024.151                 PROGRAMA DE FORMAÇÃO DO PA- TRIMÔNIO DO SERVIDOR PÚBLICO (PASEP). PROGRAMA DE INTEGRA- ÇÃO SOCIAL (PIS),5 anos,5 anos,Eliminação,
+024,024152       ,024.152      ,024.152                 FUNDO DE GARANTIA POR TEMPO DE SERVIÇO (FGTS),5 anos,47 anos,Eliminação,
+024,024153       ,024.153      ,024.153                 CONTRIBUIÇÃO SINDICAL DO EMPREGADOR,7 anos,,Eliminação,
+024,024154       ,024.154      ,024.154                 CONTRIBUIÇÃO PARA O PLANO DE SEGURIDADE SOCIAL(INCLUSIVE CONTRIBUIÇÕES ANTERIORES),5 anos,95 anos,Eliminação,
+024,024155       ,024.155      ,024.155                 SALÁRIO MATERNIDADE,7 anos,,Eliminação,
+024,024156       ,024.156      ,024.156                 IMPOSTO DE RENDA,7 anos,,Eliminação,
+024,0242         ,024.2        ,024.2            FÉRIAS,7 anos,,Eliminação,
+024,0243         ,024.3        ,"024.3          LICENÇAS ACIDENTE EM SERVIÇO ADOTANTE
+AFASTAMENTO DO CÔNJUGE/COMPANHEIRO ATIVIDADE POLÍTICA, CAPACITAÇÃO PROFISSIONAL DESEMPENHO DE MANDATO CLASSISTA DOENÇA EM PESSOA DA FAMÍLIA GESTANTE, PATERNIDADE, PRÊMIO POR ASSIDUIDADE SERVIÇO MILITAR. TRATAMENTO  DE INTERESSES PARTICULARES TRATAMENTO  DE SAÚDE (INCLUSIVE PERÍCIA MÉDICA)",5 anos,47 anos,Eliminação,
+024,0244         ,024.4        ,"024.4          AFASTAMENTOS PARA DEPOR
+PARA EXERCER MANDATO ELETIVO PARA SERVIR AO TRIBUNAL REGIONAL ELEITORAL (TRE)PARA SERVIR COMO  JURADO
+SUSPENSÃO DE CONTRATO DE TRABALHO (CLT)",5 anos,47 anos,Eliminação,
+024,0245         ,024.5        ,024.5          REEMBOLSO DE DESPESAS,,,,
+024,02451        ,024.51       ,024.51            MUDANÇA DE DOMICÍLIO DE SERVIDORES,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+024,02452        ,024.52       ,024.52            LOCOMOÇÃO,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+024,02459        ,024.59       ,024.59            OUTROS REEMBOLSOS,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+024,0249         ,024.9        ,"024.9         OUTROS DIREITOS, OBRIGAÇÕES  E VANTAGENS",,,,
+024,02491        ,024.91       ,024.91             CONCESSÕES ALISTAMENTO ELEITORAL CASAMENTO (GALA) DOAÇÃO DE SANGUE FALECIMENTO DE FAMILIARES (NOJO) HORÁRIO ESPECIAL  PARA  SERVIDOR ESTUDANTE HORÁRIO  ESPECIAL  PARA  SERVIDOR  PORTADOR  DE DEFICIÊNCIA ,5 anos,47 anos,Eliminação,
+024,02492        ,024.92       ,024.92            AUXÍLIOS ALIMENTAÇÃO / REFEIÇÃO ASSISTÊNCIA PRÉ-ESCOLAR/CRECHE FARDAMENTO/UNIFORME. MORADIA. VALE-TRANSPORTE,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+025,025          ,025          ,025           APURAÇÃO DE RESPONSABILIDADE E AÇÃO DISCIPLINAR,,,,
+025,0251         ,025.1        ,025.1            DENÚNCIAS. SINDICÂNCIAS. INQUÉRITOS,,,,
+025,02511        ,025.11       ,025.11               PROCESSOS DISCIPLINARES,5 anos,95 anos,Guarda permanente,
+025,02512        ,025.12       ,025.12               PENALIDADES DISCIPLINARES,5 anos,95 anos,Guarda permanente,
+026,026          ,026          ,"026           PREVIDÊNCIA, ASSISTÊNCIA E SEGURIDADE SOCIAL",,,,
+026,02601        ,026.01       ,026.01              PREVIDÊNCIA PRIVADA,5 anos,47 anos,Eliminação,
+026,0261         ,026.1        ,026.1            BENEFÍCIOS,,,,
+026,02611        ,026.11       ,026.11               SEGUROS,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+026,02612A       ,026.12A      ,026.12A            AUXÍLIOS ACIDENTE DOENÇA FUNERAL NATALIDADE,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+026,02612B       ,026.12B      ,026.12B                    RECLUSÃO,5 anos,47 anos,Eliminação,
+026,02613        ,026.13       ,026.13            APOSENTADORIA,5 anos,95 anos,Eliminação,
+026,026131       ,026.131      ,026.131              CONTAGEM E AVERBAÇÃO DE TEMPO DE SERVIÇO,Até a homolo- gação da aposentadoria,,Eliminação,
+026,026132A      ,026.132A     ,026.132A               PENSÕES:  PROVISÓRIA E TEMPORÁRIA,Enquanto vigora,5 anos,Eliminação,
+026,026132B      ,026.132B     ,026.132B                     PENSÃO VITALÍCIA,5 anos,95 anos,Eliminação,
+026,02619        ,026.19       ,026.19            OUTROS BENEFÍCIOS,,,,
+026,026191       ,026.191      ,026.191               ADIANTAMENTOS E EMPRÉSTIMOS A SERVIDORES,Até quitação da dívida,5 anos,Eliminação,
+026,026192A      ,026.192A     ,026.192A               ASSISTÊNCIA À SAÚDE(INCLUSIVE PLANOS DE SAÚDE),Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+026,026192B      ,026.192B     ,026.192B                   PRONTUÁRIO MÉDICO DO SERVIDOR,5 anos,95 anos,Eliminação,
+026,026193       ,026.193      ,026.193               AQUISIÇÃO DE IMÓVEIS,Até quitação da dívida,5 anos,Eliminação,
+026,026194       ,026.194      ,026.194               OCUPAÇÃO DE PRÓPRIOS DA UNIÃO,Enquanto permanece  a ocupação,5 anos,Eliminação,
+026,026195       ,026.195      ,026.195                TRANSPORTES  PARA SERVIDORES,2 anos,,Eliminação,
+026,0262         ,026.2        ,026.2            HIGIENE E SEGURANÇA DO TRABALHO,2 anos,,Eliminação,
+026,02621A       ,026.21A      ,026.21A              PREVENÇÃO DE ACIDENTES DE TRABALHO,5 anos,47 anos,Eliminação,
+026,02621B       ,026.21B      ,026.21B                    COMISSÃO INTERNA DE PREVENÇÃO  DE ACIDENTES (CIPA),2 anos,,Eliminação,
+026,02621C       ,026.21C      ,"026.21C                   CRIAÇÃO,   DESIGNAÇÃO,   PROPOSTAS,    RELATÓRIOS  E ATAS",3 anos,5 anos,Guarda permanente,
+026,02622        ,026.22       ,"026.22            REFEITÓRIOS, CANTINAS E COPAS(FORNECIMENTO DE REFEIÇÕES)",2 anos,,Eliminação,
+026,02623        ,026.23       ,026.23            INSPEÇÕES PERIÓDICAS DE SAÚDE,5 anos,,Eliminação,
+029,029          ,029          ,029           OUTROS ASSUNTOS REFERENTES  A PESSOAL,,,,
+029,0291         ,029.1        ,029.1           HORÁRIO DE EXPEDIENTE(INCLUSIVE ESCALA  DE PLANTÃO),2 anos,,Eliminação,
+029,02911        ,029.11       ,"029.11            CONTROLE DE FREQUÊNCIALIVROS, CARTÕES, FOLHAS DE PONTO, ABONO DE FALTAS, CUMPRIMENTO DE HORAS EXTRAS",5 anos,47 anos,Eliminação,
+029,0292         ,029.2        ,029.2            MISSÕES FORA DA SEDE. VIAGENS A SERVIÇO,,,,
+029,02921        ,029.21       ,"029.21            NO PAÍS AJUDAS DE CUSTO DIÁRIAS
+PASSAGENS  (INCLUSIVE DEVOLUÇÃO) PRESTAÇÕES DE CONTAS
+RELATÓRIOS DE VIAGEM",Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,"Os   relatórios  técnicos  de  viagem  estarão classificados no assunto correspondente ao seu conteúdo, cujos prazos e destinação estão estabelecidos nesta tabela."
+029,02922        ,029.22       ,029.22            NO EXTERIOR(AFASTAMENTO DO PAÍS),,,,
+029,029221       ,029.221      ,029.221               SEM ÔNUS PARA A INSTITUIÇÃO,7 anos,,Eliminação,"Os   relatórios  técnicos  de  viagem  estarão classificados no assunto correspondente ao seu conteúdo, cujos prazos e destinação estão estabelecidos nesta tabela."
+029,029222       ,029.222      ,"029.222               COM ÔNUS PARA A INSTITUIÇÃO AUTORIZAÇÃO DE AFASTAMENTO DIÁRIAS  (INCLUSIVE  COMPRA  DE  MOEDA ESTRANGEIRA)LISTA DE PARTICIPANTES (NO CASO DE COMITIVAS E DELEGAÇÕES)
+PASSAGENS PASSAPORTES PRESTAÇÕES DE CONTAS RELATÓRIOS DE VIAGEM RESERVAS DE HOTEL",Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,"Os   relatórios  técnicos  de  viagem  estarão classificados no assunto correspondente ao seu conteúdo, cujos prazos e destinação estão estabelecidos nesta tabela."
+029,0293         ,029.3        ,029.3         INCENTIVOS FUNCIONAIS,,,,
+029,02931        ,029.31       ,"029.31           PRÊMIOS CONCESSÃO DE MEDALHAS, DIPLOMAS DE HONRA AO MÉRITO  E ELOGIOS",5 anos,5 anos,Guarda permanente,
+029,0294         ,029.4        ,029.4         DELEGAÇÕES DE COMPETÊNCIA. PROCURAÇÃO,Enquanto vigora,5 anos,Eliminação,"Quanto  aos  documentos  referentes  aos ordenadores   de   despesas,   utilizar o  prazo  dos documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e eliminação)."
+029,0295         ,029.5        ,029.5         SERVIÇOS PROFISSIONAIS TRANSITÓRIOS:AUTÔNOMOS E COLABORADORES (INCLUSIVE LICITAÇÕES),Enquanto vigora a prestação do serviço,,Eliminação,"O  prazo total de guarda dos documentos  é de
+52 anos."
+029,0296         ,029.6        ,029.6         AÇÕES TRABALHISTAS. RECLAMAÇÕES TRABALHISTAS,Até o trânsito em julgado,5 anos,Guarda permanente,
+029,0297         ,029.7        ,029.7         MOVIMENTOS REIVINDICATÓRIOS: GREVES E PARALISAÇÕES,5 anos,5 anos,Guarda permanente,
+030,030          ,030          ,"030            MATERIAL NORMAS,   REGULAMENTAÇÕES,    DIRETRIZES,    PROCEDIMENTOS, ESTUDOS E/OU DECISÕES DE CARÁTER GERAL",Enquanto vigora,5 anos,Guarda permanente,
+030,0301         ,030.1        ,030.1           CADASTRO DE FORNECEDORES,5 anos,,Eliminação,
+031,031          ,031          ,"031           ESPECIFICAÇÃO. PADRONIZAÇÃO.
+CODIFICAÇÃO. PREVISÃO. CATÁLOGO. IDENTIFICAÇÃO. CLASSIFICAÇÃO(INCLUSIVE AMOSTRAS)",2 anos,,Eliminação,
+032,032          ,032          ,032           REQUISIÇÃO E CONTROLE DE SERVIÇOS REPROGRÁFICOS(INCLUSIVE ASSINATURAS AUTORIZADAS E REPRODUÇÕES DE FORMULÁRIOS),1 ano,,Eliminação,
+033,033          ,033          ,033           AQUISIÇÃO(INCLUSIVE LICITAÇÕES),,,,
+033,0331         ,033.1        ,033.1           MATERIAL PERMANENTE,,,,Os     documentos     referentes    a    material    não adquirido deverão ser eliminados  após 1 ano.
+033,03311        ,033.11       ,033.11             COMPRA(INCLUSIVE COMPRA POR IMPORTAÇÃO),Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+033,03312        ,033.12       ,033.12             ALUGUEL. COMODATO. LEASING,Até aprovação das contas,"5 anos a contar
+da   data de aprovação das contas",Eliminação,
+033,03313A       ,033.13A      ,033.13A             EMPRÉSTIMO. CESSÃO,Enquanto vigora,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das
+contas e eliminação)."
+033,03313B       ,033.13B      ,033.13B                      DOAÇÃO. PERMUTA,4 anos,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++ 5 anos a contar da data de aprovação das conta e eliminação)."
+033,0332         ,033.2        ,033.2            MATERIAL DE CONSUMO,,,,Os     documentos     referentes    a    material    não adquirido deverão ser eliminados após 1 ano.
+033,03321        ,033.21       ,033.21             COMPRA,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+033,03322        ,033.22       ,033.22             CESSÃO. DOAÇÃO. PERMUTA,4 anos,5 anos,Eliminação,
+033,03323        ,033.23       ,033.23             CONFECÇÃO DE IMPRESSOS,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+034,034          ,034          ,034             MOVIMENTAÇÃO DE MATERIAL(PERMANENTE  E DE CONSUMO),,,,"Para os documentos  referentes a produtos e insumos químicos e outras substâncias entorpecentes,  observar os prazos da legislação específica vigente."
+034,03401        ,034.01       ,034.01                TERMOS DE RESPONSABILIDADE(INCLUSIVE RMB OU RMBM),Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+034,0341         ,034.1        ,"034.1             CONTROLE DE ESTOQUE(INCLUSIVE REQUISIÇÃO,  DISTRIBUIÇÃO  E RMA)",2 anos,,Eliminação,"Para os documentos  referentes a produtos e insumos químicos e outras substâncias entorpecentes,  observar os prazos da legislação específica vigente."
+034,0342         ,034.2        ,034.2              EXTRAVIO. ROUBO. DESAPARECIMENTO,Até a conclusão do caso,5 anos,Eliminação,"Para os documentos  referentes a produtos e insumos químicos e outras substâncias entorpecentes,  observar os prazos da legislação específica vigente."
+034,0343         ,034.3        ,034.3              TRANSPORTE DE MATERIAL,2 anos,,Eliminação,"Para os documentos  referentes a produtos e insumos químicos e outras substâncias entorpecentes,  observar os prazos da legislação específica vigente."
+034,0344         ,034.4        ,034.4             AUTORIZAÇÃO DE SAÍDA DE MATERIAL,1 ano,,Eliminação,"Para os documentos  referentes a produtos e insumos químicos e outras substâncias entorpecentes,  observar os prazos da legislação específica vigente."
+034,0345         ,034.5        ,034.5             RECOLHIMENTO DE MATERIAL AO DEPÓSITO,2 anos,,Eliminação,"Para os documentos  referentes a produtos e insumos químicos e outras substâncias entorpecentes,  observar os prazos da legislação específica vigente."
+035,035          ,035          ,035              ALIENAÇÃO. BAIXA(MATERIAL PERMANENTE  E DE CONSUMO),,,,
+035,0351         ,035.1        ,035.1             VENDA(INCLUSIVE LEILÃO),Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+035,0352         ,035.2        ,035.2             CESSÃO. DOAÇÃO. PERMUTA,4 anos,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e eliminação)."
+036,036          ,036          ,036              INSTALAÇÃO E MANUTENÇÃO,,,,
+036,0361         ,036.1        ,036.1            REQUISIÇÃO E CONTRATAÇÃO DE SERVIÇOS(INCLUSIVE LICITAÇÕES),Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+036,0362         ,036.2        ,036.2            SERVIÇOS EXECUTADOS EM OFICINAS DO ÓRGÃO,1 ano,,Eliminação,
+037,037          ,037          ,037            INVENTÁRIO,,,,
+037,0371         ,037.1        ,037.1            MATERIAL PERMANENTE,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Guarda permanente,
+037,0372         ,037.2        ,037.2            MATERIAL DE CONSUMO,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+039,039          ,039          ,039           OUTROS ASSUNTOS REFERENTES  A MATERIAL,,,,"Este  grupo   será   desenvolvido    pelo   órgão   de acordo com a necessidade, bem como a temporalidade e destinação."
+040,040          ,040          ,"040             PATRIMÔNIO NORMAS,   REGULAMENTAÇÕES,    DIRETRIZES,    PROCEDI- MENTOS, ESTUDOS E/OU DECISÕES DE CARÁTER GERAL",Enquanto vigora,5 anos,Guarda permanente,
+041,041          ,041          ,"041                BENS IMÓVEIS PROJETOS, PLANTAS E ESCRITURAS",3 anos,5 anos,Guarda permanente,"É opcional a reprodução dos documentos previamente ao recolhimento, para que o órgão permaneça  com cópias para consulta."
+041,04101        ,041.01       ,041.01             FORNECIMENTO E MANUTENÇÃO DE SERVIÇOS BÁSICOS,,,,Os  documentos   que  não  envolvem   pagamentos serão eliminados após 1 ano.
+041,041011       ,041.011      ,041.011               ÁGUA E ESGOTO,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+041,041012       ,041.012      ,041.012               GÁS,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+041,041013       ,041.013      ,041.013                LUZ E FORÇA,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+041,04102        ,041.02       ,041.02           COMISSÃO INTERNA DE CONSERVAÇÃO DE ENERGIA (CICE),2 anos,,Eliminação,
+   ,             ,             ,"                           CRIAÇÃO, DESIGNAÇÃO,  PROPOSTAS DE REDUÇÃO DE GASTOS COM ENERGIA, RELATÓRIOS E ATAS",3 anos,5 anos,Guarda permanente,
+041,04103        ,041.03       ,041.03               CONDOMÍNIO,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Eliminação,
+041,0411         ,041.1        ,041.1            AQUISIÇÃO,,,,
+041,04111        ,041.11       ,041.11               COMPRA,Até aprovação das contas,"5 anos a contar
+da   data
+de aprovaç ão     das contas",Guarda permanente,
+041,04112        ,041.12       ,041.12               CESSÃO,4 anos,5 anos,Guarda permanente,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  da  aprovação  das
+contas e guarda permanente)."
+041,04113        ,041.13       ,041.13                DOAÇÃO,4 anos,5 anos,Guarda permanente,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e guarda permanente)."
+041,04114        ,041.14       ,041.14               PERMUTA,4 anos,5 anos,Guarda permanente,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e guarda permanente)."
+041,04115        ,041.15       ,041.15              LOCAÇÃO. ARRENDAMENTO. COMO- DATO,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Eliminação,
+041,0412         ,041.2        ,041.2            ALIENAÇÃO,,,,
+041,04121        ,041.21       ,041.21                VENDA,Até aprovação das contas,"5 anos a contar
+da   data de aprovaç ão     das contas",Guarda permanente,
+041,04122        ,041.22       ,041.22                CESSÃO,4 anos,5 anos,Guarda permanente,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e guarda permanente)."
+041,04123        ,041.23       ,041.23                 DOAÇÃO,4 anos,5 anos,Guarda permanente,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e guarda permanente)."
+041,04124        ,041.24       ,041.24                PERMUTA,4 anos,5 anos,Guarda permanente,"Para transações que envolvam  pagamentos  de despesas   pendentes,    utilizar  prazos   para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das
+contas e guarda permanente)."
+041,0413         ,041.3        ,041.3             DESAPROPRIAÇÃO. REINTEGRAÇÃO DE POSSE .REIVINDICAÇÃO DE DOMÍNIO. TOMBAMENTO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+041,0414         ,041.4        ,041.4             OBRAS,,,,
+041,04141        ,041.41       ,041.41               REFORMA. RECUPERAÇÃO. RESTAURA- ÇÃO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+041,04142        ,041.42       ,041.42               CONSTRUÇÃO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+041,0415         ,041.5        ,041.5           SERVIÇOS DE MANUTENÇÃO(INCLUSIVE LICITAÇÕES),,,,Os  documentos   que  não  envolvem   pagamentos serão eliminados após 1 ano.
+041,04151        ,041.51       ,041.51               MANUTENÇÃO DE ELEVADORES,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+041,04152        ,041.52       ,041.52               MANUTENÇÃO DE AR-CONDICIONADO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+041,04153        ,041.53       ,041.53               MANUTENÇÃO DE SUBESTAÇÕES E GERADORES,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+041,04154        ,041.54       ,041.54               LIMPEZA. IMUNIZAÇÃO. DESINFES- TAÇÃO(INCLUSIVE PARA JARDINS),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+041,04159        ,041.59       ,041.59              OUTROS SERVIÇOS DE MANUTENÇÃO,,,,"Este subgrupo será desenvolvido  pelo órgão de acordo com a necessidade, bem como a temporalidade e destinação."
+042,042          ,042          ,042           VEÍCULOS,,,,
+042,0421         ,042.1        ,042.1                   AQUISIÇÃO(INCLUSIVE LICITAÇÕES),,,,Para veículos não adquiridos eliminar após 1 ano.
+042,04211        ,042.11       ,042.11                COMPRA(INCLUSIVE COMPRA POR IMPORTAÇÃO),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+042,04212        ,042.12       ,042.12                ALUGUEL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+042,04213        ,042.13       ,042.13                CESSÃO. DOAÇÃO. PERMUTA. TRANSFERÊNCIA,4 anos,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas  pendentes,   utilizar prazos  para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das
+contas e eliminação)."
+042,0422         ,042.2        ,042.2           CADASTRO. LICENCIAMENTO. EMPLACA- MENTO. TOMBAMENTO,Até a alienação,5 anos,Eliminação,
+042,0423         ,042.3        ,042.3           ALIENAÇÃO(INCLUSIVE LICITAÇÕES),,,,
+042,04231        ,042.31       ,042.31            VENDA(INCLUSIVE LEILÃO),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+042,04232        ,042.32       ,042.32            CESSÃO. DOAÇÃO. PERMUTA. TRANSFERÊNCIA,4 anos,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas  pendentes,   utilizar prazos  para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar da  data    de  aprovação  das contas e eliminação)."
+042,0424         ,042.4        ,042.4          ABASTECIMENTO. LIMPEZA. MANUTEN- ÇÃO. REPARO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+042,0425         ,042.5        ,042.5          ACIDENTES. INFRAÇÕES. MULTAS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,"Para  acidentes   com   vítimas,  o   prazo   total  de guarda é de 20 anos."
+042,0429         ,042.9        ,042.9          OUTROS ASSUNTOS REFERENTES A VEÍCULOS,,,,
+042,04291        ,042.91       ,042.91            CONTROLE DE USO DE VEÍCULOS,2 anos,,Eliminação,
+042,042911       ,042.911      ,042.911              REQUISIÇÃO,2 anos,,Eliminação,
+042,042912       ,042.912      ,042.912              AUTORIZAÇÃO PARA USO FORA DO HORÁRIO DE EXPEDIENTE,2 anos,,Eliminação,
+042,042913       ,042.913      ,042.913              ESTACIONAMENTO. GARAGEM,2 anos,,Eliminação,
+043,043          ,043          ,043           BENS SEMOVENTES,,,,A temporalidade  e destinação  serão estabelecidas pelo órgão de acordo com a necessidade.
+044,044          ,044          ,044           INVENTÁRIO(INCLUSIVE RMBI),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+049,049          ,049          ,049                      OUTROS ASSUNTOS REFERENTES A PATRI- MÔNIO,,,,
+049,0491         ,049.1        ,049.1          GUARDA E SEGURANÇA,2 anos,,Eliminação,.
+049,04911        ,049.11       ,049.11            SERVIÇOS DE VIGILÂNCIA,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,Os  documentos   que  não  envolvem   pagamentos serão eliminados após 1 ano.
+049,04912        ,049.12       ,049.12            SEGUROS(INCLUSIVE DE VEÍCULOS),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,Os  documentos   que  não  envolvem   pagamentos serão eliminados após 1 ano.
+049,04913A       ,049.13A      ,"049.13A            PREVENÇÃO DE INCÊNDIOTREINAMENTO DE PESSOAL, INSTALAÇÃO E MANUTENÇÃO  DE EXTINTORES, INSPEÇÕES PERIÓDICAS",2 anos,,Eliminação,
+049,04913B       ,049.13B      ,"049.13B                     CONSTITUIÇÃO     DE   BRIGADAS     DE    INCÊNDIO, PLANOS, PROJETOS E RELATÓRIOS",4 anos,5 anos,Guarda permanente,
+049,04914        ,049.14       ,049.14             SINISTRO,Até a conclusão do caso,5 anos,Eliminação,
+049,04915A       ,049.15A      ,049.15A            CONTROLE DE PORTARIA,2 anos,,Eliminação,
+049,04915B       ,049.15B      ,049.15B                        REGISTRO DE OCORRÊNCIAS,5 anos,5 anos,Eliminação,
+049,0492         ,049.2        ,049.2         MUDANÇAS,,,,
+049,04921        ,049.21       ,049.21           PARA OUTROS IMÓVEIS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+049,04922        ,049.22       ,049.22           DENTRO DO MESMO IMÓVEL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,Os  documentos   que  não  envolvem   pagamentos serão eliminados após 1 ano.
+049,0493         ,049.3        ,049.3          USO DE DEPENDÊNCIAS,2 anos,,Eliminação,
+050,050          ,050          ,"050                ORÇAMENTO E FINANÇAS NORMAS,   REGULAMENTAÇÕES,    DIRETRIZES,    PROCEDI- MENTOS, ESTUDOS E/OU DECISÕES DE CARÁTER GERAL",Enquanto vigora,5 anos,Guarda permanente,
+050,0501         ,050.1        ,050.1            AUDITORIA,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+051,051          ,051          ,051           ORÇAMENTO,,,,
+051,0511         ,051.1        ,051.1            PROGRAMAÇÃO ORÇAMENTÁRIA,,,,
+051,05111        ,051.11       ,051.11               PREVISÃO ORÇAMENTÁRIA,2 anos,,Eliminação,
+051,05112        ,051.12       ,051.12               PROPOSTA ORÇAMENTÁRIA,5 anos,5 anos,Guarda permanente,
+051,05113        ,051.13       ,051.13               QUADRO DE DETALHAMENTO DE DESPESA (QDD),2 anos,,Eliminação,
+051,05114        ,051.14       ,051.14               CRÉDITOS ADICIONAIS CRÉDITO SUPLEMENTAR. CRÉDITO ESPECIAL. CRÉDITO EXTRAORDINÁRIO,5 anos,5 anos,Guarda permanente,
+051,0512         ,051.2        ,051.2            EXECUÇÃO ORÇAMENTÁRIA,,,,
+051,05121        ,051.21       ,051.21                DESCENTRALIZAÇÃO DE RECURSOS (DISTRIBUIÇÃO ORÇAMENTÁRIA),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+051,05122        ,051.22       ,051.22           ACOMPANHAMENTO DE DESPESA MENSAL (PESSOAL/DÍVIDA),Até aprovação das contas,"5 anos a contar da
+
+aprovação das contas",Eliminação,
+051,05123        ,051.23       ,051.23           PLANO OPERATIVO. CRONOGRAMA DE DESEMBOLSO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+052,052          ,052          ,052           FINANÇAS,,,,
+052,0521         ,052.1        ,052.1            PROGRAMAÇÃO FINANCEIRA DE DESEMBOLSO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+052,0522         ,052.2        ,052.2            EXECUÇÃO FINANCEIRA,,,,
+052,05221        ,052.21       ,052.21              RECEITA,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+052,05222        ,052.22       ,052.22              DESPESA,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+053,053          ,053          ,053           FUNDOS ESPECIAIS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+054,054          ,054          ,054           ESTÍMULOS FINANCEIROS E CREDITÍCIOS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+055,055          ,055          ,055           OPERAÇÕES BANCÁRIAS,,,,
+055,05501        ,055.01       ,055.01           PAGAMENTOS EM MOEDA ESTRANGEIRA,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+055,0551         ,055.1        ,055.1           CONTA ÚNICA(INCLUSIVE ASSINATURAS AUTORIZADAS E EXTRATOS DE CONTAS),Até aprovação das contas,"5 anos a contar da
+
+aprovação das contas",Eliminação,
+055,0552         ,055.2        ,"055.2           OUTRAS CONTAS: TIPO B, C e D(INCLUSIVE ASSINATURAS AUTORIZADAS E EXTRATOS DE CONTAS)",Até aprovação das contas,"5 anos a contar da
+
+aprovação das contas",Eliminação,
+056,056          ,056          ,056           BALANÇOS. BALANCETES,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+057,057          ,057          ,057           TOMADA DE CONTAS. PRESTAÇÃO DE CONTAS(INCLUSIVE PARECER DE APROVAÇÃO DAS CONTAS),Até aprovação das contas,"5 anos a contar da
+
+aprovação das contas",Guarda permanente,
+059,059          ,059          ,059           OUTROS ASSUNTOS REFERENTES  A ORÇA- MENTO E FINANÇAS,,,,
+059,0591         ,059.1        ,059.1           TRIBUTOS (IMPOSTOS  E TAXAS),Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+060,060          ,060          ,060               DOCUMENTAÇÃO E INFORMAÇÃO,,,,
+060,0601         ,060.1        ,060.1          PUBLICAÇÃO DE MATÉRIAS NO DIÁRIO OFICIAL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+060,0602         ,060.2        ,"060.2          PUBLICAÇÃO DE MATÉRIAS NOS BOLE- TINS ADMINISTRATIVO, DE PESSOAL E DE SERVIÇO",1 ano,,Eliminação,
+060,0603         ,060.3        ,060.3          PUBLICAÇÃO DE MATÉRIAS EM OUTROS PERIÓDICOS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+061,061          ,061          ,061                      PRODUÇÃO EDITORIAL(INCLUSIVE EDIÇÃO OU COEDIÇÃO DE PUBLICAÇÕES EM GERAL PRODUZIDAS PELO ÓRGÃO EM QUALQUER  SUPORTE),,,,
+061,0611         ,061.1        ,061.1            EDITORAÇÃO. PROGRAMAÇÃO VISUAL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,Documentos  que não envolvem  pagamentos  serão eliminados  após  5 anos  de  arquivamento  na fase corrente.
+061,0612         ,061.2        ,061.2            DISTRIBUIÇÃO. PROMOÇÃO. DIVULGAÇÃO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,Documentos  que não envolvem  pagamentos  serão eliminados  após  5 anos  de  arquivamento  na fase corrente.
+062,062          ,062          ,"062           DOCUMENTAÇÃO BIBLIOGRÁFICA(LIVROS, PERIÓDICOS, FOLHETOS E AUDIOVISUAIS)",,,,
+062,06201        ,062.01       ,062.01              NORMAS E MANUAIS,Enquanto vigora,5 anos,Guarda permanente,
+062,0621         ,062.1        ,062.1            AQUISIÇÃO(NO BRASIL E NO EXTERIOR),,,,Os  documentos  referentes a material  bibliográfico não adquirido serão eliminados após 1 ano.
+062,06211        ,062.11       ,062.11              COMPRA(INCLUSIVE ASSINATURAS DE PERIÓDICOS),Até aprovação das contas,"5 anos a contar da
+
+aprovação das contas",Eliminação,
+062,06212        ,062.12       ,062.12               DOAÇÃO,4 anos,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas  pendentes,   utilizar prazos  para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das contas e eliminação)."
+062,06213        ,062.13       ,062.13              PERMUTA,4 anos,5 anos,Eliminação,"Para transações que envolvam  pagamentos  de despesas  pendentes,   utilizar prazos  para documentos  financeiros (Até aprovação das contas
++  5  anos  a  contar  da  data  de  aprovação  das
+contas e eliminação)."
+062,0622         ,062.2        ,062.2            REGISTRO,2 anos,,Eliminação,
+062,0623         ,062.3        ,062.3            CATALOGAÇÃO. CLASSIFICAÇÃO.INDEXAÇÃO,2 anos,,Eliminação,
+062,0624         ,062.4        ,062.4            REFERÊNCIA E CIRCULAÇÃO,2 anos,,Eliminação,
+062,0625         ,062.5        ,062.5            INVENTÁRIO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Guarda permanente,
+063,063          ,063          ,063           DOCUMENTAÇÃO ARQUIVÍSTICA: GESTÃO DE DOCUMENTOS E SISTEMA DE ARQUIVOS,,,,
+063,06301        ,063.01       ,063.01            NORMAS E MANUAIS,Enquanto vigora,7 anos,Guarda permanente,
+063,0631         ,063.1        ,063.1          PRODUÇÃO DE DOCUMENTOS. LEVANTA- MENTO. FLUXO,4 anos,,Eliminação,
+   ,             ,             ,                  DIAGNÓSTICO,5 anos,5 anos,Guarda permanente,
+063,0632         ,063.2        ,"063.2          PROTOCOLO: RECEPÇÃO,  TRAMITAÇÃO E EXPEDIÇÃO DE DOCUMENTOS",2 anos,,Eliminação,
+063,0633         ,063.3        ,063.3          ASSISTÊNCIA TÉCNICA,5 anos,,Eliminação,
+063,0634         ,063.4        ,063.4          CLASSIFICAÇÃO E ARQUIVAMENTO,2 anos,,Eliminação,
+063,0635         ,063.5        ,063.5            POLÍTICA DE ACESSO AOS DOCUMENTOS,5 anos,5 anos,Guarda permanente,
+063,06351        ,063.51       ,063.51              CONSULTAS. EMPRÉSTIMOS,1 ano após a devolução,,Eliminação,
+063,0636         ,063.6        ,063.6            DESTINAÇÃO DE DOCUMENTOS,,,,
+063,06361        ,063.61       ,063.61              ANÁLISE. AVALIAÇÃO. SELEÇÃO,5 anos,5 anos,Guarda permanente,
+063,06362        ,063.62       ,"063.62           ELIMINAÇÃO TERMOS, LISTAGENS E EDITAIS DE CIÊNCIA DE ELIMINAÇÃO",5 anos,,Guarda permanente,
+063,06363        ,063.63       ,"063.63           TRANSFERÊNCIA. RECOLHIMENTO GUIAS  E TERMOS DE TRANSFERÊNCIA,
+GUIAS, RELAÇÕES E TERMOS DE RECOLHIMENTO, LISTAGENS DESCRITIVAS DO ACERVO",5 anos,,Guarda permanente,
+064,064          ,064          ,064           DOCUMENTAÇÃO MUSEOLÓGICA,,,,A temporalidade  e destinação  serão estabelecidas de acordo com as necessidades  do órgão.
+065,065          ,065          ,"065           REPRODUÇÃO DE DOCUMENTOS ESTUDOS, PROJETOS E NORMAS",Enquanto vigora,5 anos,Guarda permanente,
+066,066          ,066          ,066           CONSERVAÇÃO DE DOCUMENTOS,,,,
+066,0661         ,066.1        ,066.1          DESINFESTAÇÃO. HIGIENIZAÇÃO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,"Para documentos  que  não  envolvam  pagamentos, eliminar após 2 anos."
+066,0662         ,066.2        ,066.2          ARMAZENAMENTO. DEPÓSITOS,2 anos,,Eliminação,
+066,0663         ,066.3        ,066.3          RESTAURAÇÃO DE DOCUMENTOS(INCLUSIVE ENCADERNAÇÃO),Até aprovação das contas,"5 anos a contar da
+
+aprovação das contas",Eliminação,"Para documentos  que  não  envolvam  pagamentos, eliminar após 2 anos."
+067,067          ,067          ,067             INFORMÁTICA,,,,
+067,0671         ,067.1        ,067.1           PLANOS E PROJETOS,Enquanto vigora,5 anos,Guarda permanente,
+067,0672         ,067.2        ,067.2           PROGRAMAS.  SISTEMAS. REDES(INCLUSIVE LICENÇA E REGISTRO DE USO E COMPRA),Enquanto vigora,5 anos,Guarda permanente,
+067,06721        ,067.21       ,067.21            MANUAIS TÉCNICOS(EXEMPLARES ÚNICOS),Enquanto vigora,5 anos,Guarda permanente,
+067,06722        ,067.22       ,067.22            MANUAIS DO USUÁRIO(EXEMPLARES ÚNICOS),Enquanto vigora,5 anos,Guarda permanente,
+067,0673         ,067.3        ,067.3           ASSISTÊNCIA TÉCNICA,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,"Para documentos  que  não  envolvam  pagamentos, eliminar após 2 anos."
+069,069          ,069          ,"069           OUTROS ASSUNTOS REFERENTES
+À DOCUMENTAÇÃO  E INFORMAÇÃO",,,,"Este  grupo     será  desenvolvido   pelo   órgão   de acordo com a necessidade, bem como a temporalidade e destinação."
+070,070          ,070          ,"070             COMUNICAÇÕES NORMAS, REGULAMENTAÇÕES, DIRETRIZES, PROCEDIMENTOS, ESTUDOS E/OU DECISÕES DE CARÁTER GERAL",Enquanto vigora,5 anos,Guarda permanente,
+071,071          ,071          ,071           SERVIÇO POSTAL,,,,
+071,0711         ,071.1        ,071.1           SERVIÇOS DE ENTREGA EXPRESSA,,,,
+071,07111        ,071.11       ,071.11             NACIONAL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+071,07112        ,071.12       ,071.12             INTERNACIONAL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+071,0712         ,071.2        ,"071.2          SERVIÇOS DE COLETA, TRANSPORTE E ENTREGA DE CORRESPONDÊNCIA AGRUPADA – MALOTE",Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+071,0713         ,071.3        ,071.3            MALA OFICIAL,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+071,0719         ,071.9        ,071.9            OUTROS SERVIÇOS POSTAIS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+072,072          ,072          ,072           SERVIÇO DE RÁDIO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+072,0721         ,072.1        ,072.1            INSTALAÇÃO. MANUTENÇÃO. REPARO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+073,073          ,073          ,073           SERVIÇO DE TELEX,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+073,0731         ,073.1        ,073.1            INSTALAÇÃO. MANUTENÇÃO. REPARO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+074,074          ,074          ,074           SERVIÇO TELEFÔNICO(INCLUSIVE AUTORIZAÇÃO PARA LIGAÇÕES INTERURBANAS). FAC-SÍMILE (FAX),2 anos,,Eliminação,
+074,0741         ,074.1        ,074.1            INSTALAÇÃO. TRANSFERÊNCIA. MANU- TENÇÃO. REPARO,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+074,0742         ,074.2        ,074.2            LISTAS TELEFÔNICAS INTERNAS,"Enquanto
+Vigora",,Eliminação,
+074,0743         ,074.3        ,074.3            CONTAS TELEFÔNICAS,Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+075,075          ,075          ,"075            SERVIÇOS DE TRANSMISSÃO DE DADOS, VOZ E IMAGEM",Até aprovação das contas,5 anos a contar da data de aprovação das contas,Eliminação,
+079,079          ,079          ,079            OUTROS ASSUNTOS REFERENTES À COMUNICAÇÕES,,,,"Este  grupo  será  desenvolvido        pelo  órgão  de acordo com a necessidade, bem como a temporalidade e destinação."
+090,090          ,090          ,090               OUTROS ASSUNTOS REFERENTES À ADMINISTRAÇÃO GERAL,,,,
+091,091          ,091          ,091           AÇÕES JUDICIAIS,5 anos,95 anos,Guarda permanente,

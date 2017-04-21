@@ -128,7 +128,7 @@ class Tipologia(models.Model):
 
 class GrupoConarq(models.Model):
     codigo = models.CharField(max_length=50,blank=False,null=True)
-    nome = models.CharField(blank=False,max_length=150)
+    nome = models.CharField(blank=False,max_length=500)
 
     def __str__(self):
         return self.nome
@@ -136,7 +136,7 @@ class GrupoConarq(models.Model):
 class Conarq(models.Model):
     codGrupo = models.ForeignKey(GrupoConarq,related_name="codGrupo",blank=False)
     codigo = models.CharField(max_length=50,blank=False,null=True)
-    assunto = models.CharField(max_length=150,blank=False,null=True)
+    assunto = models.CharField(max_length=500,blank=False,null=True)
     faseCorrente = models.CharField(max_length=150,blank=False,null=True)
     faseIntermediaria = models.CharField(max_length=150,blank=False,null=True)
     destinacaoFinal = models.CharField(max_length=150,blank=False,null=True)
