@@ -9,6 +9,8 @@ from django.template.response import TemplateResponse
 from .forms import FormResposta
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
+from django.core.mail import EmailMessage
+from django.conf import settings
 
 
 admin.site.register(Campus)
@@ -76,20 +78,20 @@ class TipologiaAdmin(admin.ModelAdmin):
 
              return format_html(
 
-                        '<a class="button" href="{}">Responder</a>',
+                        '<a onclick="javascript:localStorage.setItem(\'disable\', \'false\');" class="button" href="{}">Responder</a>',
                         reverse('admin:processa_resposta', args=[obj.pk]),
                     )
         else:
             if obj.resposta.status == 'salvo':
                  return format_html(
 
-                        '<a class="button" href="{}">Editar</a>',
+                        '<a onclick="javascript:localStorage.setItem(\'disable\', \'false\');" class="button editar" href="{}">Editar</a>',
                         reverse('admin:edita_resposta', args=[obj.pk]),
                     )
             else:
 
                 return format_html(
-                '<a class="button" href="{}">Visualizar</a>',
+                '<a class="button visualizar" href="{}">Visualizar</a>',
                         reverse('admin:visualiza_resposta', args=[obj.pk]),
                     )
         
@@ -98,6 +100,8 @@ class TipologiaAdmin(admin.ModelAdmin):
 
     def processa_resposta(self, request, id_tipologia,*args, **kwargs):
         tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
+        usuario = tipologia.usuario
+        email_usuario = usuario.user.email
         response_data = {}
         resposta = None
         id_resposta = ''
@@ -132,10 +136,15 @@ class TipologiaAdmin(admin.ModelAdmin):
                         resposta.status = status
                         resposta.save()
                     else:
-                        Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
+                        resposta = Resposta.objects.create(tipologia=tipologia, codigo_ifes=codigo, resposta=resposta, observacoes=observacoes, status=status)
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
+                    dominio = settings.DEFAULT_DOMAIN
+                    assunto = 'Sled - Notificação de resposta '
+                    corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + dominio+ '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
+                    email = EmailMessage(assunto, corpo, to=[email_usuario])
+                    email.send()
                 self.message_user(request, status+' com sucesso!')
         else:
             if request.GET.get('codigo'):
@@ -199,6 +208,8 @@ class TipologiaAdmin(admin.ModelAdmin):
 
     def edita_resposta(self, request, id_tipologia, *args, **kwargs):
         tipologia = get_object_or_404(Tipologia, pk=id_tipologia)
+        usuario = tipologia.usuario
+        email_usuario = usuario.user.email
         resposta = Resposta.objects.get(tipologia_id=id_tipologia)
         response_data = {}
         if request.POST:
@@ -212,6 +223,11 @@ class TipologiaAdmin(admin.ModelAdmin):
                     fase_respondido = Fase.objects.get(nome='Analisado')
                     tipologia.fases = fase_respondido
                     tipologia.save()
+                    dominio = settings.DEFAULT_DOMAIN
+                    assunto = 'Sled - Notificação de resposta '
+                    corpo = 'Sua tipologia '+tipologia.nome+ ' foi respondida, para visualizar a resposta acesse:\n\n' + dominio+ '?next=/tipologia/' +str(tipologia.id)+ '/resposta' + '\n\nAtenciosamente,\nEquipe Sled.'
+                    email = EmailMessage(assunto, corpo, to=[email_usuario])
+                    email.send()
                 resposta.codigo_ifes = form_resposta.cleaned_data['codigo_ifes']
                 resposta.resposta = form_resposta.cleaned_data['resposta']
                 resposta.observacoes = form_resposta.cleaned_data['observacoes']

@@ -7,11 +7,12 @@ $(document).ready(function(){
                 $('.tap-target').tapTarget('open');
             }
         }).modal('open');
-       // $('.tap-target').tapTarget('open');
         localStorage.setItem("esta_logado", 'true');
     }
     }
+    $('.tooltipped').tooltip({delay: 50, html: true});
     $(".modal").modal();
+    
 })
 
 $(document).ready(function() {
@@ -25,15 +26,6 @@ $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15, // Creates a dropdown of 15 years to control year
     format: 'yyyy-mm-dd'
-});
-
-$(document).ready(function(){
-    $('.tooltipped').tooltip({delay: 50, html:true});
-});
-
-$(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
 });
 
 function submitform()
@@ -112,3 +104,16 @@ function create_post() {
             }
         });
 };
+
+
+function botaoSalvar(){
+    $("#valor_botao").val("1");
+    $('#tipologia-form').submit();
+}
+
+function botaoSim(){
+    $("#valor_botao").val("0");
+    $('#tipologia-form').submit();
+}
+
+

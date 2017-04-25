@@ -16,14 +16,11 @@ from django.http import JsonResponse
 
 
 
-
 @csrf_protect
 def cadastroUsuario(request):
     setores = Setor.objects.all()
     campi = Campus.objects.all()
     setor_campus = dict()
-    #setores_id = []
-    #setores_nome = []
     setores_no_campus = dict()
     informacoes_setores_campus = dict()
     setor_campus_json = ''
@@ -75,15 +72,34 @@ def cadastroUsuario(request):
 @csrf_protect
 @login_required
 def user_detail(request, pk):
+
     user = get_object_or_404(User, pk=pk)
     usuario = get_object_or_404(Usuario, pk=Usuario.objects.get(user=user).id)
     setor = get_object_or_404(Setor,  pk=usuario.setor.id)
 
     setores = Setor.objects.all()
+    campi = Campus.objects.all()
     setor_campus = dict()
-    for (campus__,setor__) in [(setor.campus.id,setor.id) for setor in setores]:
-            setor_campus[setor__] = campus__
-    setor_campus_json = json.dumps(setor_campus)
+    setores_no_campus = dict()
+    informacoes_setores_campus = dict()
+    setor_campus_json = ''
+    
+    
+    for campus in campi:
+        setores_id = []
+        setores_nome = []
+        campus_json =dict()
+        for setor in setores:
+            if setor.campus.id == campus.id:
+                setores_id.append(setor.id)
+                setores_nome.append(setor.nome)    
+        campus_json['setores_id'] = setores_id
+        campus_json['setores_nome'] = setores_nome
+
+        setores_no_campus[campus.id] = campus_json
+
+    setor_campus_json = json.dumps(setores_no_campus)
+
 
     if request.POST:
         formUser = FormUser(request.POST, instance=user)
@@ -112,209 +128,13 @@ def user_detail(request, pk):
         formUser = FormUser(instance=user)
         formParcialSetor = FormParcialSetor(instance=setor)
         formUsuario = FormUsuario(instance=usuario)
-    return render(request, 'editarUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario,'setorCampus':setor_campus_json})
+    return render(request, 'editarUsuario.html', {'formParcialSetor':formParcialSetor, 'formUser': formUser, 'formUsuario':formUsuario, 'setorCampus':setor_campus_json})
 
 @csrf_protect
 @login_required
 def home(request):
     return render(request, 'home.html')
 
-@csrf_protect
-@login_required
-def especieDocumental(request):
-    if request.POST:
-        nome = request.POST.get('nome', None)
-        existeNoBanco = EspecieDocumental.objects.filter(nome=nome).exists()
-        if (nome != ''):
-            if (existeNoBanco == True):
-                messages.add_message(request, messages.ERROR,
-                                     'A Especie Documental ja existe. Por favor, tente novamente!')
-            else:
-                EspecieDocumental.objects.create(nome=nome)
-                return HttpResponseRedirect(request.POST.get('next'))
-    return render(request, 'especieDocumental.html', {})
-
-
-@csrf_protect
-@login_required
-def especiesDocumentais_list(request):
-    especiesDocumentais = EspecieDocumental.objects.all
-    return render(request, 'especiesDocumentais_list.html', {'especiesDocumentais': especiesDocumentais})
-
-
-@csrf_protect
-@login_required
-def especieDocumental_remove(request, pk):
-    especieDocumental = get_object_or_404(EspecieDocumental, pk=pk)
-    especieDocumental.delete()
-    return redirect('app.views.especiesDocumentais_list')
-
-
-@csrf_protect
-@login_required
-def especieDocumental_edit(request, pk):
-    especieDocumental = get_object_or_404(EspecieDocumental, pk=pk)
-    if request.POST:
-        nome = request.POST.get('nome', None)
-        existeNoBanco = EspecieDocumental.objects.filter(nome=nome).exists()
-        if (nome != ''):
-            if (existeNoBanco == True):
-                messages.add_message(request, messages.ERROR,
-                                     'A Especie Documental ja existe. Por favor, tente novamente!')
-            else:
-                nome = request.POST.get('nome', None)
-                especieDocumental.nome = nome
-                especieDocumental.save()
-                return HttpResponseRedirect(request.POST.get('next'))
-
-    return render(request, 'editarEspecieDocumental.html', {'especieDocumental': especieDocumental})
-
-@csrf_protect
-@login_required
-def atividades_list(request):
-    atividades = Atividade.objects.order_by('setor')
-    return render(request, 'atividades_list.html', {'atividades': atividades})
-
-@csrf_protect
-@login_required()
-def atividade(request):
-    if request.method == 'POST':
-        form = FormAtividade(request.POST)
-        if form.is_valid():
-            setor = form.cleaned_data['setor']
-            descricao = form.cleaned_data['descricao']
-            Atividade.objects.create(setor=setor,descricao=descricao)
-            return HttpResponseRedirect('/atividades_list/')
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = FormAtividade()
-
-    return render(request, 'atividade.html', {'form': form})
-
-@csrf_protect
-@login_required
-def atividade_edit(request, pk):
-    atividade = get_object_or_404(Atividade, pk=pk)
-    if request.POST:
-        form = FormAtividade(request.POST, instance=atividade)
-        if form.is_valid():
-            atividade = form.save(commit=False)
-            atividade.setor = form.cleaned_data['setor']
-            atividade.descricao = form.cleaned_data['descricao']
-            atividade.save()
-            return HttpResponseRedirect(request.POST.get('next'))
-    else:
-        form = FormAtividade(instance=atividade)
-    return render(request, 'editar_atividade.html', {'form': form, 'atividade': atividade})
-
-@csrf_protect
-@login_required
-def atividade_remove(request, pk):
-    atividade = get_object_or_404(Atividade, pk=pk)
-    atividade.delete()
-    return redirect('app.views.atividades_list')
-
-@csrf_protect
-@login_required
-def setores_list(request):
-    setores = Setor.objects.all
-    return render(request, 'setores_list.html', {'setores': setores})
-
-
-@csrf_protect
-@login_required()
-def cadastrar_setor(request):
-    if request.method == 'POST':
-        form = FormSetor(request.POST)
-        if form.is_valid():
-            campus = form.cleaned_data['campus']
-            nome = form.cleaned_data['nome']
-            sigla = form.cleaned_data['sigla']
-            id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
-            id_unidade = form.cleaned_data['id_unidade']
-            funcao = form.cleaned_data['funcao']
-            historico = form.cleaned_data['historico']
-            Setor.objects.create(nome=nome, sigla=sigla, id_unidade_responsavel=id_unidade_responsavel, id_unidade=id_unidade, campus=campus)
-            return HttpResponseRedirect(request.POST.get('next'))
-    else:
-        form = FormSetor()
-
-    return render(request, 'cadastro_setor.html', {'form': form})
-
-
-@csrf_protect
-@login_required
-def setor_edit(request, pk):
-    setor = get_object_or_404(Setor, pk=pk)
-    if request.POST:
-        form = FormSetor(request.POST, instance=setor)
-        if form.is_valid():
-            setor = form.save(commit=False)
-            setor.campus = form.cleaned_data['campus']
-            setor.nome = form.cleaned_data['nome']
-            setor.sigla = form.cleaned_data['sigla']
-            setor.id_unidade_responsavel = form.cleaned_data['id_unidade_responsavel']
-            setor.id_unidade = form.cleaned_data['id_unidade']
-            setor.save()
-            return HttpResponseRedirect(request.POST.get('next'))
-    else:
-        form = FormSetor(instance=setor)
-    return render(request, 'editar_setor.html', {'form': form, 'setor': setor})
-
-
-@csrf_protect
-@login_required
-def setor_remove(request, pk):
-    setor = get_object_or_404(Setor, pk=pk)
-    setor.delete()
-    return redirect('app.views.setores_list')
-
-
-@csrf_protect
-@login_required
-def campus(request):
-    if request.method == 'POST':
-        form = FormCampus(request.POST)
-        if form.is_valid():
-            nome = form.cleaned_data['nome']
-            Campus.objects.create(nome=nome)
-            return HttpResponseRedirect(request.POST.get('next'))
-    else:
-        form = FormCampus()
-    return render(request, 'campus.html', {'form': form})
-
-
-@csrf_protect
-@login_required
-def campi_list(request):
-    campi = Campus.objects.all
-    return render(request, 'campi_list.html', {'campi': campi})
-
-
-@csrf_protect
-@login_required
-def campus_edit(request, pk):
-    campus = get_object_or_404(Campus, pk=pk)
-    if request.POST:
-        form = FormCampus(request.POST, instance=campus)
-        if form.is_valid():
-            campus = form.save(commit=False)
-            if(Campus.objects.filter(nome=form.cleaned_data['nome'])):
-                form.add_error('nome', 'Campus com este Nome já existe.')
-            else:
-                campus.nome = form.cleaned_data['nome']
-                campus.save()
-                return HttpResponseRedirect(request.POST.get('next'))
-    else:
-        form = FormCampus(instance=campus)
-    return render(request, 'editarCampus.html', {'form': form, 'campus': campus})
-
-@csrf_protect
-@login_required
-def campus_remove(request, pk):
-    campus = get_object_or_404(Campus, pk=pk)
-    campus.delete()
-    return redirect('app.views.campi_list')
 
 @csrf_protect
 @login_required
@@ -371,7 +191,6 @@ def levantamento_view(request, pk):
     tipologia = get_object_or_404(Tipologia, pk=pk)
     return render(request, 'visualizar_levantamento.html',{'tipologia':tipologia})
 
-@login_required
 def resposta_view(request, pk):
     resposta = Resposta.objects.get(tipologia=pk)
     return render(request, 'resposta_formulario.html',{'resposta':resposta})
@@ -386,7 +205,6 @@ def cadastrar_tipologia(request):
     if request.POST:
         formAtividade = FormAtividade(request.POST)
         form = FormTipologia(request.POST, setor=setor)
-        #form.errors['atividade'] = None
         if request.POST.get('botao_cadastrar') == "3":
             if formAtividade.is_bound and formAtividade.is_valid():
                 descricao = formAtividade.cleaned_data['descricao']
@@ -398,9 +216,9 @@ def cadastrar_tipologia(request):
             return JsonResponse(response_data)
         else:
             if form.is_valid():
-                if request.POST.get('submit_enviar') == "0":
+                if request.POST.get('valor') == "0":
                     fase = Fase.objects.get(nome='Aguardando Resposta')
-                elif request.POST.get('submit_salvar') == "1":
+                elif request.POST.get('valor') == "1":
                     fase = Fase.objects.get(nome='Levantamento')
                 especieDocumental = form.cleaned_data['especieDocumental']
                 finalidade = form.cleaned_data['finalidade']
@@ -435,4 +253,3 @@ def cadastrar_tipologia(request):
         formAtividade = FormAtividade()
 
     return render(request, 'cadastro_tipologia.html', {'form': form, 'formAtividade':formAtividade})
-

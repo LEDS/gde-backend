@@ -23,37 +23,20 @@ from app.views import *
 from app import admin as adminMethod
 
 urlpatterns = [
-                  url(r'^jet/', include('jet.urls', 'jet')),
-                  url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
+                  url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
+                  url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
+                  url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',auth_views.password_reset_confirm, name='password_reset_confirm'),
+                  url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'),
                   url(r'^admin/', admin.site.urls),
-                  url(r'^register/$', cadastroUsuario),
+                  url(r'^register/$', cadastroUsuario, name='cadastro_usuario'),
                   url(r'^home/$', home),
                   url(r'^user/(?P<pk>[\d]+)/$', user_detail),
-                  url(r'^$', auth_views.login, {'template_name': 'login.html'}),
+                  url(r'^$', auth_views.login, {'template_name': 'login.html'}, name='login'),
                   url(r'^logout/$', auth_views.logout, {'next_page': '/'}),
-                  url(r'^especieDocumental/$', especieDocumental),
-                  url(r'^especieDocumental/(?P<pk>\d+)/edit/$', especieDocumental_edit, name='especieDocumental_edit'),
-                  url(r'^especiesDocumentais_list/$', especiesDocumentais_list),
-                  url(r'^especieDocumental/(?P<pk>\d+)/remove/$', especieDocumental_remove, name='especieDocumental_remove'),
-                  url(r'^setor/$', cadastrar_setor),
-                  url(r'^setores_list/$', setores_list),
-                  url(r'^setor/(?P<pk>\d+)/edit/$', setor_edit, name='setor_edit'),
-                  url(r'^setor/(?P<pk>\d+)/remove/$', setor_remove, name='setor_remove'),
-                  url(r'^campus/$', campus),
-                  url(r'^campi_list/$', campi_list),
-                  url(r'^campus/(?P<pk>\d+)/edit/$', campus_edit, name='campus_edit'),
-                  url(r'^campus/(?P<pk>\d+)/remove/$', campus_remove, name='campus_remove'),
-                  url(r'^atividade/$', atividade, name='atividade'),
-                  url(r'^atividades_list/$', atividades_list, name='atividades_list'),
-                  url(r'^atividade/(?P<pk>\d+)/edit/$', atividade_edit, name='atividade_edit'),
-                  url(r'^atividade/(?P<pk>\d+)/remove/$', atividade_remove, name='atividade_remove'),
                   url(r'^levantamento_list/$', levantamento_list, name='levantamento_list'),
                   url(r'^levantamento/(?P<pk>\d+)/edit/$', levantamento_edit, name='levantamento_edit'),
                   url(r'^tipologia/$', cadastrar_tipologia, name="cadastrar_tipologia"),
                   url(r'^levantamento/(?P<pk>\d+)/view/$', levantamento_view, name='levantamento_view'),
                   url(r'^tipologia/(?P<pk>\d+)/resposta/$', resposta_view, name='resposta_view'),
-                  #url(r'^processa_resposta/$', adminMethod.processa_resposta, name='processa_resposta'),
-
-
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

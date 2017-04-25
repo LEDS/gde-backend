@@ -5,7 +5,7 @@ import datetime
 
 def gera_anos(anoInicial):
     YEAR_CHOICES = []
-    for r in range(anoInicial, (datetime.datetime.now().year+1)):
+    for r in range((datetime.datetime.now().year), anoInicial, -1):
         YEAR_CHOICES.append((r,r))
     return YEAR_CHOICES
 
@@ -26,7 +26,7 @@ class EspecieDocumental(models.Model):
         return self.nome
 
 class Campus(models.Model):
-    nome = models.CharField(max_length=30, null=True, blank=False, unique=True)
+    nome = models.CharField(max_length=500, null=True, blank=False, unique=True)
 
     def __str__(self):
         return self.nome
@@ -105,7 +105,7 @@ class Tipologia(models.Model):
     identificacao = models.CharField('Identificação', max_length=50, blank=False, unique=True)
     elemento = models.ManyToManyField(Elemento, related_name='elemento', verbose_name='Elemento')
     suporte = models.ForeignKey(Suporte, related_name='suporte', verbose_name='Suporte')
-    formaDocumental = models.BooleanField('Forma Documental', choices=((True, 'Original'), (False, 'Copia')), blank=False)
+    formaDocumental = models.BooleanField('Forma Documental', choices=((True, 'Original'), (False, 'Copia')), blank=False, null=False)
     genero = models.ManyToManyField(Genero, related_name='genero', verbose_name='Gênero')
     anexo = models.BooleanField('Anexo', choices=gera_sim_nao(), blank=False)
     relacaoInterna = models.BooleanField('Relação interna', choices=gera_sim_nao(), blank=False)
@@ -113,8 +113,8 @@ class Tipologia(models.Model):
     inicioAcumulo = models.IntegerField('Início', choices=gera_anos(1900), blank=False)
     quantidadeVias = models.BooleanField('Quantidade de vias', choices=gera_sim_nao(), blank=False)
     fimAcumulo = models.IntegerField('Fim', choices=gera_anos(1900), blank=False)
-    quantidadeAcumulada = models.IntegerField('Quantidade acumulada', choices=gera_inteiros_positivos(100),blank=True)
-    tipoAcumulo = models.ForeignKey(TipoAcumulo, related_name='tipoAcumulo', blank=True, null=True, verbose_name='Tipo de acúmulo')
+    quantidadeAcumulada = models.IntegerField('Quantidade acumulada', choices=gera_inteiros_positivos(100),blank=False)
+    tipoAcumulo = models.ForeignKey(TipoAcumulo, related_name='tipoAcumulo', blank=False, null=True, verbose_name='Tipo de acúmulo')
     embasamentoLegal = models.CharField('Embasamento legal', max_length=50, null=True, blank=False, unique=False)
     informacaoOutrosDocumentos = models.BooleanField('Informações em outros documentos', choices=gera_sim_nao(), blank=False)
     restricaoAcesso = models.ManyToManyField(RestricaoAcesso, related_name='restricaoAcesso', verbose_name='Restrições de acesso')
@@ -128,7 +128,7 @@ class Tipologia(models.Model):
 
 class GrupoConarq(models.Model):
     codigo = models.CharField(max_length=50,blank=False,null=True)
-    nome = models.CharField(blank=False,max_length=150)
+    nome = models.CharField(blank=False,max_length=500)
 
     def __str__(self):
         return self.nome
@@ -136,7 +136,7 @@ class GrupoConarq(models.Model):
 class Conarq(models.Model):
     codGrupo = models.ForeignKey(GrupoConarq,related_name="codGrupo",blank=False)
     codigo = models.CharField(max_length=50,blank=False,null=True)
-    assunto = models.CharField(max_length=150,blank=False,null=True)
+    assunto = models.CharField(max_length=500,blank=False,null=True)
     faseCorrente = models.CharField(max_length=150,blank=False,null=True)
     faseIntermediaria = models.CharField(max_length=150,blank=False,null=True)
     destinacaoFinal = models.CharField(max_length=150,blank=False,null=True)

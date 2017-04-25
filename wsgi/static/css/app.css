@@ -61,10 +61,6 @@
     font-size:16px;
 }
 
-#botao-login{
-    position:relative;
-    left:38%;
-}
 
 .cadastrar{
     position:fixed;
@@ -178,4 +174,28 @@
     margin-top:-40px;3
     font-family: "Times New Roman";
     font-style: italic;
+}
+
+.conteiner-botao{
+    width: 100%;
+    text-align: center;
+}
+
+.erro{
+    width: 100%;
+}
+
+.erro2{
+    margin-top: 20px;
+
+}
+.errorlist li:hover{
+    background-color: #ffffff !important
+}
+.errorlist li{
+    color: red !important
+}
+
+.erro{
+    color: red;
 }

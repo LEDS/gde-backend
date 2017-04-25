@@ -44,13 +44,9 @@ ALLOWED_HOSTS = [
     #'www.example.com', # Second DNS alias (set up in the app)
 ]
 
-
-
 # Application definition
 
 INSTALLED_APPS = (
-    'jet.dashboard',
-    'jet',
     'app',
     'behave_django',
     'django.contrib.admin',
@@ -150,3 +146,14 @@ STATICFILES_DIRS = [
 
 
 LOGIN_URL = '/'
+
+#Configuração do servidor de email
+#início
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'projetogde@gmail.com'
+EMAIL_HOST_PASSWORD = 'ifesledsgde'
+EMAIL_PORT = 587
+#fim
+
+DEFAULT_DOMAIN = '127.0.0.1:8000'
