@@ -30,7 +30,7 @@ script:
 - cd wsgi/gde
 - python manage.py makemigrations
 - python manage.py migrate
-- python manage.py behave
+#- python manage.py behave
 - cd ..
 - cd ..
 - sonar-scanner
